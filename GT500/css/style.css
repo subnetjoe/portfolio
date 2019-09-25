@@ -486,7 +486,7 @@ footer i.fab:hover {
     height: 95%;
     background-size: cover;
     background-position: center center;
-    z-index: 2;
+    z-index: -2;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     will-change: transform;
