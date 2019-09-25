@@ -285,7 +285,7 @@ img{
 }
 
 .home-inner {
-  background-image: url(../img/splash.jpg);
+  background-image: url(/img/splash.jpg);
   position: fixe;
   display: table;
   top: 0;
