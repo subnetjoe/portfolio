@@ -1,0 +1,545 @@
+@font-face {
+  font-family: "light";
+  src: url("light.woff") format('woff');
+}
+
+/*=====Color Palette======*/
+/* black         #0b0c10 */
+/* dark grey     #1f2833 */
+/* light grey    #c5c6c7 */
+/* bright teal   #66fcf1 */
+/* dark teal     #45a29e */
+/* dark ford blue  #102b4e */
+/* light ford blue  #2096cd */
+/* middle ford blue  #0276B3 */
+
+/*======TABLE OF CONTENTS======*/
+/*------DEMO GALLERY---------
+--------GLOBAL STYLES---------
+--------NAVIGATION------------
+--------LANDING PAGE--------
+--------GT500 MAIN SECTION--------
+--------PEAK OF PERFORMANCE SECTION--------
+--------MEDIA QUERIES----------*/
+
+
+
+
+/*======DEMO GALLERY======*/
+
+.demo-gallery > ul {
+  margin-bottom: 0;
+}
+.demo-gallery > ul > li {
+  margin-bottom: 15px;
+}
+.demo-gallery > ul > li a {
+  border: 3px solid #FFF;
+  border-radius: 3px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  float: left;
+}
+.demo-gallery > ul > li a > img {
+  -webkit-transition: -webkit-transform 0.15s ease 0s;
+  -moz-transition: -moz-transform 0.15s ease 0s;
+  -o-transition: -o-transform 0.15s ease 0s;
+  transition: transform 0.15s ease 0s;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  width: 100%;
+}
+.demo-gallery > ul > li a:hover > img {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+.demo-gallery > ul > li a:hover .demo-gallery-poster > img {
+  opacity: 1;
+}
+.demo-gallery > ul > li a .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: background-color 0.15s ease 0s;
+  -o-transition: background-color 0.15s ease 0s;
+  transition: background-color 0.15s ease 0s;
+}
+.demo-gallery > ul > li a .demo-gallery-poster > img {
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: opacity 0.3s ease 0s;
+  -o-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+}
+.demo-gallery > ul > li a:hover .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.demo-gallery .justified-gallery > a > img {
+  -webkit-transition: -webkit-transform 0.15s ease 0s;
+  -moz-transition: -moz-transform 0.15s ease 0s;
+  -o-transition: -o-transform 0.15s ease 0s;
+  transition: transform 0.15s ease 0s;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  height: 100%;
+  width: 100%;
+}
+.demo-gallery .justified-gallery > a:hover > img {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+.demo-gallery .justified-gallery > a:hover .demo-gallery-poster > img {
+  opacity: 1;
+}
+.demo-gallery .justified-gallery > a .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: background-color 0.15s ease 0s;
+  -o-transition: background-color 0.15s ease 0s;
+  transition: background-color 0.15s ease 0s;
+}
+.demo-gallery .justified-gallery > a .demo-gallery-poster > img {
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: opacity 0.3s ease 0s;
+  -o-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+}
+.demo-gallery .justified-gallery > a:hover .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.demo-gallery .video .demo-gallery-poster img {
+  height: 48px;
+  margin-left: -24px;
+  margin-top: -24px;
+  opacity: 0.8;
+  width: 48px;
+}
+.demo-gallery.dark > ul > li a {
+  border: 3px solid #041d1f;
+}
+.home .demo-gallery {
+  padding-bottom: 80px;
+}
+#aniimated-thumbnials .demo-gallery a {
+  width: 190px;
+  height: 132px;
+}
+
+
+
+/*======GLOBAL STYLES======*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "light";
+  color: #1f2833;
+  padding-top: 0px;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+i.fas .far {
+  color: #0276B3;
+  padding-top: 2rem;
+  padding-left: 8rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.carousel-text {
+  text-shadow: .1rem .1rem .1rem black;
+}
+
+.heading-underline {
+  width: 5rem;
+  height: .2rem;
+  background-color: #0276B3;
+  margin: 2rem auto 2rem auto;
+}
+
+.offset:before {
+  display: block;
+  content: "";
+  height: 4.5rem;
+  margin-top: -4.5rem;
+}
+
+.row,
+.container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.to-top { 	
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  text-decoration: none; 
+  color: #fff; 
+  background: #151f28; 
+  padding: 10px 20px; 
+  display: none; 
+}
+.to-top:hover{ 
+  color: #151f28; 
+  background: #fff; 
+}
+
+img{
+  width: 100%;
+}
+
+/*=========NAVIGATION=======*/
+.navbar {
+  font-weight: 200;
+  font-size: 1.25rem;
+  background: rgba(255, 255, 255) !important;
+}
+
+.navbar-brand img {
+  height: 100%;
+  width: 100%;
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+
+.navbar-nav li {
+  padding-right: .9rem;
+  padding-bottom: 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #0276B3;
+  padding-top: 1.5rem;
+  padding-bottom: .95rem;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #0276B3;
+}
+
+.navbar-light .navbar-nav .nav-link.active :hover {
+  color: #0276B3;
+}
+
+.fixed-top {
+  -webkit-backface-visibility: hidden;
+}
+
+.navbar-sticky {
+  font-weight: 100;
+  font-size: 1.3rem;
+  color: white;
+  background: #0276B3 !important;
+  padding-left: 4rem;
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+  height: 85px;
+}
+
+.thick {
+  font-weight: 700;
+}
+
+.darkblue {
+  background: #102b4e;
+  height: 85px;
+  width: 940px;
+  margin: 0px 0px 40px 0px;
+}
+
+/*=======LANDING PAGE ======*/
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home-inner {
+  background-image: url(../img/website/splash.jpg);
+  position: fixe;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  z-index: -1;
+}
+
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+  color: white;
+}
+
+.caption h1 {
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .1rem black;
+  padding-bottom: 1rem;
+  margin-left: 600px;
+}
+
+/*========GT500 MAIN SECTION =========*/
+
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 0rem;
+}
+
+.GT500-Main-border {
+  margin-bottom: 0rem;
+  margin-top: 0;
+  padding: 0rem 0rem 2rem;
+  border-radius: 0;
+  background-color: white;
+}
+
+/*============Peak of Performance SECTION============*/
+.fixed {
+  background-image: url(../img/blue.jpg);
+  z-index: -1;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.fixed-background {
+  position: relative;
+  width: 100%;
+}
+
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+
+.dark {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 3rem 2rem 5rem;
+}
+
+i.fab {
+  color: #45a29e;
+  text-shadow: .4rem .4rem .4rem black;
+}
+
+i.fab:hover {
+  color: #66fcf1;
+}
+
+
+/*===========FOOTER SECTION==========*/
+footer {
+  background-color: #1f2833;
+  color: white;
+  padding: 4rem 0 0;
+  margin-top: 0rem;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #45a29e;
+  text-decoration: none;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+footer h2{
+  font-size: 1.2rem;
+}
+
+footer img{
+  padding-bottom: .8rem;
+}
+
+footer i.fab {
+  font-size: 2.3rem;
+  margin: 0 1rem 1rem 1rem;
+  color: white;
+}
+
+footer i.fab:hover {
+  color: #45a29e !important;
+}
+
+
+/*========MEDIA QUERIES=======*/
+@media (max-width: 992px) {
+
+  p {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 2.1rem;
+    font-weight: 500;
+    margin-top: .5rem;
+  }
+
+  .caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 33%;
+    z-index: -1;
+    color: white;
+  }
+  
+  .caption h1 {
+    font-size: 1.8rem;
+    font-weight: 100;
+    letter-spacing: .15rem;
+    text-shadow: .1rem .1rem .1rem black;
+    padding-bottom: .5rem;
+    margin-left: 10px;
+  }
+
+  .caption h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .narrow {
+    width: 95%;
+    margin: 1.5rem auto;
+    padding-top: 0rem;
+  }
+
+  .narrow h1 {
+    font-size: 1.5rem;
+  }
+
+  .home-inner {
+    background-image: url(../img/website/splash.jpg);
+    position: fixe;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+  }
+
+  .landing {
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    display: table;
+    z-index: -2;
+  }
+
+  .navbar-toggler{
+    float: right !important;
+    margin-right: 1rem;
+    margin-top: 1.3rem;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #0276B3;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    font-size: 1rem;
+  }
+  
+  .mt-3 {
+    margin-top: 3rem !important;
+  }
+
+.sticky-text {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 4rem !important;
+  padding-top: 4rem !important;
+}
+
+
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
