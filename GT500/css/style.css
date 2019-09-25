@@ -285,7 +285,7 @@ img{
 }
 
 .home-inner {
-  background-image: url(http://warezcodes.com/GT500/img/splash.jpg);
+  background-image: url(../img/splash.jpg);
   position: fixe;
   display: table;
   top: 0;
@@ -477,7 +477,7 @@ footer i.fab:hover {
   }
 
   .home-inner {
-    background-image: url(../img/website/splash.jpg);
+    background-image: url(../img/splash.jpg);
     position: fixe;
     display: table;
     top: 0;
