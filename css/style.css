@@ -325,6 +325,11 @@ hr.socket {
 
 /*========MEDIA QUERIES=======*/
 @media (max-width: 767px) {
+
+  .jumbotron-heading {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
   h3.heading {
     font-size: 2rem;
     font-weight: 500;
@@ -364,12 +369,6 @@ hr.socket {
 
   .narrow h1 {
     font-size: 1.5rem;
-  }
-
-  .clients img {
-    width: 50%;
-    display: block;
-    margin: 0 auto;
   }
 }
 
