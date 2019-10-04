@@ -162,6 +162,14 @@ h3.heading {
   text-transform: uppercase;
 }
 
+.caption a {
+  color: white !important;
+}
+
+.caption a:hover{
+  color: black !important;
+}
+
 .caption h1 {
   font-size: 4rem;
   font-weight: 700;
@@ -266,12 +274,12 @@ i.fab:hover {
   border-top: .05rem solid #45a29e;
 }
 
-a:link, a:visited, a:active {
+.porfolio a:link, a:visited, a:active {
   color: #000000;
   text-decoration: none;
 }
 
-a:hover {
+.portfolio a:hover {
   color: #45a29e;
   text-decoration: none;
 }
