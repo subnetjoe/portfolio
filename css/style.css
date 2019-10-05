@@ -162,14 +162,6 @@ h3.heading {
   text-transform: uppercase;
 }
 
-.caption a {
-  color: white !important;
-}
-
-.caption a:hover{
-  color: black !important;
-}
-
 .caption h1 {
   font-size: 4rem;
   font-weight: 700;
@@ -274,13 +266,8 @@ i.fab:hover {
   border-top: .05rem solid #45a29e;
 }
 
-.porfolio a:link, a:visited, a:active {
-  color: #000000;
-  text-decoration: none;
-}
-
 .portfolio a:hover {
-  color: #45a29e;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -315,12 +302,6 @@ footer i.fab {
 
 footer i.fab:hover {
   color: #45a29e !important;
-}
-
-hr.socket {
-  width: 100%;
-  border-top: .2rem solid #666b71;
-  margin-top: 3rem;
 }
 
 /*========MEDIA QUERIES=======*/
