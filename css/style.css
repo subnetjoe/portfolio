@@ -186,7 +186,7 @@ h3.heading {
 
 /*========ABOUT SECTION =========*/
 .narrow {
-  width: 75%;
+  width: 65%;
   margin: 1.5rem auto;
   padding-top: 1rem;
 }
@@ -194,7 +194,7 @@ h3.heading {
 .jumbotron {
   margin-bottom: 0rem;
   margin-top: 0;
-  padding: 0rem 2rem 4rem;
+  padding: 0rem 2rem 2rem;
   border-radius: 0;
   background-color: white;
 }
@@ -350,6 +350,11 @@ footer i.fab:hover {
 
   .narrow h1 {
     font-size: 1.5rem;
+    width: 100%;
+  }
+
+  .narrow {
+    width: 100%;
   }
 }
 
