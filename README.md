@@ -1,5 +1,5 @@
 William Joe Early's portfolio of web developments
 
-WarezCodes.com
+http://WarezCodes.com
 
 # warezcodes
