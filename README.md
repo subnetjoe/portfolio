@@ -6,7 +6,7 @@ Next on the list is working with GSAP to animate images during scrolling and the
 
 
 <ul>
-  Projects finished:
+  <h6>Projects finished:</h6>
   <li>2020 Ford Mustang Shelby GT500</li>
   <li>WarezCodes.com Portfolio of William Early</li>
 <ul>
