@@ -1,6 +1,6 @@
 <img src="https://warezcodes.com/img/warez.png">
 
-<h3>William Joe Early's portfolio of web development projects</h3>
+<h3>William Early's portfolio of web development projects</h3>
 
 Currently working on the Ricardo's Mexican restaurant website.
 
