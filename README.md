@@ -1,4 +1,4 @@
-William Joe Early's portfolio of web development projects
+<h4>William Joe Early's portfolio of web development projects</h4>
 
 Currently working on the Ricardo's Mexican restaurant website.
 
