@@ -416,7 +416,9 @@ footer h2{
 }
 
 footer img{
-  padding-bottom: .8rem;
+  height: 3rem;
+  width: auto;
+  margin: 1rem 0 1rem 0;
 }
 
 footer i.fab {
