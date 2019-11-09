@@ -165,7 +165,7 @@ h3.heading {
 .caption h1 {
   font-size: 4rem;
   font-weight: 700;
-  letter-spacing: .3rem;
+  letter-spacing: .1rem;
   text-shadow: .5rem .5rem .5rem black;
   padding-bottom: 1rem;
 }
