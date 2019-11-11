@@ -189,8 +189,8 @@ h3.heading {
 }
 
 .modal-content{
-  background-color: #800080;
-  color: white !important;
+  background-color: rgba(128, 0, 128, .8);
+  color: white;
 }
 
 .white {
