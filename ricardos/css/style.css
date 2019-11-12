@@ -407,3 +407,15 @@ footer i.fab:hover {
 }
 
 /*========MEDIA QUERIES=======*/
+@media (max-width: 767px) {
+
+  .jumbotron-heading {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  .title img{
+    height: 50px;
+  }
+
+}
+
