@@ -261,6 +261,13 @@ i.fab:hover {
   padding: 2.5rem 4rem 4rem 4rem;
 }
 
+.heading-underline-large{
+  width: 20rem;
+  height: .2rem;
+  background-color: #45a29e;
+  margin: 2rem auto 2rem auto;
+}
+
 .portfolio img {
   width: 100%;
   border-radius: 50%;
