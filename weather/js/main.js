@@ -1,7 +1,7 @@
 
 var city = "New York";
 
-$.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&APPID=a4f1e1fffd21c3ab5f84c30ea39c7a47", 
+$.getJSON("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&APPID=a4f1e1fffd21c3ab5f84c30ea39c7a47", 
     function(data){
     console.log(data);
 
