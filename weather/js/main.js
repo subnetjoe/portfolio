@@ -5,7 +5,7 @@ $.getJSON("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=
     function(data){
     console.log(data);
 
-    var icon = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
+    var icon = "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
     var temp = Math.floor(data.main.temp);
     var weather = data.weather[0].main;
 
