@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+/*=====Color Palette======*/
+/* black         #0b0c10 */
+/* dark grey     #1f2833 */
+/* light grey    #c5c6c7 */
+/* bright teal   #66fcf1 */
+/* dark teal     #45a29e */
+
+/*======TABLE OF CONTENTS======*/
+/*-------GLOBAL STYLES---------
+--------NAVIGATION------------
+---------LANDING PAGE--------
+--------SERVICES SECTION--------
+--------SKILLS SECTION--------
+--------PORTFOLIO SECTION-------
+--------CONTACT SECTION---------
+---------MEDIA QUERIES----------*/
+
+
+/*======GLOBAL STYLES======*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Roboto";
+  color: #1f2833;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+h6 {
+  font-weight: 100;
+  font-size: 1.1rem;
+}
+
+h3.heading {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.heading-underline {
+  width: 500px;
+  height: .1rem;
+  background-color: blue;
+  margin: 2rem auto 2rem auto;
+}
+
+.offset:before {
+  display: block;
+  content: "";
+  height: 4.5rem;
+  margin-top: -4.5rem;
+}
+
+.row,
+.container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-decoration: none;
+  color: #fff;
+  background: #151f28;
+  padding: 10px 20px;
+  display: none;
+}
+
+.to-top:hover {
+  color: #151f28;
+  background: #fff;
+}
+
+/*=========NAVIGATION=======*/
+
+.pagewide{
+  height: 70px;
+  width: auto;
+  background-color: white;
+  margin: 0;
+  text-align: center;
+}
+
+.rowheader{
+  width: 1200px;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+      top: 30px;
+  } 
+}
+  .pagewide {
+      height: 70px;
+  }
+
+@media (max-width: 576px){
+  .pagewide{
+    height: 0px;
+  }
+}
+
+.navbar {
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: 0rem;
+  background: white;
+}
+
+.navbar-brand img {
+  height: auto;
+}
+
+.navbar-nav li {
+  padding-right: .7rem;
+}
+
+.nav-link {
+  color: black;
+  padding-top: .8rem;
+  padding-bottom: .95rem;
+}
+
+a.nav-link.active {
+  color: blue;
+}
+
+a.nav-link:hover {
+  color: blue;
+}
+
+a.dropdown-item:hover {
+  color: blue;
+}
+
+.navbar-nav li:hover>.dropdown-menu {
+  display: block;
+}
+
+.navbar-toggler{
+  border-color: blue!important;
+}
+
+
+.fixed-top {
+  -webkit-backface-visibility: hidden;
+}
+
+/*=======LANDING PAGE ======*/
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home-inner {
+  background-image: url(../img/splash.jpg);
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  z-index: -1;
+}
+
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 0;
+  color: white;
+}
+
+.caption h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  text-shadow: .2rem .2rem .2rem black;
+  padding-bottom: 0rem;
+  z-index: 0;
+}
+
+.caption h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-shadow: .1rem .1rem .1rem black;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.btn-lg {
+  border-width: medium;
+  border-radius: 25;
+  padding: .6rem 1.3rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: green;
+}
+
+/*========SERVICES SECTION =========*/
+.narrow {
+  width: 65%;
+  margin: 1.5rem auto;
+  padding-top: 1rem;
+}
+
+.jumbotron {
+  margin-bottom: 0rem;
+  margin-top: 0;
+  padding: 0rem 2rem 2rem;
+  border-radius: 0;
+  background-color: white;
+}
+
+.about h6 {
+  line-height: 1.6;
+}
+
+a.services {
+  color: black;
+}
+
+a.services:hover{
+  color: blue;
+  text-decoration: none;
+}
+
+.services-col{
+  padding-top: 2rem;
+}
+
+.services-col h3{
+  font-size: 1.4rem;
+}
+
+
+/*============REQUEST SECTION============*/
+.fixed {
+  background-image: url(../img/newcurtis.jpg);
+  z-index: -1;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.fixed-background {
+  position: relative;
+  width: 100%;
+}
+
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+
+.dark {
+  background-color: rgba(0, 0, 0, 0.);
+  
+  padding: 3rem 2rem 5rem;
+  height: 500px;
+}
+
+.request {
+  text-shadow: .1rem .1rem .1rem black;
+}
+
+.request h3{
+  font-size: 3rem;
+  color:blue;
+}
+
+.request h2{
+  font-size: 1.8rem;
+  color: black;
+}
+
+.estimate{
+  height: 400px;
+  width: auto;
+}
+
+.heading-underline-request {
+  width: 400px;
+  height: .1rem;
+  background-color: blue;
+}
+
+.btn-lg-blue {
+  border-width: medium;
+  border-radius: 25;
+  padding: .6rem 1.3rem;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  background-color: blue;
+}
+
+/*=====-CUSTOMERS SECTION-======*/
+.jumbotron-heading {
+  padding: 2.5rem 4rem 4rem 4rem;
+}
+
+.heading-underline-large {
+  width: 20rem;
+  height: .2rem;
+  background-color: #45a29e;
+  margin: 3rem auto 4rem auto;
+}
+
+.customer{
+  height: 350px;
+  width: auto;
+  background-color:#add8e6;
+  padding: 3rem 2.5rem 5rem 2.5rem;
+}
+
+.customers img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.customers-hr {
+  border-top: .05rem solid #45a29e;
+}
+
+.customers a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+.webratings{
+  width: auto;
+  height: 150px;
+  background-color: lightgray;
+  margin: 0;
+  padding: 2rem 4rem 2rem 4rem;
+}
+
+/*===========CONTACT SECTION==========*/
+footer {
+  background-color: #1f2833;
+  color: white;
+  padding: 4rem 0 0;
+  margin-top: 0rem;
+  text-shadow: .4rem .4rem .4rem black;
+}
+
+footer img {
+  height: 3rem;
+  margin: 1rem 0 1rem 0;
+}
+
+footer a:hover {
+  color: #45a29e;
+  text-decoration: none;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+footer i.fab {
+  font-size: 2.3rem;
+  margin: 0 1rem 1rem 1rem;
+  color: white;
+}
+
+footer i.fab:hover {
+  color: #45a29e !important;
+}
+
+/*========MEDIA QUERIES=======*/
+@media (max-width: 767px) {
+
+  .jumbotron-heading {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  h3.heading {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  i.fab {
+    color: #45a29e;
+    text-shadow: .4rem .4rem .4rem black;
+    font-size: 3rem;
+  }
+
+  .caption h1 {
+    font-size: 2.3rem;
+    letter-spacing: .15rem;
+    padding-bottom: .5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .caption h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .narrow h1 {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  .narrow {
+    width: 100%;
+  }
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
