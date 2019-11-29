@@ -95,6 +95,12 @@ h3.heading {
   text-align: center;
 }
 
+.pagewide p{
+  color: blue;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
 .rowheader{
   width: 1200px;
 }
@@ -353,24 +359,30 @@ a.services:hover{
 }
 
 .customer{
-  height: 350px;
+  height: 300px;
   width: auto;
   background-color:#add8e6;
-  padding: 3rem 2.5rem 5rem 2.5rem;
+  padding: 1rem 2.5rem 5rem 2.5rem;
+  border-radius: 2%;
+  box-shadow: inset;
+  box-shadow: .2rem .2rem .2rem grey;
 }
 
-.customers img {
-  width: 100%;
+.customer img {
   border-radius: 50%;
+  border: blue;
+  border-width: 2px;
 }
 
-.customers-hr {
-  border-top: .05rem solid #45a29e;
+.customer h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 
-.customers a:hover {
-  color: #000000;
-  text-decoration: none;
+.customer p{
+  font-size: 1rem;
+  font-weight: 100;
+  font-style: italic;
 }
 
 .webratings{
