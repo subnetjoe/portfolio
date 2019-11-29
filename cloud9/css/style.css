@@ -451,8 +451,21 @@ footer i.fab:hover {
     padding-bottom: .5rem;
   }
 
+  .caption h3{
+    font-size: 1rem;
+
+  }
+
+  .heading-underline{
+    width: 300px;
+  }
+
   h3 {
     font-size: 1.2rem;
+  }
+
+  .services-col h3{
+    font-size: 1rem;
   }
 
   .lead {
