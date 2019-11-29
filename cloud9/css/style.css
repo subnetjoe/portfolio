@@ -428,6 +428,8 @@ footer i.fab:hover {
 
 /*========MEDIA QUERIES=======*/
 @media (max-width: 767px) {
+  body { padding-top: 100px; 
+  }
 
   .jumbotron-heading {
     padding: 1rem 1rem 1rem 1rem;
