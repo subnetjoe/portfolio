@@ -89,7 +89,6 @@ h3.heading {
 
 .pagewide{
   height: 70px;
-  width: auto;
   background-color: white;
   margin: 0;
   text-align: center;
@@ -99,10 +98,6 @@ h3.heading {
   color: blue;
   font-size: 1rem;
   font-weight: 100;
-}
-
-.rowheader{
-  width: 1200px;
 }
 
 @media (min-width: 768px) {
@@ -428,8 +423,7 @@ footer i.fab:hover {
 
 /*========MEDIA QUERIES=======*/
 @media (max-width: 767px) {
-  body { padding-top: 100px; 
-  }
+ 
 
   .jumbotron-heading {
     padding: 1rem 1rem 1rem 1rem;
