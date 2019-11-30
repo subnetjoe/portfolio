@@ -301,7 +301,6 @@ a.services:hover{
 
 .dark {
   background-color: rgba(0, 0, 0, 0.);
-  
   padding: 3rem 2rem 5rem;
   height: 500px;
 }
@@ -423,7 +422,25 @@ footer i.fab:hover {
 
 /*========MEDIA QUERIES=======*/
 @media (max-width: 767px) {
- 
+  .request {
+    text-shadow:none;
+  }
+
+  .request h3{
+    font-size: 1.2rem;
+    color:blue;
+  }
+  
+  .request h2{
+    font-size: 1rem;
+    color: black;
+  }
+
+  .heading-underline-request {
+    width: 150px;
+    height: .1rem;
+    background-color: blue;
+  }
 
   .jumbotron-heading {
     padding: 1rem 1rem 1rem 1rem;
