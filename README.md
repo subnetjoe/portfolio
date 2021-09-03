@@ -1,6 +1,6 @@
 <h3>William Early's portfolio of web development projects</h3>
 
-Subnet Joe's new area to change.
+<h2>Subnet Joe's new area to change.</h2>
 
 <h4>Projects finished:</h4>
 <ul>
