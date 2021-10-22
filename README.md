@@ -2,7 +2,7 @@
 <br>
 <a href="https://subnetjoe.com">SubnetJoe.com Portfolio of Joe Early</a>
 <br>
-<p>Finishing up the final touches for the portfolio site and then go in for a total overhaul.
+<p>Finishing up the final touches for the portfolio site and then go in for a total overhaul as of Halloween 2021.
 </p>
 <h4>Projects finished:</h4>
 <ul>
