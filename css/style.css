@@ -45,7 +45,7 @@ h6 {
 
 h3.heading {
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 800;
   margin-bottom: 1rem;
 }
 
@@ -171,7 +171,7 @@ h3.heading {
 }
 
 .caption h3 {
-  font-weight: 100;
+  font-weight: 700;
   font-size: 2rem;
   text-shadow: .4rem .4rem .4rem black;
   padding-bottom: 1rem;
