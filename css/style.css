@@ -7,6 +7,14 @@
 /* bright teal   #66fcf1 */
 /* dark teal     #45a29e */
 
+/*changing the teal to purple and pink */
+
+/* Magenta    #D93060 */
+/* Purple     #6244C5 */
+
+
+
+
 /*======TABLE OF CONTENTS======*/
 /*-------GLOBAL STYLES---------
 --------NAVIGATION------------
@@ -52,7 +60,7 @@ h3.heading {
 .heading-underline {
   width: 8rem;
   height: .2rem;
-  background-color: #45a29e;
+  background-color: #6244C5;
   margin: 2rem auto 2rem auto;
 }
 
@@ -108,11 +116,11 @@ h3.heading {
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #45a29e;
+  color: #6244C5;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #66fcf1;
+  color: #D93060;
 }
 
 .fixed-top {
@@ -243,13 +251,13 @@ h3.heading {
 }
 
 i.fab {
-  color: #45a29e;
+  color: #6244C5;
   text-shadow: .4rem .4rem .4rem black;
   font-size: 6rem;
 }
 
 i.fab:hover {
-  color: #66fcf1;
+  color: #D93060;
 }
 
 .skills {
@@ -264,7 +272,7 @@ i.fab:hover {
 .heading-underline-large{
   width: 20rem;
   height: .2rem;
-  background-color: #45a29e;
+  background-color: #6244C5;
   margin: 4rem auto 4rem auto;
 }
 
@@ -274,7 +282,7 @@ i.fab:hover {
 }
 
 .portfolio-hr {
-  border-top: .05rem solid #45a29e;
+  border-top: .05rem solid #6244C5;
 }
 
 .portfolio a:hover {
@@ -297,7 +305,7 @@ footer img {
 }
 
 footer a:hover {
-  color: #45a29e;
+  color: #6244C5;
   text-decoration: none;
 }
 
@@ -312,7 +320,7 @@ footer i.fab {
 }
 
 footer i.fab:hover {
-  color: #45a29e !important;
+  color: #6244C5 !important;
 }
 
 /*========MEDIA QUERIES=======*/
@@ -329,7 +337,7 @@ footer i.fab:hover {
   }
 
   i.fab {
-    color: #45a29e;
+    color: #6244C5;
     text-shadow: .4rem .4rem .4rem black;
     font-size: 3rem;
   }
