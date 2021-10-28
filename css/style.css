@@ -125,6 +125,7 @@ h3.heading {
 
 .fixed-top {
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 /*=======LANDING PAGE ======*/
