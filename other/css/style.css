@@ -1,0 +1,19 @@
+.bg {
+    background: #6244c5;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+.hl {
+    background: #D93060;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    z-index: -1;
+}
