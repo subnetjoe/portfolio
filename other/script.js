@@ -10,3 +10,4 @@ console.log(food);
 document.getElementById("demo").innerHTML = creditBuilder
 
 // document.write(creditBuilder);
+//new
