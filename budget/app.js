@@ -19,7 +19,9 @@ class UI {
 }
 
 function eventListeners(){
-const budgetForm = 
+const budgetForm = document.getElementById('budget-form');
+const expenseForm = document.getElementById('expense-form');
+const expenseList = document.getElementById('expense-list');
 }
 
 document.addEventListener('DOMContentLoaded', function(){
