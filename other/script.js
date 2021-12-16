@@ -11,4 +11,4 @@ document.getElementById("december").innerHTML = '$' + creditBuilder.toFixed(2)
 document.getElementById("january").innerHTML = '$' + monthlySupport.toFixed(2)
 
 // document.write(creditBuilder);
-//new
+// new
