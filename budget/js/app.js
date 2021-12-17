@@ -1,6 +1,5 @@
 class UI {
     constructor() {
-
         this.budgetFeedback = document.querySelector(".budget-feedback");
         this.expenseFeedback = document.querySelector(".expense-feeback");
         this.budgetForm = document.getElementById("budget-form");
@@ -19,10 +18,61 @@ class UI {
     //submit budget method
     submitBudgetForm(){
         const value = this.budgetInput.value;
-        if(value==='' || value <0){
+        if(value==='' || value < 0){
             this.budgetFeedback.classList.add('showItem');
-            this.budgetFeedback.innerHTML = '<p>value cannot be empty or negative<p>'
+            this.budgetFeedback.innerHTML = '<p>value cannot be empty or negative<p>';
+            const self = this;
+            //console.log(this);
+            
+            setTimeout(function() {
+                self.budgetFeedback.classList.remove('showItem'); 
+                            
+            }, 4000);
         }
+        else{
+            this.budgetAmount.textContent = value;
+            this.budgetInput.value = '';
+            this.showBalance();
+        }
+    }
+    //show balance
+    showBalance(){
+        const expense = this.totalExpense();
+        const total = parseInt(this.budgetAmount.textContent) - expense;
+        this.balanceAmount.textContent = total;
+        if(total < 0){
+            this.balance.classList.remove('showGreen', 'showBlack');
+            this.balance.classList.add('showRed');
+        }
+        else if(total > 0){
+            this.balance.classList.remove('showRed', 'showBlack');
+            this.balance.classList.add('showGreen');
+        }
+        else if(total = 0){
+            this.balance.classList.remove('showRed', 'showGreen');
+            this.balance.classList.add('showBlack');
+        }
+    }
+    // submit expense form
+    submitExpenseForm(){
+        const expenseValue = this.expenseInput.value;
+        const amountValue = this.amountInput.value;
+        if(expenseValue === '' || amountValue === '' || amountValue < 0){
+            this.expenseFeedback.classList.add('showItem');
+            this.expenseFeedback.innerHTML = '<p>values cannot be empty of negative<p>';
+            const self = this;
+            setTimeout(function(){
+            self.expenseFeedback.classList.remove('showItem');    
+            }, 4000);
+        }
+    }
+
+
+
+    //total expense
+    totalExpense(){
+        let total = 400;
+        return total;
     }
 }
 
@@ -42,6 +92,7 @@ budgetForm.addEventListener('submit', function(event){
 // expense form submit
 expenseForm.addEventListener('submit', function(event){
     event.preventDefault();
+    ui.submitExpenseForm();
 })
 // expense click
 expenseList.addEventListener('click', function(){
