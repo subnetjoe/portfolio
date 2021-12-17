@@ -18,7 +18,11 @@ class UI {
     }
     //submit budget method
     submitBudgetForm(){
-        console.log('hello from es6');
+        const value = this.budgetInput.value;
+        if(value==='' || value <0){
+            this.budgetFeedback.classList.add('showItem');
+            this.budgetFeedback.innerHTML = '<p>value cannot be empty or negative<p>'
+        }
     }
 }
 
@@ -49,3 +53,5 @@ expenseList.addEventListener('click', function(){
 document.addEventListener('DOMContentLoaded', function(){
     eventListeners();
 })
+
+
