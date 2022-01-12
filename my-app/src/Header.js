@@ -1,4 +1,7 @@
-function Header(){
+import React from "react"
+import ReactDOM from "react-dom"
+
+export default function Header(){
   return(
     <div>
       <header>
@@ -14,14 +17,3 @@ function Header(){
     </div>
   )
 }
-
-function Page() {
-  return (
-    <div>
-      <Header />
-      
-    </div>
-  )
-}
-
-ReactDOM.render(<Page />, document.getElementById("root"))

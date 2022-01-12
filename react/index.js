@@ -1,6 +1,3 @@
-
-
-
 function Header(){
   return(
     <div>
@@ -42,6 +39,8 @@ function Footer(){
     </div>
   )
 }
+
+
 
 function Page() {
   return (
