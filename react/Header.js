@@ -1,6 +1,6 @@
 export default function Header(){
   return(
-    <div>
+    
       <header>
         <nav className="nav">
           <img src="./react-logo.png" className="nav-logo" />
@@ -11,6 +11,6 @@ export default function Header(){
           </ul>
         </nav>
       </header>
-    </div>
+    
   )
 }
