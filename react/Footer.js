@@ -1,3 +1,6 @@
+import React from "React"
+import ReactDOM from "React-dom"
+
 export default function Footer(){
   return(
     <div>
