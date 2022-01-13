@@ -4,7 +4,7 @@ import Header from "./Header";
 import MainContent from "./MainContent";
 import Footer from "./Footer";
 import './index2.css';
-import './react-logo.png';
+
 
 function App() {
   return (
