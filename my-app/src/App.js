@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import Header from "./Header";
 import MainContent from "./MainContent";
 import Footer from "./Footer";
-// import logo from './logo.svg';
 import './index2.css';
 
 function App() {
@@ -18,9 +17,4 @@ function App() {
 
 export default App;
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById('root'));
