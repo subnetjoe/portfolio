@@ -1,4 +1,4 @@
-import "./react-logo.png"
+import './react-logo.png';
 
 export default function Header(){
   return(
