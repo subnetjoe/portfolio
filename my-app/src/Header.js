@@ -9,7 +9,7 @@ export default function Header(){
           <ul className="nav-items">
             <li>Pricing</li>
             <li>About</li>
-            <li>Contact</li>
+            <li>Contact Us</li>
           </ul>
         </nav>
       </header>
