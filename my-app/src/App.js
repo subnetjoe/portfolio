@@ -3,11 +3,11 @@ import ReactDOM from "react-dom"
 import Navbar from "./components/Navbar"
 import Main from "./components/Main"
 
-function App(){
+export default function App(){
   return(
-    <div>
-    <Navbar />
-    <Main />
+    <div className="container">
+      <Navbar />
+      <Main />
     </div>
   )
 }
