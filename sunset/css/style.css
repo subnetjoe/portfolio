@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
 }
+
+
 
 header {
   background-image: url(../img/retro.png);
@@ -19,5 +22,7 @@ header {
 }
 
 h3 {
+  font-family: 'Play', sans-serif;
   font-size: 4rem; 
+  font-weight: 700;
 }
