@@ -22,14 +22,14 @@ header {
 
 h3 {
   font-family: 'Play', sans-serif;
-  font-size: 4rem; 
+  font-size: 3.5rem; 
   font-weight: 700;
 }
 
 /*Iphone 11 width: 414px and height: 895px*/
 @media only screen and (max-width: 375px) {
   h3 {
-    font-size: 2rem;
+    font-size: 2.9rem;
     font-weight: 700;
   }
 }
