@@ -6,7 +6,6 @@
 }
 
 
-
 header {
   background-image: url(../img/retro.png);
   height: 100vh;
@@ -25,4 +24,12 @@ h3 {
   font-family: 'Play', sans-serif;
   font-size: 4rem; 
   font-weight: 700;
+}
+
+
+@media only screen and (max-width: 600px) {
+  h3 {
+    font-size: 2rem;
+    font-
+  }
 }
