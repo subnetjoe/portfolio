@@ -26,10 +26,10 @@ h3 {
   font-weight: 700;
 }
 
-/*Iphone 11 width: 414px and height: 895px*/
+/*Iphone 11 of mine width: 414px and height: 895px*/
 @media only screen and (max-width: 375px) {
   h3 {
-    font-size: 2.9rem;
+    font-size: 2.7rem;
     font-weight: 700;
   }
 }
