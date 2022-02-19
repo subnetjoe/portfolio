@@ -1,0 +1,6 @@
+/* How to install .deb file manually in Terminal*/
+sudo dpkg -i package_file.deb
+
+/*How to remove .dev file manually*/
+sudo apt-get remove package_name
+
