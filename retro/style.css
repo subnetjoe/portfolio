@@ -6,14 +6,15 @@ body {
 
 /* ............................................................... */
 /* ............................................................... */
-/* ............................................................... */
+/* ........original color: #a3c;....................................................... */
 #retrobg {
 	position: relative;
 	overflow: hidden;
 	height: 100%;
-	color: #a3c;
+	color: rgb(74, 51, 204);
 	background-color: #000;
 }
+
 
 /* ............................................................... */
 #retrobg-sky {
@@ -111,14 +112,14 @@ body {
 	background-color: #000;
 }
 
-/* ............................................................... */
+/* .....border-top: 2px solid #bf578c;.......................................................... */
 #retrobg-ground {
 	position: absolute;
 	overflow: hidden;
 	width: 100%;
 	height: 45%;
 	bottom: 0;
-	border-top: 2px solid #bf578c;
+	border-top: 2px solid #6dd1ff;
 	background-color: #000;
 }
 .retrobg-shutdown #retrobg-ground {
