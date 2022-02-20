@@ -22,7 +22,7 @@ header {
 
 h3 {
   font-family: 'Play', sans-serif;
-  font-size: 3.5rem; 
+  font-size: 6.5rem; 
   font-weight: 700;
 }
 
@@ -31,7 +31,7 @@ h3 {
 /*My phone is more like Pixel 1 on the mobileview extension*/
 @media only screen and (max-width: 375px) {
   h3 {
-    font-size: 2.3rem;
+    font-size: 2.7rem;
     font-weight: 700;
   }
 }
