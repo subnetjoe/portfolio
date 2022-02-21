@@ -1,3 +1,6 @@
-document.querySelector( "#retrobg-sun" ).onclick = () => {
-	document.querySelector( "#retrobg" ).classList.toggle( "retrobg-shutdown" );
-};
+document.getElementById("retrobg").addEventListener("click", myFunction);
+
+      function myFunction(){
+        var element = document.body;
+        element.classList.toggle("retrobg-shutdown");
+      }
