@@ -147,7 +147,7 @@ body {
 	animation: .35s linear infinite retrobg-lines-anim;
 }
 .retrobg-shutdown #retrobg-lines {
-	animation-duration: 5s;
+	animation-duration: 2s;
 }
 @keyframes retrobg-lines-anim {
 	from { transform: rotateX( 84deg ) translateY( 0 ); }
