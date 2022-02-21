@@ -59,8 +59,8 @@ body {
 	--glow-color: #000;
 }
 @keyframes retrobg-sun-glow-anim {
-	from { box-shadow: 0 0 160px 80px var( --glow-color ); }
-	to   { box-shadow: 0 0 200px 95px var( --glow-color ); }
+	from { box-shadow: 0 0 100px 60px var( --glow-color ); }
+	to   { box-shadow: 0 0 200px 120px var( --glow-color ); }
 }
 
 /* ............................................................... */
@@ -156,14 +156,14 @@ body {
 	width: 100%;
 	height: 100%;
 	transform-origin: top center;
-	animation: .35s linear infinite retrobg-lines-anim;
+	animation: .45s linear infinite retrobg-lines-anim;
 }
 .retrobg-shutdown #retrobg-lines {
 	animation-duration: 1s;
 }
 @keyframes retrobg-lines-anim {
-	from { transform: rotateX( 84deg ) translateY( 10px ); }
-	to { transform: rotateX( 84deg ) translateY( 100px ); }
+	from { transform: rotateX( 88deg ) translateY( 0px ); }
+	to { transform: rotateX( 88deg ) translateY( 100px ); }
 }
 #retrobg-hlines,
 #retrobg-vlines {
@@ -182,7 +182,7 @@ body {
 	height: 100%;
 	background-color: currentColor;
 }
-.retrobg-hline { height: 3px; }
-.retrobg-vline { width: 2px; }
-.retrobg-hline + .retrobg-hline { margin-top: 108px; }
-.retrobg-vline + .retrobg-vline { margin-left: 25px; }
+.retrobg-hline { height: 2px; }
+.retrobg-vline { width: 1px; }
+.retrobg-hline + .retrobg-hline { margin-top: 88px; }
+.retrobg-vline + .retrobg-vline { margin-left: 10px; }
