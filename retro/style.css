@@ -4,6 +4,18 @@ body {
 	height: 100%;
 }
 
+.Logo {
+  font-size: 2rem;
+  text-align: center;
+  z-index: 10;
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  color: #000;
+  top: 35%;
+
+}
+
 /* ............................................................... */
 /* ............................................................... */
 /* ........original color: #a3c;....................................................... */
@@ -11,8 +23,8 @@ body {
 	position: relative;
 	overflow: hidden;
 	height: 100%;
-	color: rgb(0, 204, 255);
-	background-color: #000;
+	color: rgb(0, 195, 255);
+	background-color: black;
 }
 
 
@@ -147,7 +159,7 @@ body {
 	animation: .35s linear infinite retrobg-lines-anim;
 }
 .retrobg-shutdown #retrobg-lines {
-	animation-duration: 2s;
+	animation-duration: 1s;
 }
 @keyframes retrobg-lines-anim {
 	from { transform: rotateX( 84deg ) translateY( 0 ); }
@@ -171,6 +183,6 @@ body {
 	background-color: currentColor;
 }
 .retrobg-hline { height: 3px; }
-.retrobg-vline { width: 3px; }
-.retrobg-hline + .retrobg-hline { margin-top: 98px; }
-.retrobg-vline + .retrobg-vline { margin-left: 48px; }
+.retrobg-vline { width: 2px; }
+.retrobg-hline + .retrobg-hline { margin-top: 108px; }
+.retrobg-vline + .retrobg-vline { margin-left: 25px; }
