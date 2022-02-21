@@ -85,7 +85,7 @@ body {
 }
 .retrobg-mountain {
 	position: absolute;
-	width: 30%;
+	width: 35%;
 	height: 100%;
 	background-image: linear-gradient( #000 70%, #111 85%, #fff1 );
 }
@@ -162,7 +162,7 @@ body {
 	animation-duration: 1s;
 }
 @keyframes retrobg-lines-anim {
-	from { transform: rotateX( 84deg ) translateY( 0 ); }
+	from { transform: rotateX( 84deg ) translateY( 10px ); }
 	to { transform: rotateX( 84deg ) translateY( 100px ); }
 }
 #retrobg-hlines,
