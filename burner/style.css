@@ -1,0 +1,675 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  text-align: center;
+  background-color: #111;
+}
+
+.title {
+  font-family: knewave, fantasy;
+  font-size: 3.3rem;
+  transform: skewX(-36deg) rotate(-9deg) scale(1, 1.25);
+  background: -webkit-linear-gradient(#ffdd00, #ff00d0);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+  margin: 32px;
+  padding-top: 12px;
+}
+
+.main-container {
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+
+}
+
+.sky-container {
+  position: absolute;
+  width: 100%;
+  height: 160px;
+  background: linear-gradient(#111, #3f00ff, #ff00dc);
+}
+
+.ground-container {
+  position: absolute;
+  top: 160px;
+  width: 100%;
+  height: 240px;
+  background: linear-gradient(#001121, #002b51);
+  z-index: 2;
+  
+}
+
+.sun {
+  height: 240px;
+  width: 240px;
+  position: absolute;
+  top: 30%;
+  left: calc(50% - 120px);
+  border-radius: 50%;
+  background: linear-gradient(#ff0090, #ffaa00, #ff0090);
+  box-shadow: 2px 2px 36px #ff00dc;
+
+}
+
+.building {
+  position: absolute;
+  bottom: 0;
+  background-color: #111;
+  
+}
+
+.building-1 {
+  height: 24px;
+  width: 12px;
+
+}
+
+.building-2 {
+  height: 32px;
+  width: 16px;
+}
+
+.building-3 {
+  height: 36px;
+  width: 18px; 
+}
+
+.building-4 {
+  height: 42px;
+  width: 20px;
+}
+
+.building-5 {
+  height: 46px;
+  width: 20px;
+}
+
+.building-6 {
+  height: 52px;
+  width: 18px;
+}
+
+.building-7 {
+  height: 20px;
+  width: 10px;
+}
+
+.building-8 {
+  height: 16px;
+  width: 12px;
+}
+
+.left-12 {
+  left: 12px;
+}
+
+.left-28 {
+  left: 28px;
+}
+
+.left-46 {
+  left: 46px;
+}
+
+.left-58 {
+  left: 58px;
+}
+
+.left-78 {
+  left: 78px;
+}
+
+.left-94 {
+  left: 94px;
+}
+
+.left-106 {
+  left: 106px;
+}
+
+.left-122 {
+  left: 122px;
+}
+
+.left-134 {
+  left: 134px;
+}
+
+.left-152 {
+  left: 152px;
+}
+
+.left-168 {
+  left: 168px;
+}
+
+.left-188 {
+  left: 188px;
+}
+
+.left-206 {
+  left: 206px;
+}
+
+.left-224 {
+  left: 224px;
+}
+
+.left-240 {
+  left: 240px;
+}
+
+.left-252 {
+  left: 252px;
+}
+
+.left-262 {
+  left: 262px;
+}
+
+.left-274 {
+  left: 274px;
+}
+
+.left-316 {
+  left: 316px;
+}
+
+.left-326 {
+  left: 326px;
+}
+
+.left-338 {
+  left: 338px;
+}
+
+.left-350 {
+  left: 350px;
+}
+
+.left-366 {
+  left: 366px;
+}
+
+.left-378 {
+  left: 378px;
+}
+
+.left-396 {
+  left: 396px;
+}
+
+.left-414 {
+  left: 414px;
+}
+
+.left-430 {
+  left: 430px;
+}
+
+.left-450 {
+  left: 450px;
+}
+
+.left-468 {
+  left: 468px;
+}
+
+.left-484 {
+  left: 484px;
+}
+
+.left-496 {
+  left: 496px;
+}
+
+.left-512 {
+  left: 512px;
+}
+
+.left-524 {
+  left: 524px;
+}
+
+.left-542 {
+  left: 542px;
+}
+
+.left-554 {
+  left: 554px;
+}
+
+.left-570 {
+  left: 570px;
+}
+
+.left-588 {
+  left: 588px;
+}
+
+.footer {
+  font-family: 'Play', sans-serif;
+  font-size: 1rem;
+  color: #3f00ff;
+  position: relative;
+  top: 440px;
+}
+
+
+/* Car */
+.car-container {
+  width: 180px;
+  height: 120px;
+  position: absolute;
+  left: calc(50% - 90px);
+  bottom: 20px;  
+}
+
+.main-body {
+  position: absolute;
+  top: 30px;
+  width: 180px;
+  height: 28px;
+  background-color: #00173d;
+  border-radius: 4px;
+  border: 1px solid #0074b2;
+  z-index: 5;
+}
+
+.upper-main {
+  position: absolute;
+  top: 24px;
+  width: 180px;
+  height: 6px;
+  background-color: #00173d;
+  clip-path: polygon(8% 0, 92% 0, 99% 100%, 1% 100%);
+  border: 1px solid #0074b2;
+  z-index: 3;
+}
+
+.lower-main {
+  position: absolute;
+  top: 60px;
+  width: 180px;
+  height: 10px;
+  background-color: #00173d;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
+  z-index: 3;
+}
+
+.roof {
+  position: absolute;
+  top: 5px;
+  width: 180px;
+  height: 14px;
+  background-color: #00173d;
+  clip-path: polygon(32% 0, 68% 0, 90% 100%, 8% 100%);
+  border: 2px solid #00417a;
+  background: linear-gradient(#e87400, #ff0090, #0074b2);z-index: 3;
+}
+
+.wheel-l {
+  position: absolute;
+  height: 26px;
+  width: 24px;
+  border-radius: 3px;
+  border: 0.5px solid #333;
+  background-color: #111;
+  top: 52px;
+  left: 10px;
+  z-index: 1;
+}
+
+.wheel-r {
+  position: absolute;
+  height: 26px;
+  width: 24px;
+  border-radius: 3px;
+  border: 0.5px solid #333;
+  background-color: #111;
+  top: 52px;
+  left: 146px;
+  z-index: 1;
+}
+
+.rear-light {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 172px;
+  height: 2px;
+  background-color: #dd002c;
+  animation-name: rear-lights-flashing;
+  animation-duration: 0.75s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.rear-light:nth-of-type(2) {
+  top: 8px;
+}
+
+.rear-light:nth-of-type(3) {
+  top: 12px;
+}
+
+.rear-light:nth-of-type(4) {
+  top: 16px;
+}
+
+.rear-light:nth-of-type(5) {
+  top: 20px;
+}
+
+.car-shadow {
+  position: absolute;
+  top: 64px;
+  left: -23px;
+  height: 80px;
+  width: 230px;
+  clip-path: polygon(14% 0, 86% 0, 100% 100%, 0 100%);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.road-line-horizontal {
+  position: absolute;
+  top: 2px;
+  width: 100%;
+  height: 2px;
+  background-color: #0070c6;
+  z-index: -1;
+}
+.road-line-horizontal:nth-of-type(2) {
+  top: 8px;
+  animation-name: move-line-2;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.road-line-horizontal:nth-of-type(3) {
+  top: 18px;
+  animation-name: move-line-3;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.road-line-horizontal:nth-of-type(4) {
+  top: 34px;
+  animation-name: move-line-4;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.road-line-horizontal:nth-of-type(5) {
+  top: 60px;
+  animation-name: move-line-5;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.road-line-horizontal:nth-of-type(6) {
+  top: 100px;
+  animation-name: move-line-6;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.road-line-horizontal:nth-of-type(7) {
+  top: 150px;
+  animation-name: move-line-7;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.road-line-horizontal:nth-of-type(8) {
+  top: 208px; 
+  animation-name: move-line-8;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.road-line-vertical {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  width: 2px;
+  height: 238px;
+  background: linear-gradient(#003b84, #0058c4);
+  box-shadow: 0 0 24px #004aa5;
+}
+
+.road-line-vertical-1 {
+  -ms-transform: rotate(10deg); /* IE 9 */
+  -webkit-transform: rotate(10deg); /* Safari */
+  transform: rotate(10deg);
+  left: 280px;
+}
+
+.road-line-vertical-2 {
+  -ms-transform: rotate(-10deg); /* IE 9 */
+  -webkit-transform: rotate(-10deg); /* Safari */
+  transform: rotate(-10deg);
+  left: 320px;
+}
+
+.road-line-vertical-3 {
+  -ms-transform: rotate(28deg); /* IE 9 */
+  -webkit-transform: rotate(28deg); /* Safari */
+  transform: rotate(28deg);
+  left: 238px;
+  height: 266px;
+  top: -12px;
+}
+
+.road-line-vertical-4 {
+  -ms-transform: rotate(-28deg); /* IE 9 */
+  -webkit-transform: rotate(-28deg); /* Safari */
+  transform: rotate(-28deg);
+  left: 362px;
+  height: 266px;
+  top: -12px;
+}
+
+.road-line-vertical-5 {
+  -ms-transform: rotate(40deg); /* IE 9 */
+  -webkit-transform: rotate(40deg); /* Safari */
+  transform: rotate(40deg);
+  left: 200px;
+  height: 310px;
+  top: -32px;
+}
+
+.road-line-vertical-6 {
+  -ms-transform: rotate(-40deg); /* IE 9 */
+  -webkit-transform: rotate(-40deg); /* Safari */
+  transform: rotate(-40deg);
+  left: 400px;
+  height: 310px;
+  top: -32px;
+}
+
+.road-line-vertical-7 {
+  -ms-transform: rotate(52deg); /* IE 9 */
+  -webkit-transform: rotate(52deg); /* Safari */
+  transform: rotate(52deg);
+  left: 150px;
+  height: 375px;
+  top: -64px;
+}
+
+.road-line-vertical-8 {
+  -ms-transform: rotate(-52deg); /* IE 9 */
+  -webkit-transform: rotate(-52deg); /* Safari */
+  transform: rotate(-52deg);
+  left: 450px;
+  height: 375px;
+  top: -64px;
+}
+
+.land-left {
+  position: absolute;
+  background-color: #111;
+  background: rgba(0, 0, 0, 0.7);
+  width: 50%;
+  height: 100%;
+  clip-path: polygon(0 0, 101% 0, 0 100%, 0 100%);
+  z-index: 4;
+}
+
+.land-right {
+  position: absolute;
+  right: 0;
+  background-color: #111;
+  background: rgba(0, 0, 0, 0.7);
+  width: 50%;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+  z-index: 4;
+}
+
+/* MAIN ANIMATION EFFECTS */
+@keyframes move-line-2 {
+  0% {
+    top: 8px;
+  }
+  100% {
+    top: 17px;
+  }
+}
+
+@keyframes move-line-3 {
+  0% {
+    top: 18px;
+  }
+  100% {
+    top: 33px;
+  }
+}
+
+@keyframes move-line-4 {
+  0% {
+    top: 34px;
+  }
+  100% {
+    top: 59px;
+  }
+}
+
+@keyframes move-line-5 {
+  0% {
+    top: 60px;
+  }
+  100% {
+    top: 99px;
+  }
+}
+
+@keyframes move-line-6 {
+  0% {
+    top: 100px;
+  }
+  100% {
+    top: 149px;
+  }
+}
+
+@keyframes move-line-7 {
+  0% {
+    top: 150px;
+  }
+  100% {
+    top: 207px;
+  }
+}
+
+@keyframes move-line-8 {
+  0% {
+    top: 208px;
+  }
+  100% {
+    top: 240px;
+  }
+}
+
+@keyframes rear-lights-flashing {
+  0% {
+    background-color: #b20023;
+  }
+  40% {
+    background-color: #b20023;
+  }
+  45% {
+    background-color: #ff0032;
+  }
+  50% {
+    background-color: #b20023;
+  }
+  70% {
+    background-color: #b20023;
+  }
+  75% {
+    background-color: #ff0032;
+  }
+  80% {
+    background-color: #b20023;
+  }
+  85% {
+    background-color: #ff0032;
+  }
+  90% {
+    background-color: #b20023;
+  }
+  100% {
+    background-color: #b20023;
+  }
+}
+/*darker-red #8e001c*/
+
+/* Overlay */
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  z-index: 90;
+}
+
+/* TODO - Grain effect */
+/*
+.grain {
+  height: 600px;
+  width: 600px;
+  z-index: 99;
+  position: fixed;
+  
+  background-image: url("http://api.thumbr.it/whitenoise-361x370.png?background=d6d6d6ff&noise=333333&density=30&opacity=100");
+  opacity: 0.1;
+  animation-name: film-grain;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes film-grain {
+  0% {
+    background: url(http://api.thumbr.it/whitenoise-361x370.png?background=d6d6d6ff&noise=333333&density=30&opacity=100);
+  }
+  33% {
+    background: url(http://api.thumbr.it/whitenoise-361x370.png?background=d6d6d6ff&noise=333333&density=40&opacity=100);
+  }
+  66% {
+    background: url(background-url: http://api.thumbr.it/whitenoise-361x370.png?background=d6d6d6ff&noise=333333&density=50&opacity=100);
+  }
+}
+*/
