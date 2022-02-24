@@ -101,7 +101,8 @@ body {
 #retrobg-city {
 	padding-top: 20%;
 }
-.retrobg-building {
+/* took away the g in building and all buildings erased. */
+.retrobg-buildin {
 	position: absolute;
 	width: 5%;
 	height: 100%;
@@ -186,3 +187,14 @@ body {
 .retrobg-vline { width: 1px; }
 .retrobg-hline + .retrobg-hline { margin-top: 88px; }
 .retrobg-vline + .retrobg-vline { margin-left: 10px; }
+
+
+/* work on lengthening the page beyond a basic refresh */
+
+.work {
+	height: 400px;
+	width: 100%;
+	background-color: black;
+	color: black;
+	position: relative;
+}
