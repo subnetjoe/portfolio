@@ -1,10 +1,14 @@
 body{
-  
+  height: 100vh;
+  width: auto;
+  margin: 0;
 }
 
 .loader-wrapper {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  
 }
 
 .loader{
@@ -15,13 +19,13 @@ body{
   border-top-color: aqua;
   border-bottom-color: magenta;
   border-radius: 50%;
-  animation: rotate 5s linear infinite;
+  animation: rotate 15s linear infinite;
 }
 
 loader-inner{
   border-top-color: lime;
   border-bottom-color: white;
-  animation-duration: 2.5s;
+  animation-duration: 3s;
 }
 
 @keyframes rotate {
@@ -29,7 +33,7 @@ loader-inner{
     transform: scale(1) rotate(360deg);
   }
   50%{
-    transform: scale(.5) rotate(-360deg);
+    transform: scale(.99) rotate(-360deg);
   }
   100%{
     transform: scale(1) rotate(360deg);
