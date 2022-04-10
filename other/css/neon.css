@@ -22,7 +22,7 @@ body {
   position: relative;
   font-family: "Genos";
   font-weight: 700;
-  font-size: 5rem;
+  font-size: 3rem;
   border: var(--neon-color) 0.06em solid;
   border-radius: 0.25em;
   padding: 0.1em 0.7em;
@@ -43,5 +43,10 @@ body {
   width: 100%;
   height: 100%;
   background: var(--neon-color);
-  transform: perspective(0.2em);
+  transform: 
+    perspective(0.2em) 
+    rotateX(10deg)
+    scale(.7, 0.3);
+  filter: blur(0.5em);
+  opacity: 0.5;
 }
