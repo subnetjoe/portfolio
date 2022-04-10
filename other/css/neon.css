@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@500;700;800;900&display=swap');
+
+
+:root {
+  --neon-color: #00ffff;
+  --bkgd-color: #222;
+}
+
+body {
+  background-color: var(--bkgd-color);
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: var(--neon-color);
+  overflow: hidden;
+}
+
+.neon {
+  position: relative;
+  font-family: "Genos";
+  font-weight: 700;
+  font-size: 5rem;
+  border: var(--neon-color) 0.06em solid;
+  border-radius: 0.25em;
+  padding: 0.1em 0.7em;
+  cursor: pointer;
+  text-shadow: 
+    0 0 .2em #fff7,
+    0 0 .3em var(--neon-color);
+  box-shadow: 
+    0 0 .5em var(--neon-color),
+    0 0 .5em var(--neon-color);
+}
+
+.neon::before {
+  content: "";
+  position: absolute;
+  top: 140%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--neon-color);
+  transform: perspective(0.2em);
+}
