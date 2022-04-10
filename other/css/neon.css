@@ -2,7 +2,7 @@
 
 
 :root {
-  --neon-color: #00ffff;
+  --neon-color: #fff;
   --bkgd-color: #222;
 }
 
@@ -19,11 +19,34 @@ body {
 }
 
 .circle {
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  background: var(--bkgd-color);
+  border: var(--neon-color) .4em solid;
+  border-radius: 50%;
+  border-color: var(--neon-color) var(--bkgd-color) var(--bkgd-color);
+  z-index: -3;
+  animation: rotation 2s ease-in-out infinite;
+  filter: ;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+
+.dot {
   position: relative;
   width: 10px;
   height: 10px;
   background: var(--neon-color);
-  border-radius: 3em;
+  border-radius: 50%;
   top: -20%;
   left: -10%;
   cursor: pointer;
