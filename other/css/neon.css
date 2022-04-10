@@ -18,6 +18,21 @@ body {
   overflow: hidden;
 }
 
+.circle {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background: var(--neon-color);
+  border-radius: 3em;
+  top: -20%;
+  cursor: pointer;
+}
+
+.circle:hover {
+  opacity: 0;
+  transition: opacity 100ms linear;
+}
+
 .neon {
   position: relative;
   font-family: "Genos";
