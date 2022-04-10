@@ -20,23 +20,20 @@ body {
 
 .circle {
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   background: var(--neon-color);
   border-radius: 3em;
   top: -20%;
+  left: -10%;
   cursor: pointer;
-}
-
-.circle:hover {
-  opacity: 0;
-  transition: opacity 100ms linear;
+  filter: blur(0.3em);
 }
 
 .neon {
   position: relative;
   font-family: "Genos";
-  font-weight: 700;
+  font-weight: 500;
   font-size: 3rem;
   border: var(--neon-color) 0.06em solid;
   border-radius: 0.25em;
