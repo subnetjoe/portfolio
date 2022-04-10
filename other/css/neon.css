@@ -2,7 +2,7 @@
 
 
 :root {
-  --neon-color: #fff;
+  --neon-color: #00ff00;
   --bkgd-color: #222;
 }
 
@@ -75,7 +75,7 @@ body {
 .neon::before {
   content: "";
   position: absolute;
-  top: 140%;
+  top: 150%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -84,7 +84,7 @@ body {
     perspective(0.2em) 
     rotateX(10deg)
     scale(.7, 0.3);
-  filter: blur(0.5em);
+  filter: blur(0.4em);
   opacity: 0.5;
   pointer-events: none;
   transition: opacity 100ms linear;
