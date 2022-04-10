@@ -23,7 +23,7 @@ body {
   width: 330px;
   height: 330px;
   background: var(--bkgd-color);
-  border: var(--neon-color) .4em solid;
+  border: var(--neon-color) .2em solid;
   border-radius: 50%;
   border-color: var(--neon-color) var(--bkgd-color) var(--bkgd-color);
   z-index: -3;
@@ -35,7 +35,7 @@ body {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(720deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -107,7 +107,7 @@ body {
 }
 
 .neon:hover, .neon:focus {
-  color: #000;
+  color: var(--bkgd-color);
   transition: opacity 100ms linear;
 }
 
