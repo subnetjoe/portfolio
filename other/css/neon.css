@@ -28,7 +28,6 @@ body {
   border-color: var(--neon-color) var(--bkgd-color) var(--bkgd-color);
   z-index: -3;
   animation: rotation 2s ease-in-out infinite;
-  filter: ;
 }
 
 @keyframes rotation {
