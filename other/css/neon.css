@@ -31,6 +31,7 @@ body {
     0 0 .2em #fff7,
     0 0 .3em var(--neon-color);
   box-shadow: 
+    inset 
     0 0 .5em var(--neon-color),
     0 0 .5em var(--neon-color);
 }
@@ -48,5 +49,34 @@ body {
     rotateX(10deg)
     scale(.7, 0.3);
   filter: blur(0.5em);
+  opacity: 0.5;
+  pointer-events: none;
+  transition: opacity 100ms linear;
+}
+
+.neon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--neon-color);
+  box-shadow: 0 0 2em var(--neon-color);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 100ms linear;
+}
+
+.neon:hover::after {
+  opacity: 1;
+}
+
+.neon:hover, .neon:focus {
+  color: #000;
+  transition: opacity 100ms linear;
+}
+
+.neon:hover::before {
   opacity: 0.5;
 }
