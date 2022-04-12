@@ -27,7 +27,7 @@ body {
   border-radius: 50%;
   border-color: var(--neon-color) var(--bkgd-color) var(--bkgd-color);
   z-index: -3;
-  animation: rotation 2s ease-in-out infinite;
+  animation: rotation 2s ease-in-out 2;
 }
 
 @keyframes rotation {
