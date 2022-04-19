@@ -23,7 +23,16 @@ body {
   padding-top: 1rem;
 }
 
-.circle {
+.lincoln {
+  color: var(--front-color);
+}
+
+.lincoln p {
+  font-family: 'Raleway';
+  font-size: 3rem;
+}
+
+.ircle {
   width: 1200px;
   height: 100vh;
   position: absolute;
