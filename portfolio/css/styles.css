@@ -9,7 +9,7 @@
 body {
   background-color: #6f42c1;
   margin: 0;
-
+  height: 100vh;
 }
 
 .logo {
@@ -24,14 +24,15 @@ body {
 }
 
 .circle {
-  width: 900px;
-  height: 900px;
+  width: 1200px;
+  height: 100vh;
   position: absolute;
   margin: 0;
   z-index: 1;
   border-radius: 50%;
   background-color: var(--front-color);
   left: 40%;
+  top: 0;
 }
 
 /* .spike {
