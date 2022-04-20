@@ -10,16 +10,17 @@ body {
   background-color: #6f42c1;
   margin: 0;
   height: 100vh;
+  width: auto;
 }
 
 .logo {
   display: flex;
+  flex-direction: row;
   font-size: 6rem;
   color: var(--front-color);
   font-family: 'Raleway';
   font-weight: 800;
   position: relative;
-  z-index: 4;
   padding-left: 2rem;
   padding-top: 1rem;
 }
@@ -41,45 +42,45 @@ body {
   }
 }
 
-
 .lincoln {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   color: var(--front-color);
   font-family: 'Raleway';
-  position: relative;
-  width: 900px;
+  position: absolute;
   top: 120px;
   left: 20%;
+  margin: 0;
+
 }
 .lincoln p {
   font-style: italic;
   font-size: 3.3rem;
-  line-height: .2;
+  line-height: .09;
   text-align: center;
 }
 .lincoln h3 {
   font-weight: 800;
   font-size: 2rem;
-  text-align: right;
+  text-align: center;
+  padding-left: 5rem;
 }
 
 /***THIS IS A NOTE FOR LATER**/
 
 @media (max-width: 400px) {
-
-  .logo {
+    .logo {
     font-size: 2.1rem;
   }
   .lincoln {
-    left: -30%;
-    transform: translateX(-170px);
+    
   }
   .lincoln p{
     font-size: 1rem;
   }
   .lincoln h3 {
     font-size: 1rem;
-    text-align: center;
     padding-top: 1rem;
-    /* padding-left: 6rem; */
   }
 }
