@@ -67,12 +67,12 @@ body {
      font-size: 3.8rem;
    }
    .lincoln {
-     left: 10%;
+     left: -10%;
    }
    .lincoln p{
      font-size: 2rem;
    }
    .lincoln h3 {
-     font-size: 2rem;
+     font-size: 1.4rem;
    }
 }
