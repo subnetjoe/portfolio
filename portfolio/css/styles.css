@@ -62,17 +62,23 @@ body {
   text-align: right;
 }
 
-@media (max-width: 900px) {
+/***THIS IS A NOTE FOR LATER**/
+
+@media (max-width: 400px) {
    .logo {
-     font-size: 3.8rem;
+     font-size: 2.1rem;
    }
    .lincoln {
-     left: -10%;
+     left: -30%;
+     transform: translateX(-200px);
    }
    .lincoln p{
-     font-size: 2rem;
+     font-size: 1rem;
    }
    .lincoln h3 {
-     font-size: 1.4rem;
+     font-size: 1rem;
+     text-align: center;
+     padding-top: 1rem;
+     padding-left: 5rem;
    }
 }
