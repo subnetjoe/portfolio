@@ -57,7 +57,6 @@ display=flex, then direction helps
   position: absolute;
   top: 200px;
   margin: 0;
-  border: 2px solid var(--front-color);
   width: 100%;
 }
 .lincoln p {
@@ -78,12 +77,14 @@ display=flex, then direction helps
 /***THIS IS A NOTE FOR LATER**/
 
 @media (max-width: 480px) {
-    .logo {
+  .logo {
     font-size: 2.1rem;
+  }
+  .j {
+    padding-left: .6rem;
   }
   .lincoln {
     top: 150px;
-    border: 2px solid var(--front-color);
   }
   .lincoln p{
     font-size: 1.2rem;
