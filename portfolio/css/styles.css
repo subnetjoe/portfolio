@@ -49,7 +49,6 @@ display=flex, then direction helps
 .lincoln {
   display: flex;
   flex-direction: column;
-  justify-content: start;
   color: var(--front-color);
   font-family: 'Raleway';
   position: absolute;
