@@ -7,12 +7,17 @@
   color-scheme: normal;
 }
 
+/*----------/
+overflow=hidden, fixed side/top scroll on phone screen
+/----------*/
+
 body {
   background-color: #6f42c1;
   margin: 0;
   height: 100vh;
   width: auto;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .logo {
@@ -59,6 +64,7 @@ display=flex, then direction helps
   position: absolute;
   top: 275px;
   margin: 0;
+  padding: 0;
   width: 100%;
 }
 .lincoln p {
