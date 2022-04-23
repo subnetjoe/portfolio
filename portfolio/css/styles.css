@@ -23,8 +23,9 @@ body {
   font-family: 'Raleway';
   font-weight: 800;
   position: relative;
-  padding-left: 2rem;
-  padding-top: 1rem;
+  left: 40px;
+  top: 10px;
+  margin: 0;
 }
 
 .j {
@@ -56,7 +57,7 @@ display=flex, then direction helps
   color: var(--front-color);
   font-family: 'Raleway';
   position: absolute;
-  top: 200px;
+  top: 275px;
   margin: 0;
   width: 100%;
 }
@@ -84,6 +85,8 @@ display=flex, then direction helps
 @media (max-width: 480px) {
   .logo {
     font-size: 2.5rem;
+    left: 20px;
+    top: 5px;
   }
   .j {
     padding-left: .6rem;
