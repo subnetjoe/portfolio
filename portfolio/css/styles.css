@@ -3,7 +3,7 @@
 :root {
   --front-color: #ffffff;
   --neon-color: #ff00ff;
-  --bkgd-color: #222;
+  --bkgd-color: #6f42c1;
   color-scheme: normal;
 }
 
@@ -12,7 +12,7 @@ overflow=hidden, fixed side/top scroll on phone screen
 /----------*/
 
 body {
-  background-color: #6f42c1;
+  background-color: var(--bkgd-color);
   margin: 0;
   height: 100vh;
   width: auto;
@@ -27,17 +27,20 @@ body {
   position: absolute;
   top:0;
   left: 0;
-  background-color: #ff00ff;
-  z-index: 4;
+  background-color: var(--bkgd-color);
+  color: var(--bkgd-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .spinner {
-  border: 16px solid #f3f3f3; /* Light grey */
+  border: 16px solid #purple;
   border-top: 16px solid #ffffff;
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  animation: spin 2s linear infinite;
+  animation: spin 1.2s ease-in-out infinite;
 }
 
 @keyframes spin {

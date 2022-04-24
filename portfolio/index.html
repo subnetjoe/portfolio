@@ -7,13 +7,22 @@
   <meta name="color-scheme" content="dark light">
   <title>SubnetJoe's Portfolio</title>
   <link rel="stylesheet" href="css/styles.css">
-  <script src="./preload.js"></script>
 </head>
 <body>
 
   <div class="spinner-wrapper">
     <div class="spinner"></div>
   </div>
+
+  <script>
+    //after window is loaded completely 
+    window.onload = ()=> {
+    setTimeout(() => {
+    //hide the preloader
+      document.querySelector(".spinner-wrapper").style.display = "none";
+      }, 3000);
+    }
+  </script>
 
   <div class="logo">
     <div class="s letter">S</div>
