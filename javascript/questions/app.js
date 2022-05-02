@@ -21,7 +21,7 @@ questions.forEach(function(question){
 
 
 
-// traversing the do
+// traversing the dom
 
 // const btns = document.querySelectorAll('.question-btn');
 
