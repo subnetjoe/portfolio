@@ -27,7 +27,7 @@ form input, form button {
     font-size: 2rem;
     border: none;
     background: white;
-    
+    width: auto;
 }
 
 form input {
@@ -111,6 +111,10 @@ select {
     appearance: none;
     outline: none;
     border: none;
+    color: #0e3fa8;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
 }
 
 .select {
@@ -119,12 +123,6 @@ select {
     overflow: hidden;
 }
 
-select {
-    color: #0e3fa8;
-    width: 10rem;
-    cursor: pointer;
-    padding: 1rem;
-}
 .select::after{
     content: "\25BC";
     position: absolute;
@@ -139,4 +137,24 @@ select {
 .select:hover::after {
     background: white;
     color: #0e3fa8;
+}
+
+@media (max-width: 400px) { 
+    form input {
+        padding: 0.5rem;
+        font-size: 2rem;
+        width: 50%;
+    }
+    form button {
+        width: auto;
+    }
+    form {
+        flex-wrap: wrap;
+    }
+    select {
+        width: auto;
+    }
+    .todo-list{
+        width: 75%;
+    }
 }
