@@ -54,6 +54,7 @@ form button:hover {
 .todo-list {
     min-width: 30%;
     list-style: none;
+    align-items: center;
 }
 
 .todo {
@@ -65,6 +66,7 @@ form button:hover {
     justify-content: space-between;
     align-items: center;
     transition: all 0.5s ease;
+    width: 25rem;
 }
 
 .todo li{
@@ -137,7 +139,7 @@ select {
     color: #0e3fa8;
 }
 
-@media (max-width: 400px) { 
+@media (max-width: 550px) { 
     form input {
         padding: 0.5rem;
         font-size: 2rem;
@@ -157,6 +159,9 @@ select {
     }
     .todo-list{
         width: 85%;
+    }
+    .todo {
+        width: 20rem;
     }
     header {
         font-size: 1.4rem;
