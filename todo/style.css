@@ -152,9 +152,10 @@ select {
         flex-wrap: wrap;
     }
     select {
+        width: 13rem;
     }
     .todo-list{
-        width: 75%;
+        width: 85%;
     }
     header {
         font-size: 1.4rem;
