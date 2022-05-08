@@ -144,15 +144,18 @@ select {
         padding: 0.5rem;
         font-size: 2rem;
         width: 70%;
+        margin-bottom: 2rem;
     }
     form button {
         width: auto;
+        margin-bottom: 2rem;
     }
     form {
         flex-wrap: wrap;
     }
     select {
         width: 13rem;
+        margin-bottom: 1.5rem;
     }
     .todo-list{
         width: 85%;
