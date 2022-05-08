@@ -86,7 +86,6 @@ function filterTodo(e){
     });
 }
 
-
 function saveLocalTodos(todo){
     //DO I already have something in here?
     let todos;

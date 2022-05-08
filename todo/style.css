@@ -27,11 +27,10 @@ form input, form button {
     font-size: 2rem;
     border: none;
     background: white;
-    width: auto;
 }
 
 form input {
-    border-top-left-radius: 0.5rem;
+    width: 20rem;
 }
 
 form button {
@@ -39,7 +38,6 @@ form button {
     background: white;
     cursor: pointer;
     transition: all 0.3 ease;
-    border-top-right-radius: 0.5rem;
 }
 
 form button:hover {
@@ -114,7 +112,7 @@ select {
     color: #0e3fa8;
     width: 10rem;
     cursor: pointer;
-    padding: 1rem;
+    padding: 1.1rem;
 }
 
 .select {
