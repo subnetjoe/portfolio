@@ -143,7 +143,7 @@ select {
     form input {
         padding: 0.5rem;
         font-size: 2rem;
-        width: 50%;
+        width: 70%;
     }
     form button {
         width: auto;
@@ -152,9 +152,11 @@ select {
         flex-wrap: wrap;
     }
     select {
-        width: auto;
     }
     .todo-list{
         width: 75%;
+    }
+    header {
+        font-size: 1.4rem;
     }
 }
