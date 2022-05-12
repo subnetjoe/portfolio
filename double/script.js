@@ -1,11 +1,11 @@
-//SELECTORS 
-const whatButton = document.querySelector('.double-click');
+// //SELECTORS 
+// const myButton  = document.getElementById('double-click');
 
-//TRIGGERS + EVENT LISTENERS
+// //TRIGGERS + EVENT LISTENERS
 
-whatButton.addEventListener('click', function e() {
-    console.log(e.currentTarget);
-});
+// myButton.addEventListener('click', function () {
+//     console.log(this);
+// });
 
 // document.addEventListener('DOMContentLoaded', function () {
 //     whatButton.addEventListener('click', e => {
@@ -20,3 +20,13 @@ whatButton.addEventListener('click', function e() {
 
 //FUNCTIONS
 
+
+const element = document.getElementById('*');
+
+element.addEventListener('click', myFunction);
+
+
+
+function myFunction() {
+  console.log(this); // Expected Value: 'Data'
+};
