@@ -13,10 +13,11 @@ body {
 
 header {
     font-size: 1.5rem;
+    margin: 0;
 }
 
 header, form {
-    min-height: 20vh;
+    min-height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
