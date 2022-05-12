@@ -1,11 +1,9 @@
 //SELECTORS 
-const myEvent = new CustomEvent("myCustomEvent", { detail: { hello: "World"}})
 const button = document.querySelector("button");
 
-
 //TRIGGERS + LISTENERS
-button.addEventListener("custom:doubleClick", e => {
-    console.log("Double Click");
+button.addEventListener('click', e => {
+    console.log('Double Click');
 });
 
 // const MAX_DOUBLE_CLICK_TIME = 500
