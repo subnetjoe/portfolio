@@ -127,6 +127,7 @@ display=flex, then direction helps
     top: 5px;
     align-items: center;
     justify-content: center;
+    text-shadow: -4px 4px 1px #777777;
   }
   .j {
     padding-left: .6rem;
