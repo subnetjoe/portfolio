@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   --front-color: #ffffff;
@@ -54,15 +55,14 @@ body {
   display: flex;
   flex-direction: row;
   font-size: 6rem;
+  font-weight: 900;
   color: var(--front-color);
-  font-family: 'Sonsie One';
+  font-family: 'Work Sans';
   position: relative;
   left: 40px;
   top: 10px;
   margin: 0;
-  font-style: italic;
-  color: white;
-  text-shadow: -6px 6px 1px #777777;
+  color: #FFFFFF;
 }
 
 .j {
@@ -127,7 +127,9 @@ display=flex, then direction helps
     top: 5px;
     align-items: center;
     justify-content: center;
-    text-shadow: -4px 4px 1px #777777;
+    /* text-shadow: -4px 4px 1px #777777; */
+    stroke-width: 10px;
+    stroke: #333333;
   }
   .j {
     padding-left: .6rem;
