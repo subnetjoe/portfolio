@@ -61,20 +61,8 @@ body {
   top: 10px;
   margin: 0;
   font-style: italic;
-  color: whitesmoke;
-  text-shadow:  1px 0px 1px #222222, 
-                0px 1px 1px #333333, 
-                2px 1px 1px #CCCCCC, 
-                1px 2px 1px #333333, 
-                3px 2px 1px #CCCCCC, 
-                2px 3px 1px #555555, 
-                4px 3px 1px #CCCCCC, 
-                3px 4px 1px #555555, 
-                5px 4px 1px #CCCCCC, 
-                4px 5px 1px #555555, 
-                6px 5px 1px #CCCCCC, 
-                5px 6px 1px #555555, 
-                7px 6px 1px #CCCCCC;
+  color: white;
+  text-shadow: -6px 6px 1px #777777;
 }
 
 .j {
@@ -137,6 +125,8 @@ display=flex, then direction helps
     font-size: 2.5rem;
     left: 20px;
     top: 5px;
+    align-items: center;
+    justify-content: center;
   }
   .j {
     padding-left: .6rem;
