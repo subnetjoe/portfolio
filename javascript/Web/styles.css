@@ -25,7 +25,7 @@ body {
     top: -250px;
     left: 100px;
     position: relative;
-    /* display: none; */
+    display: none;
 }
 
 #js-container{

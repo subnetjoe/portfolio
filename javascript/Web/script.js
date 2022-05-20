@@ -1,14 +1,25 @@
 //SELECTORS
 const jsIcon = document.querySelector('Js-icon');
+const jsFunctions = document.querySelector('jsfunctions');
 
 //ACTION EVENT HANDLERS
-jsIcon.addEventListener('click', jsIdeas);
+document.addEventListener('click', jsIdeas);
 
 //FUNCTIONS
+
 function jsIdeas(){
-    console.log(jsIdeas);
-    document.getElementById("jsfunctions").style.display = "none";
+    const jsFunctions = document.style.display ;
 };
+
+
+
+// .addEventListener('click', function jsIdeas(){
+//     if (document.getElementById('jsfunctions').style.display == 'none')
+//         {return false;}
+//         return true;}
+// );
+
+
 
 
 
