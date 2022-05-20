@@ -1,13 +1,12 @@
 //SELECTORS
-const div = document.querySelector('Js-icon');
-const jsFunctions = document.querySelector('jsfunctions');
+const element = document.querySelector('.Js-icon');
 
 //ACTION EVENT HANDLERS
 // document.getElementById('Js-icon').addEventListener('click', jsIdeas);
 
 //FUNCTIONS
 
-window.addEventListener('click', (event) => {
+element.addEventListener('click', (event) => {
     console.log('HI!', event.target);
 });
 
