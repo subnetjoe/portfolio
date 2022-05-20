@@ -5,10 +5,11 @@
 :root {
     --minion-yellow: #F0DB4F;
     --dark-charcoal: #323330;
+    --main-background: #161616;
 }
 
 body {
-    background-color: var(--dark-charcoal);
+    background-color: var(--main-background);
     margin: 0;
     height: 100vh;
     display: flex;
