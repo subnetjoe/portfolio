@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap');
 
-
-/*OFFICIAL COLORS*/ 
+/*OFFICIAL COLORS for Javascript Language*/ 
 :root {
     --minion-yellow: #F0DB4F;
     --dark-charcoal: #323330;
@@ -14,7 +13,7 @@ body {
     height: 100vh;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
