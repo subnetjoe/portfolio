@@ -5,6 +5,7 @@
     --minion-yellow: #F0DB4F;
     --dark-charcoal: #323330;
     --main-background: #161616;
+    --main-font: #bbbbbb;
 }
 
 body {
@@ -15,18 +16,39 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
+    font-family: 'Assistant';
 }
 
-.Js-icon {
+#jsfunctions {
+    color: var(--main-font);
+    font-size: 2rem;
+    top: -250px;
+    left: 100px;
+    position: relative;
+    /* display: none; */
+}
+
+#js-container{
+    display: flex;
+    flex-direction: column ;
+}
+
+#Js-icon {
     width: 6rem;
     height: 6rem;
     color: var(--dark-charcoal);
     background-color: var(--minion-yellow);
-    font-family: 'Assistant';
     font-weight: 700;
     font-size: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 3rem;
+}
+
+#click-me {
+    display: flex;
+    color: #fff;
+    font-size: 1.35rem;
+    justify-content: center;
 }
