@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap');
+
+
+/*OFFICIAL COLORS*/ 
+:root {
+    --minion-yellow: #F0DB4F;
+    --dark-charcoal: #323330;
+}
+
+body {
+    background-color: var(--dark-charcoal);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.JS-icon {
+    width: 6rem;
+    height: 6rem;
+    color: var(--dark-charcoal);
+    background-color: var(--minion-yellow);
+    font-family: 'Assistant';
+    font-weight: 700;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+}
