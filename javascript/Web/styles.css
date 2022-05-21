@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap');
 
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /*OFFICIAL COLORS for Javascript Language*/ 
 :root {
     --minion-yellow: #F0DB4F;
@@ -25,8 +34,21 @@ body {
     top: 50px;
     left: 150px;
     position: absolute;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+transform
+
+.jsfunctions::before {
     display: none;
 }
+
+
+.jsfunctions::after, ::before{
+    transition: 500ms;
+}
+
+
 
 .js-container{
     display: flex;
@@ -45,6 +67,7 @@ body {
     align-items: center;
     border-radius: 3rem;
     cursor: pointer;
+    /* transition:500ms; */
 }
 
 .click-me {
