@@ -22,9 +22,9 @@ body {
 .jsfunctions {
     color: var(--main-font);
     font-size: 2rem;
-    top: -250px;
-    left: 100px;
-    position: relative;
+    top: 50px;
+    left: 150px;
+    position: absolute;
     display: none;
 }
 
@@ -44,6 +44,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 3rem;
+    cursor: pointer;
 }
 
 .click-me {
