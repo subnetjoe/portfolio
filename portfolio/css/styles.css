@@ -23,34 +23,6 @@ body {
   scroll-behavior: smooth;
 }
 
-.spinner-wrapper{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top:0;
-  left: 0;
-  background-color: var(--bkgd-color);
-  color: var(--bkgd-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 3;
-}
-
-.spinner {
-  border: 16px solid #purple;
-  border-top: 16px solid #ffffff;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 1.2s ease-in-out infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
 .logo {
   display: flex;
   flex-direction: row;
