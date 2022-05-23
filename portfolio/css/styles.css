@@ -71,6 +71,7 @@ body {
 
 .e:hover {
   animation: rotation 2000ms ease-in-out infinite;
+  transform-origin: -100% 50%;
 }
 
 @keyframes rotation {
