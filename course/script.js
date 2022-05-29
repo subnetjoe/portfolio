@@ -1,4 +1,6 @@
-const inputYear = '1991';
-console.log(Number(inputYear));
+const hasDriversLicense = true;  // A
+const hasGoodVision = false;  // B
 
-console.log(String(23), 23);
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
