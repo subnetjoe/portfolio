@@ -37,24 +37,11 @@ body {
   color: #FFFFFF;
 }
 
-.j {
-  padding-left: 1.2rem;
+.e {
+  padding-left: .8rem;
 }
 
-.e:hover {
-  animation: rotation 2000ms ease-in-out infinite;
-  transform-origin: center;
-  /* transform-origin: -100% 50%; */
-}
 
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /*----------/
 width=auto, took away side scrolls.
@@ -90,8 +77,6 @@ display=flex, then direction helps
 
 /***-------
 
-
-
 --------**/
 
 @media (max-width: 480px) {
@@ -107,6 +92,9 @@ display=flex, then direction helps
   }
   .j {
     padding-left: .6rem;
+  }
+  .e {
+    padding-left: .25rem;
   }
   .lincoln {
     top: 150px;
