@@ -9,9 +9,9 @@
   color-scheme: normal;
 }
 
-/*----------/
-overflow=hidden, fixed side/top scroll on phone screen
-/----------*/
+/*-------------------------/
+The Asterisk is global on all websites
+/-------------------------*/
 
 * {
   box-sizing: border-box;
@@ -19,18 +19,22 @@ overflow=hidden, fixed side/top scroll on phone screen
   margin: 0;
 }
 
+/*----------/
+overflow=hidden, fixed side/top scroll on phone screen
+/----------*/
+
 body {
   background-color: var(--bkgd-color);
-  margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   width: auto;
-  box-sizing: border-box;
   overflow: hidden;
   scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
 }
 
 nav {
-  height: 150px;
+  height: 200px;
   width: 100%;
   /* background-color: red; */
   display: flex;
@@ -85,48 +89,37 @@ li {
 width=auto, took away side scrolls.
 display=flex, then direction helps
 /----------*/
-.lincoln {
-  display: flex;
-  flex-direction: column;
-  color: var(--front-color);
-  font-family: 'Raleway';
-  position: absolute;
-  top: 275px;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-.lincoln p {
-  font-style: italic;
-  font-size: 4rem;
-  line-height: 140%;
-  text-align: center;
-  margin: 0;
-  cursor: default;
-  content: attr(content);
-}
-.lincoln h3 {
-  font-weight: 800;
-  font-size: 2rem;
-  text-align: center;
-  margin: 0;
-  padding-top: 1rem;
-}
-.lincoln p:hover, h3:hover {
-  color: transparent;
-  text-shadow: 0 0 9px rgba(255, 255, 255, 0.8);
-  cursor: default;
-}
+
+
+
 /* //////////////////////////////////////////////////////////////// */
 
-.about {
+main {
   width: 100%;
-  height: 100vh;
+  min-height: calc(100vh - 200px - 22px);
   display: flex;
-  border: 5px solid rgb(255, 255, 255);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+.about {
+  width: 200px;
+  height: 200px;
+  border: 5px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+footer {
+  text-align: center;
+  color: white;
+  /* border: 2px solid red; */
+  margin-top: auto; /*auto keeps the info down*/
+  font-family: 'Work Sans';
+  font-size: 1rem;
+}
 
 
 
