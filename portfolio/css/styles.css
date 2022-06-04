@@ -82,6 +82,11 @@ display=flex, then direction helps
 /----------*/
 
 
+.lincoln p:hover {
+  color: transparent;
+  text-shadow: 0 0 9px rgba(255, 255, 255, 0.8);
+}
+
 .lincoln {
   display: flex;
   flex-direction: column;
