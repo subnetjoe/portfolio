@@ -66,6 +66,16 @@ nav {
   padding-left: .8rem;
 }
 
+.blink {
+  animation: blinker 1.5s step-end infinite;
+}
+
+@keyframes blinker {
+  60% {
+    opacity: 0;
+  }
+}
+
 .menu {
   display: flex;
 }
