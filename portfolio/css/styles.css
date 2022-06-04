@@ -67,10 +67,10 @@ ul {
 }
 
 li {
-  padding: 1rem 5rem;
+  padding: 1rem 6rem;
   /* border: 2px solid white; */
   font-family: 'Work Sans';
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-transform: capitalize;
   font-weight: 600;
 }
