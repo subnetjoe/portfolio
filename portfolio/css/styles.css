@@ -13,6 +13,12 @@
 overflow=hidden, fixed side/top scroll on phone screen
 /----------*/
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background-color: var(--bkgd-color);
   margin: 0;
@@ -21,6 +27,14 @@ body {
   box-sizing: border-box;
   overflow: hidden;
   scroll-behavior: smooth;
+}
+
+nav {
+  height: 150px;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
@@ -41,7 +55,24 @@ body {
   padding-left: .8rem;
 }
 
+.menu {
+  display: flex;
+}
 
+ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+li {
+  padding: 1rem 5rem;
+  /* border: 2px solid white; */
+  font-family: 'Work Sans';
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
 
 
 /*----------/
