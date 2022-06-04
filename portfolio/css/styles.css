@@ -71,7 +71,8 @@ li {
   /* border: 2px solid white; */
   font-family: 'Work Sans';
   font-size: 1.2rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-weight: 600;
 }
 
 
