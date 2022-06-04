@@ -80,13 +80,6 @@ li {
 width=auto, took away side scrolls.
 display=flex, then direction helps
 /----------*/
-
-
-.lincoln p:hover {
-  color: transparent;
-  text-shadow: 0 0 9px rgba(255, 255, 255, 0.8);
-}
-
 .lincoln {
   display: flex;
   flex-direction: column;
@@ -104,6 +97,8 @@ display=flex, then direction helps
   line-height: 140%;
   text-align: center;
   margin: 0;
+  cursor: default;
+  content: attr(content);
 }
 .lincoln h3 {
   font-weight: 800;
@@ -112,9 +107,14 @@ display=flex, then direction helps
   margin: 0;
   padding-top: 1rem;
 }
+.lincoln p:hover, h3:hover {
+  color: transparent;
+  text-shadow: 0 0 9px rgba(255, 255, 255, 0.8);
+  cursor: default;
+}
 
 /***-------
-
+Phone Screen Size
 --------**/
 
 @media (max-width: 480px) {
