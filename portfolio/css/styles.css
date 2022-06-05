@@ -52,7 +52,7 @@ nav {
   display: flex;
   flex-direction: row;
   font-size: 4rem;
-  font-weight: 900;
+  font-weight: 800;
   color: var(--front-color);
   font-family: 'Assistant';
   position: relative;
@@ -127,8 +127,8 @@ justify-content: center;
 .main-content{
   width: 700px;
   height: 700px;
-  background-color: white;
-  border-radius: 15rem;
+  background-color: rgb(141, 141, 141);
+  border-radius: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,7 +140,6 @@ justify-content: center;
   text-align: center;
   background-color: white;
   border-radius: 50%;
-  z-index: 3;
   font-family: 'Assistant';
   font-size: 3rem;
   font-weight: 800;
