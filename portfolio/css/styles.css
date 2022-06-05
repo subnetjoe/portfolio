@@ -166,4 +166,10 @@ Phone Screen Size
     font-size: 1.2rem;
     padding-top: 2rem;
   }
+  .menu{
+    display: none;
+  }
+  nav{
+    justify-content: center;
+  }
 }
