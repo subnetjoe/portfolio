@@ -26,12 +26,17 @@ overflow=hidden, fixed side/top scroll on phone screen
 body {
   background-color: var(--bkgd-color);
   min-height: 100vh;
+  height: auto;
   width: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
   scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
 }
+
+/*////////////////////////////////////////
+NAVIGATION
+////////////////////////////////////////////*/
 
 nav {
   height: 200px;
@@ -102,15 +107,25 @@ display=flex, then direction helps
 
 
 
-/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////
+MAIN CONTENT
+/////////////////////////////////////////// */
 
 main {
   width: 100%;
-  min-height: calc(100vh - 200px - 22px);
+  height: auto;
+  /* min-height: calc(100vh - 200px - 22px); */
+  /* background-color: green; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.main-content{
+  width: 700px;
+  height: 700px;
+  background-color: white;
 }
 
 .about {
@@ -154,17 +169,6 @@ Phone Screen Size
   }
   .e {
     padding-left: .25rem;
-  }
-  .lincoln {
-    top: 150px;
-  }
-  .lincoln p{
-    font-size: 1.4rem;
-    line-height: 170%;
-  }
-  .lincoln h3 {
-    font-size: 1.2rem;
-    padding-top: 2rem;
   }
   .menu{
     display: none;
