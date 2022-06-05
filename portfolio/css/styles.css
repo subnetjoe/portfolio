@@ -46,7 +46,6 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-
 .logo {
   display: flex;
   flex-direction: row;
@@ -60,36 +59,29 @@ nav {
   margin: 0;
   color: #FFFFFF;
 }
-
 .letter:hover {
   color: transparent;
   text-shadow: 0 0 9px rgba(255, 255, 255, 0.8);
   cursor: default;
 }
-
 .e {
   padding-left: .8rem;
 }
-
 .blink {
   animation: blinker 1.5s step-end infinite;
 }
-
 @keyframes blinker {
   60% {
     opacity: 0;
   }
 }
-
 .menu {
   display: flex;
 }
-
 ul {
   display: flex;
   list-style: none;
 }
-
 li {
   padding: 1rem 6rem;
   /* border: 2px solid white; */
@@ -121,13 +113,11 @@ main {
   align-items: center;
   justify-content: center;
 }
-
 .main-content{
   width: 700px;
   height: 700px;
   background-color: white;
 }
-
 .about {
   width: 200px;
   height: 200px;
@@ -136,7 +126,6 @@ main {
   justify-content: center;
   align-items: center;
 }
-
 footer {
   text-align: center;
   color: white;
@@ -146,13 +135,9 @@ footer {
   font-size: 1rem;
 }
 
-
-
-
 /***-------
 Phone Screen Size
 --------**/
-
 @media (max-width: 480px) {
   .logo {
     font-size: 2.5rem;
