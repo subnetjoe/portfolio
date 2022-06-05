@@ -28,7 +28,7 @@ body {
   min-height: 100vh;
   height: auto;
   width: auto;
-  /* overflow: hidden; */
+  overflow-x: hidden;
   scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
