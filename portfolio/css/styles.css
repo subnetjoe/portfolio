@@ -46,10 +46,13 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+.logoCircleContainer {
+  margin-left: 3rem;
+  margin-top: 3rem;
+}
 .logo-circle{
   width: 100px;
   height: 100px;
-  margin: 2rem;
   aspect-ratio: 1 / 1;
   color: var(--bkgd-color);
   text-align: center;
@@ -62,7 +65,7 @@ nav {
   justify-content: center;
   align-items: center;
   cursor: default;
-  /* position: relative; */
+  position: relative;
 }
 .logo {
   display: flex;
@@ -122,7 +125,7 @@ MAIN CONTENT
 
 main {
   width: 100%;
-  height: auto;
+  min-height: 600px;
   /* min-height: calc(100vh - 200px - 22px); */
   background-color: #ffffff;
   display: flex;
