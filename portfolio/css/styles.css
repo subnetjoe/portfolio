@@ -64,7 +64,7 @@ nav {
   cursor: default;
 }
 .e {
-  padding-left: .8rem;
+  padding-left: .5rem;
 }
 .blink {
   animation: blinker 1.5s step-end infinite;
