@@ -50,7 +50,7 @@ nav {
   width: 100px;
   height: 100px;
   margin: 2rem;
-  perspective-origin: 1 / 1 ;
+  aspect-ratio: 1 / 1;
   color: var(--bkgd-color);
   text-align: center;
   background-color: white;
