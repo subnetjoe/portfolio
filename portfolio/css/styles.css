@@ -41,10 +41,26 @@ NAVIGATION
 nav {
   height: 100px;
   width: 100%;
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.logo-circle{
+  width: 100px;
+  height: 100px;
+  margin: 1rem 0 0 1rem;
+  color: var(--bkgd-color);
+  text-align: center;
+  background-color: white;
+  border-radius: 50%;
+  font-family: 'Assistant';
+  font-size: 4rem;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
 }
 .logo {
   display: flex;
@@ -83,7 +99,7 @@ ul {
 }
 li {
   padding: 1rem 6rem;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   font-family: 'Work Sans';
   font-size: 1.5rem;
   text-transform: capitalize;
@@ -130,30 +146,6 @@ justify-content: center;
   align-items: center;
   justify-content: center;
 }
-.logo-circle{
-  width: 80px;
-  height: 80px;
-  color: var(--bkgd-color);
-  text-align: center;
-  background-color: white;
-  border-radius: 50%;
-  font-family: 'Assistant';
-  font-size: 3rem;
-  font-weight: 800;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: default;
-}
-
-
-
-
-
-
-
-
-
 .about {
   width: 200px;
   height: 200px;
