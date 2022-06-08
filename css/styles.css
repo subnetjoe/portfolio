@@ -216,14 +216,14 @@ Phone Screen Size
 --------**/
 @media (max-width: 480px) {
   .logo {
-    font-size: 2.5rem;
+    /* font-size: 2.5rem;
     left: 0px;
     top: 5px;
     align-items: center;
     justify-content: center;
-    /* text-shadow: -4px 4px 1px #777777; */
     stroke-width: 10px;
-    stroke: #333333;
+    stroke: #333333; */
+    display: none;
   }
   .j {
     padding-left: .6rem;
