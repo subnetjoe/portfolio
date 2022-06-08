@@ -39,16 +39,16 @@ NAVIGATION
 ////////////////////////////////////////////*/
 
 nav {
-  height: 100px;
+  height: 150px;
   width: 100%;
   /* background-color: red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 .logoCircleContainer {
-  margin-left: 3rem;
-  margin-top: 3rem;
+  padding-left: 3rem;
 }
 .logo-circle{
   width: 100px;
