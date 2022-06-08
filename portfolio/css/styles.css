@@ -189,6 +189,7 @@ justify-content: center;
   color: white;
 }
 footer {
+  height: auto;
   text-align: center;
   color: white;
   /* border: 2px solid red; */
