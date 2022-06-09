@@ -216,6 +216,9 @@ footer {
 Phone Screen Size
 --------**/
 @media (max-width: 480px) {
+  body{
+    overflow-y: hidden;
+  }
   .logo {
     display: none;
   }
