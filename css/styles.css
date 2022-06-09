@@ -128,7 +128,7 @@ MAIN CONTENT
 
 main {
   width: 100%;
-  min-height: 500px;
+  min-height: 550px;
   /* min-height: calc(100vh - 200px - 22px); */
   background-color: #ffffff;
   display: flex;
@@ -216,9 +216,6 @@ footer {
 Phone Screen Size
 --------**/
 @media (max-width: 480px) {
-  body{
-    overflow-y: hidden;
-  }
   .logo {
     display: none;
   }
@@ -235,6 +232,9 @@ Phone Screen Size
     width: 80px;
     height: 80px;
     font-size: 3rem;
+  }
+  main {
+    min-height: 500px;
   }
   .main-content{
     height: 400px;
