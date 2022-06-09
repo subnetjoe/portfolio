@@ -180,7 +180,7 @@ justify-content: center;
   margin: 1.25rem 0 0 0;
 }
 .main-content{
-  height: 600px;
+  height: 500px;
   width: 100%;
   /* border: 20px solid red; */
   display: flex;
@@ -236,5 +236,8 @@ Phone Screen Size
   }
   nav{
     justify-content: center;
+  }
+  .logoCircleContainer {
+    padding-left: 0;
   }
 }
