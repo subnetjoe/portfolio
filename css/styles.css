@@ -123,7 +123,7 @@ MAIN CONTENT
 
 main {
   width: 100%;
-  min-height: 550px;
+  min-height: 450px;
   /* min-height: calc(100vh - 200px - 22px); */
   background-color: #ffffff;
   display: flex;
@@ -189,7 +189,7 @@ justify-content: center;
   height: 250px;
   aspect-ratio: 1 / 1;
   border: 15px solid var(--bkgd-color);
-  border-radius: 50%;
+  border-radius: 1.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
