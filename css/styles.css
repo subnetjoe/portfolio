@@ -237,7 +237,7 @@ Phone Screen Size
     font-size: 3rem;
   }
   main {
-    min-height: 500px;
+    /* min-height: 50px; */
   }
   .main-content {
     height: 400px;
