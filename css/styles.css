@@ -123,7 +123,8 @@ MAIN CONTENT
 
 main {
   width: 100%;
-  min-height: 450px;
+  height: calc(100vh - 175px);
+  /* min-height: 450px; */
   /* min-height: calc(100vh - 200px - 22px); */
   background-color: #ffffff;
   display: flex;
