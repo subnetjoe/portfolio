@@ -188,6 +188,11 @@ justify-content: center;
 .myIcons {
   color: black;
 }
+i.fab {
+  color: #6244C5;
+  text-shadow: .4rem .4rem .4rem black;
+  font-size: 6rem;
+}
 .pushME {
   width: 250px;
   height: 250px;
