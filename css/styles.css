@@ -185,6 +185,9 @@ justify-content: center;
   justify-content: center;
   align-items: center;
 }
+.myIcons {
+  color: black;
+}
 .pushME {
   width: 250px;
   height: 250px;
