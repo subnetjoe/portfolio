@@ -264,6 +264,6 @@ Phone Screen Size
     font-size: 8rem;
   }
   .myIcons{
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 }
