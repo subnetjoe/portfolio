@@ -263,4 +263,7 @@ Phone Screen Size
   i.fab {
     font-size: 8rem;
   }
+  .myIcons{
+    flex-direction: column;
+  }
 }
