@@ -186,11 +186,16 @@ justify-content: center;
   align-items: center;
 }
 .myIcons {
+  display: flex;
+  justify-content: space-around;
   color: black;
+  width: 900px;
+  /* border: solid ; */
+  
 }
 i.fab {
   color: var(--bkgd-color);
-  font-size: 8rem;
+  font-size: 10rem;
 }
 .pushME {
   width: 250px;
@@ -254,5 +259,8 @@ Phone Screen Size
     width: 200px;
     height: 200px;
     font-size: 2rem;
+  }
+  i.fab {
+    font-size: 8rem;
   }
 }
