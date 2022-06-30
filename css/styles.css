@@ -189,9 +189,8 @@ justify-content: center;
   color: black;
 }
 i.fab {
-  color: #6244C5;
-  text-shadow: .4rem .4rem .4rem black;
-  font-size: 6rem;
+  color: var(--bkgd-color);
+  font-size: 8rem;
 }
 .pushME {
   width: 250px;
