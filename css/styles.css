@@ -195,11 +195,11 @@ justify-content: center;
 }
 .html5 ,.css3 ,.jScript{
   display: flex;
-  justify-content: center;
+  /* justify-content: space-between; */
   flex-direction: column;
   align-items: center;
   font-family: 'Assistant';
-  font-size: 24px;
+  font-size: 1.5rem;
   color: var(--bkgd-color);
 }
 i.fab {
