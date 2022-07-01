@@ -200,9 +200,17 @@ justify-content: center;
   flex-direction: column;
   align-items: center;
   font-family: 'Assistant';
-  font-size: 1.5rem;
-  color: var(--bkgd-color);
+  font-weight: 700;
+  font-size: 2rem;
+  color: black;
+  letter-spacing: -.1rem;
 }
+.html5:focus {
+  color: black;
+}
+
+
+
 i.fab {
   color: var(--bkgd-color);
   font-size: 10rem;
