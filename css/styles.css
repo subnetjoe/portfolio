@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
 
 :root {
   --front-color: #ffffff;
@@ -185,6 +185,40 @@ justify-content: center;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.intro {
+  width: 550px;
+  display: flex;
+  color: black;
+  flex-direction: column;
+
+}
+.hiJoe {
+  display: flex;
+  font-family: 'Assistant';
+  font-size: 5rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+.passionPhrase {
+  display: flex;
+  font-family: 'Assistant';
+  font-size: 2.25rem;
+  font-weight: 400;
+  padding: 1rem 0 3rem 0;
+  letter-spacing: -1px;
+}
+.viewWork {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Assistant';
+  font-size: 2rem;
+  font-weight: 700;
+  width: 250px;
+  background-color: var(--bkgd-color);
+  border: none;
+  border-radius: 5px;
 }
 .myIcons {
   display: flex;
