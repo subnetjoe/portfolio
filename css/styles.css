@@ -6,6 +6,7 @@
   --front-color: #ffffff;
   --neon-color: #ff00ff;
   --bkgd-color: #6f42c1;
+  --grey-color: #C0C0C0;
   color-scheme: normal;
 }
 
@@ -230,7 +231,7 @@ i.fab {
 }
 footer {
   text-align: center;
-  color: white;
+  color: var(--grey-color);
   /* border: 2px solid red; */
   margin-top: auto; /*auto keeps the info down*/
   font-family: "Work Sans";
