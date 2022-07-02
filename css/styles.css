@@ -219,6 +219,7 @@ justify-content: center;
   background-color: var(--bkgd-color);
   border: none;
   border-radius: 5px;
+  color: white;
 }
 .myIcons {
   display: flex;
