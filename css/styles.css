@@ -78,22 +78,7 @@ nav {
   top: 0px;
   color: #ffffff;
 }
-.letter:hover {
-  color: transparent;
-  text-shadow: 0 0 9px rgba(255, 255, 255, 0.8);
-  cursor: default;
-}
-.e {
-  padding-left: 0.5rem;
-}
-.blink {
-  animation: blinker 1.5s step-end infinite;
-}
-@keyframes blinker {
-  60% {
-    opacity: 0;
-  }
-}
+
 /*////////////////////////////////////////////
 MENU THAT INCLUDES: HOME, WORK, CONTACT
 ///////////////////////////////////////////*/
@@ -108,7 +93,7 @@ li {
   padding: 1rem 6rem;
   /* border: 2px solid white; */
   font-family: "Work Sans";
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-transform: capitalize;
   font-weight: 600;
 }
@@ -240,37 +225,13 @@ justify-content: center;
   color: black;
   letter-spacing: -.1rem;
 }
-.html5:focus {
-  color: black;
-}
+
 
 
 
 i.fab {
   color: var(--bkgd-color);
   font-size: 10rem;
-}
-.pushME {
-  width: 250px;
-  height: 250px;
-  aspect-ratio: 1 / 1;
-  border: 15px solid var(--bkgd-color);
-  border-radius: 1.2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  font-family: "work Sans";
-  font-weight: 800;
-  font-size: 2.8rem;
-  text-transform: uppercase;
-  background-image: 
-    linear-gradient(45deg, #808080 25%, transparent 25%),
-    linear-gradient(-45deg, #808080 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, #808080 75%),
-    linear-gradient(-45deg, transparent 75%, #808080 75%);
-  background-size: 20px 20px;
-  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
 }
 footer {
   text-align: center;
