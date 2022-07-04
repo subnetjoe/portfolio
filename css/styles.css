@@ -10,6 +10,15 @@
   color-scheme: normal;
 }
 
+/*=================
+display: flex;
+align-items: center;
+justify-content: center;
+==================*/
+/*----------/
+overflow=hidden, fixed side/top scroll on phone screen
+/----------*/
+
 /*-------------------------/
 The Asterisk is global on all websites
 /-------------------------*/
@@ -19,21 +28,15 @@ The Asterisk is global on all websites
   padding: 0;
   margin: 0;
 }
-
-/*----------/
-overflow=hidden, fixed side/top scroll on phone screen
-/----------*/
-
 body {
   background-color: var(--bkgd-color);
-  min-height: 100vh;
+  height: 100%;
   width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
 }
-
 /*////////////////////////////////////////
 NAVIGATION
 ////////////////////////////////////////////*/
@@ -78,10 +81,6 @@ nav {
   top: 0px;
   color: #ffffff;
 }
-
-/*////////////////////////////////////////////
-MENU THAT INCLUDES: HOME, WORK, CONTACT
-///////////////////////////////////////////*/
 .menu {
   display: flex;
 }
@@ -98,11 +97,6 @@ li {
   font-weight: 600;
 }
 
-/*----------/
-width=auto, took away side scrolls.
-display=flex, then direction helps
-/----------*/
-
 /*////////////////////////////////////////////
 MAIN CONTENT
 ///////////////////////////////////////////*/
@@ -118,13 +112,6 @@ main {
   align-items: center;
   justify-content: center;
 }
-/*=================
-TARGET CENTER
-|||||||||||||||||||||
-display: flex;
-align-items: center;
-justify-content: center;
-==================*/
 .lineFadeContainer {
   width: 100%;
   height: 100px;
@@ -241,7 +228,7 @@ ABOUT
   border: solid;
 }
 
-.offset:before {
+.offset {
   display: block;
   content: "";
   height: 4.5rem;
