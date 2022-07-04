@@ -170,13 +170,16 @@ justify-content: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: black;
+  border: solid;
+  padding-top: 150px;
+  padding-bottom: 250px;
 }
 .intro {
   width: 550px;
   display: flex;
   color: black;
   flex-direction: column;
-
 }
 .hiJoe {
   display: flex;
@@ -212,7 +215,6 @@ justify-content: center;
   color: black;
   width: 900px;
   /* border: solid ; */
-  
 }
 .html5 ,.css3 ,.jScript{
   display: flex;
@@ -225,21 +227,45 @@ justify-content: center;
   color: black;
   letter-spacing: -.1rem;
 }
-
-
-
-
 i.fab {
   color: var(--bkgd-color);
   font-size: 10rem;
 }
+/* //////////////////////////////
+ABOUT 
+////////////////////////////////*/
+.about {
+  width: 100%;
+  height: 400px;
+  color: black;
+  border: solid;
+}
+
+.offset:before {
+  display: block;
+  content: "";
+  height: 4.5rem;
+  margin-top: -4.5rem;
+}
+.jumbotron {
+  margin-bottom: 0rem;
+  margin-top: 0;
+  padding: 0rem 2rem 2rem;
+  border-radius: 0;
+  background-color: white;
+}
+
+
+
 footer {
   text-align: center;
   color: var(--grey-color);
   /* border: 2px solid red; */
-  margin-top: auto; /*auto keeps the info down*/
+  /* margin-top: auto; auto keeps the info down */
   font-family: "Work Sans";
   font-size: 1rem;
+  /* position: sticky; */
+  /* top: 100vh; */
 }
 
 /***-------
