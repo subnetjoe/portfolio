@@ -185,7 +185,7 @@ PORTFOLIO SECTION
   height: 400px;
   display: flex;
   flex-direction: column;
-  margin-top: 300px;
+  margin: 300px 0;
 }
 
 .portfolio > header {
@@ -278,6 +278,11 @@ CONTACT SECTION
   color: var(--bkgd-color);
   font-size: 8rem;
   background-color: white;
+  border-radius: 15px;
+  height: 112px;
+  width: auto;
+  transform: translateY(-20px);
+  box-shadow: 0px 5px 17px 14px rgba(0, 0, 0, 0.15);
 }
 .social-icon {
   display: flex;
