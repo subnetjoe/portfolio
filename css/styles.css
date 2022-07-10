@@ -145,7 +145,7 @@ main {
   font-family: "Assistant";
   font-size: 2rem;
   font-weight: 700;
-  width: 250px;
+  width: 275px;
   background-color: var(--bkgd-color);
   border: none;
   border-radius: 5px;
@@ -175,14 +175,39 @@ i.fab {
   color: var(--bkgd-color);
   font-size: 10rem;
 }
+
 /*//////////////////////////////
-ABOUT SECTION
+PORTFOLIO SECTION
 //////////////////////////////*/
-.about {
+.portfolio {
   width: 100%;
   height: 400px;
-  color: black;
+  display: flex;
+}
+
+.portfolio > header{
+  height: 60px;
+  width: 100%;
+  border: solid 1px black;
+  color: var(--bkgd-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Assistant";
   font-size: 4rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.portfolio-container{
+  
+}
+/*//////////////////////////////
+CONTACT SECTION
+//////////////////////////////*/
+.contact {
+  width: 100%;
+  height: 400px;
+  display: flex;
 }
 
 footer {
