@@ -241,10 +241,12 @@ CONTACT SECTION
 //////////////////////////////*/
 .contact {
   width: 100%;
-  height: 400px;
+  /* height: 400px; */
   display: flex;
   flex-direction: column;
   margin-top: 300px;
+  padding-bottom: 50px;
+  padding-top: 200px;
 }
 .contact-container {
   display: flex;
@@ -264,11 +266,21 @@ CONTACT SECTION
   padding-left: 3rem;
   /* flex-grow: 1; */
 }
-
+.social-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 650px;
+  flex-direction: column;
+}
 .social-icon i.fab {
   color: var(--bkgd-color);
   font-size: 8rem;
   background-color: white;
+}
+.social-icon {
+  display: flex;
 }
 
 /*//////////////////////////////
