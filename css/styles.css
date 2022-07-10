@@ -90,7 +90,14 @@ li {
   font-size: 2rem;
   text-transform: capitalize;
   font-weight: 600;
+  text-decoration: none;
+  un
 }
+li a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 
 /*///////////////////////////////////
 MAIN CONTENT
@@ -151,6 +158,10 @@ main {
   border: none;
   border-radius: 5px;
   color: white;
+}
+.viewWork a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
 }
 .myIcons {
   display: flex;
