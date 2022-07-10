@@ -268,9 +268,9 @@ CONTACT SECTION
 }
 .social-icon-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  width: 85%;
+  width: 650px;
   height: 650px;
   flex-direction: column;
 }
