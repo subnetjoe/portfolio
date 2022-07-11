@@ -8,8 +8,9 @@ gsap.registerPlugin(ScrollTrigger);
 const timeline = gsap.timeline({defaults: {duration: 1}});
 timeline
     .from("#logo", {duration: 1, y: '-150%', ease: 'bounce', opacity: 0})
-    .from(".fab", {duration: 1, y: -100, opacity: 0})
-
+    .from(".html5", {duration: 1, y: -100, opacity: 0})
+    .from(".css3", {duration: 1, y: -100, opacity: 0})
+    .from(".jScript", {duration: 1, y: -100, opacity: 0})
 
 console.clear();
 let targets = gsap.utils.toArray("#logo");
