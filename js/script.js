@@ -16,8 +16,11 @@ timeline
 
 
 
+
     
-    // click div to do and reverse animation
+
+
+// click div to do and reverse animation
 // console.clear();
 // let targets = gsap.utils.toArray("#logo");
 
