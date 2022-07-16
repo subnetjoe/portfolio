@@ -404,11 +404,12 @@ PHONE SCREEN SIZE
     font-size: 3rem;
   }
   main {
-    display: none;
+    
     /* min-height: 50px; */
   }
   .main-content {
     height: 400px;
+    flex-direction: row;
   }
   i.fab {
     font-size: 8rem;
