@@ -22,16 +22,34 @@ timeline
     opacity: 0,
   })
   .from(".html5", {
+    scrollTrigger: {
+        trigger: ".html5",
+        start: "top center",
+      //   markers: true,
+        // id: "html5",
+      },
     duration: 1,
     y: "-100%",
     opacity: 0,
   })
   .from(".css3", {
+    scrollTrigger: {
+        trigger: ".css3",
+        start: "top center",
+      //   markers: true,
+        // id: "css3",
+      },
     duration: 1,
     y: "-100%",
     opacity: 0,
   })
   .from(".jScript", {
+    scrollTrigger: {
+        trigger: ".jScript",
+        start: "top center",
+      //   markers: true,
+        // id: "jScript",
+      },
     duration: 1,
     y: "-100%",
     opacity: 0,
