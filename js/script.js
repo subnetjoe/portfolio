@@ -1,24 +1,41 @@
 gsap.registerPlugin(ScrollTrigger);
 
+
+
 // gsap.from("#logo", {duration: 1, y: '-150%', ease: 'bounce', opacity: 0});
 // gsap.from(".fab", {duration: 1, y: -100, opacity: 0, delay: 1.5});
 
 //Start a timeline
 
-const timeline = gsap.timeline({defaults: {duration: 1}});
+const timeline = gsap.timeline({ defaults: { duration: 1 } });
 timeline
-    .from("#logo", {duration: 1, y: '-150%', ease: 'bounce', opacity: 0})
-    .from(".intro", {duration: 1, x: '-100%', y: '-100%', opacity: 0 })
-    .from(".html5", {duration: 1, y: '-100%', opacity: 0})
-    .from(".css3", {duration: 1, y: '-100%', opacity: 0})
-    .from(".jScript", {duration: 1, y: '-100%', opacity: 0})
-
-
-
-
-
-    
-
+  .from("#logo", {
+    duration: 1,
+    y: "-150%",
+    ease: "bounce",
+    opacity: 0,
+  })
+  .from(".intro", {
+    duration: 1,
+    x: "-100%",
+    y: "-100%",
+    opacity: 0,
+  })
+  .from(".html5", {
+    duration: 1,
+    y: "-100%",
+    opacity: 0,
+  })
+  .from(".css3", {
+    duration: 1,
+    y: "-100%",
+    opacity: 0,
+  })
+  .from(".jScript", {
+    duration: 1,
+    y: "-100%",
+    opacity: 0,
+  });
 
 // click div to do and reverse animation
 // console.clear();
@@ -32,3 +49,28 @@ timeline
 // function doCoolStuff() {
 //   this.anim.reversed(!this.anim.reversed());
 // }
+
+gsap.from(".portfolio", {
+    scrollTrigger: {
+      trigger: ".portfolio",
+      start: "top center",
+    //   markers: true,
+      id: "portfolio",
+    },
+    x: 100,
+    opacity: 0,
+    duration: 1,
+  });
+
+  gsap.from(".contact", {
+    scrollTrigger: {
+      trigger: ".contact",
+      start: "top center",
+    //   markers: true,
+      id: "contact",
+    },
+    x: -100,
+    opacity: 0,
+    duration: 1,
+  });
+
