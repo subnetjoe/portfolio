@@ -395,7 +395,7 @@ PHONE SCREEN SIZE
   nav {
     justify-content: center;
   }
-  .logoCircleContainer {
+  .logo-container {
     padding-left: 0;
   }
   .logo-circle {
@@ -404,15 +404,11 @@ PHONE SCREEN SIZE
     font-size: 3rem;
   }
   main {
+    display: none;
     /* min-height: 50px; */
   }
   .main-content {
     height: 400px;
-  }
-  .pushME {
-    width: 200px;
-    height: 200px;
-    font-size: 2rem;
   }
   i.fab {
     font-size: 8rem;
