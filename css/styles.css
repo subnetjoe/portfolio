@@ -29,7 +29,7 @@ The Asterisk is global on all websites
   padding: 0;
   margin: 0;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
@@ -95,11 +95,13 @@ li {
   font-weight: 600;
   text-decoration: none;
 }
-li a, a:hover, a:focus, a:active {
+li a,
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
   color: inherit;
 }
-
 
 /*///////////////////////////////////
 MAIN CONTENT
@@ -162,7 +164,10 @@ main {
   border-radius: 5px;
   color: white;
 }
-.viewWork a, a:hover, a:focus, a:active {
+.viewWork a,
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
   color: inherit;
 }
@@ -303,7 +308,7 @@ CONTACT SECTION
   justify-content: left;
   align-items: left;
 }
-.form-group{
+.form-group {
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -319,7 +324,7 @@ CONTACT SECTION
   height: 40px;
   font-size: 1.5rem;
   font-weight: 500;
-  padding-left: .8rem;
+  padding-left: 0.8rem;
   background-color: white;
   color: black;
   border: none;
@@ -330,8 +335,8 @@ CONTACT SECTION
   height: 150px;
   font-size: 1.5rem;
   font-weight: 500;
-  padding-left: .8rem;
-  padding-top: .3rem;
+  padding-left: 0.8rem;
+  padding-top: 0.3rem;
   background-color: white;
   color: black;
   border: none;
@@ -413,12 +418,13 @@ PHONE SCREEN SIZE
     font-size: 3rem;
   }
   main {
-    
     /* min-height: 50px; */
   }
   .main-content {
-    height: 300px;
-    flex-direction: row;
+    flex-direction: column;
+    border: solid 1px red;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   i.fab {
     font-size: 8rem;
