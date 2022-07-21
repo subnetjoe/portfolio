@@ -1,141 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="dark light" />
-    <title>Joe Early | Front End Developer</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <!-- JAVASCRIPT -->
-    <script src="https://kit.fontawesome.com/63f8598e7f.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" defer></script>
-    <script src="/js/script.js" defer></script>
-  </head>
-  <body  id="home">
-    <!-- NAVIGATION -->
-    <nav>
-      <!-- LOGO  -->
-      <div class="logo-container">
-        <div class="logo-circle" id="logo">Je</div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark light" />
+  <title>Joe Early | Front End Developer</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- JAVASCRIPT -->
+  <script src="https://kit.fontawesome.com/63f8598e7f.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" defer></script>
+  <script src="/js/script.js" defer></script>
+</head>
+
+<body id="home">
+  <!-- NAVIGATION -->
+  <nav>
+    <!-- LOGO  -->
+    <div class="logo-container">
+      <div class="logo-circle" id="logo">Je</div>
+    </div>
+    <!-- MENU OF NAVIGATION -->
+    <div class="menu">
+      <ul>
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#portfolio">portfolio</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <section class="main-content">
+      <div class="intro">
+        <div class="hiJoe">Hi, I am Joe.</div>
+        <div class="passionPhrase">
+          Developing unique websites with a great experience is my passion.
+        </div>
+        <button class="viewWork"><a class="nav-link" href="#portfolio">View my Portfolio</a></button>
       </div>
-      <!-- MENU OF NAVIGATION -->
-      <div class="menu">
-        <ul>
-          <li><a class="nav-link" href="#home">Home</a></li>
-          <li><a class="nav-link" href="#portfolio">portfolio</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
+      <div class="myIcons">
+        <div class="html5">
+          <i class="fab fa-html5" title="HTML 5" aria-label="HTML 5"></i>HTML 5
+        </div>
+        <div class="css3">
+          <i class="fab fa-css3-alt" title="CSS 3" aria-label="CSS 3"></i>CSS 3
+        </div>
+        <div class="jScript">
+          <i class="fab fa-js" title="JavaScript" aria-label="JavaScript"></i>JavaScript
+        </div>
       </div>
-    </nav>
+    </section>
 
-    <!-- MAIN CONTENT -->
-    <main>
-
-      <section class="main-content">
-        <div class="intro">
-          <div class="hiJoe">Hi, I am Joe.</div>
-          <div class="passionPhrase">
-            Developing unique websites with a great experience is my passion.
-          </div>
-          <button class="viewWork"><a class="nav-link" href="#portfolio">View my Portfolio</a></button>
-        </div>
-        <div class="myIcons">
-          <div class="html5">
-            <i
-              class="icon fab fa-brands fa-html5"
-              title="HTML 5"
-              aria-label="HTML 5"
-            ></i
-            >HTML 5
-          </div>
-          <div class="css3">
-            <i
-              class="icon fab fa-brands fa-css3-alt"
-              title="CSS 3"
-              aria-label="CSS 3"
-            ></i
-            >CSS 3
-          </div>
-          <div class="jScript">
-            <i
-              class="icon fab fa-brands fa-js"
-              title="JavaScript"
-              aria-label="JavaScript"
-            ></i
-            >JavaScript
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio" id="portfolio">
+      <header>Portfolio</header>
+      <!-- BEGINNING OF PORTFOLIO CONTAINER -->
+      <div class="portfolio-container">
+        <div class="portfolio-info">
+          <div class="portfolio-title">Ford Mustang Shelby GT500</div>
+          <div class="portfolio-description">
+            The 2020 Ford Mustang Shelby GT500 is a splash page showing all
+            the highlights and features of the mustang. <br /><br />The
+            website was built with HTML 5, CSS 3, JavaScript, and Bootstrap.
           </div>
         </div>
-      </section>
+        <div class="portfolio-image">
+          <img src="/img/thumbnailGT500.jpg" alt="GT500" />
+        </div>
+      </div>
+    </section>
 
-      <!-- PORTFOLIO SECTION -->
-      <section class="portfolio" id="portfolio">
-        <header>Portfolio</header>
-        <!-- BEGINNING OF PORTFOLIO CONTAINER -->
-        <div class="portfolio-container">
-          <div class="portfolio-info">
-            <div class="portfolio-title">Ford Mustang Shelby GT500</div>
-            <div class="portfolio-description">
-              The 2020 Ford Mustang Shelby GT500 is a splash page showing all
-              the highlights and features of the mustang. <br /><br />The
-              website was built with HTML 5, CSS 3, JavaScript, and Bootstrap.
-            </div>
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-title">Contact Me</div>
+          <div class="contact-description">
+            I am currently looking for a position as a Front End Developer. If
+            you are interested in working with me, please fill out the form.
           </div>
-          <div class="portfolio-image">
-            <img src="/img/thumbnailGT500.jpg" alt="GT500" />
+          <div class="contact-form">
+            <form action="https://formspree.io/f/mqkkezbb" method="post">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="5"></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
           </div>
         </div>
-      </section>
-
-      <!-- CONTACT SECTION -->
-      <section class="contact" id="contact">
-        <div class="contact-container">
-          <div class="contact-info">
-            <div class="contact-title">Contact Me</div>
-            <div class="contact-description">
-              I am currently looking for a position as a Front End Developer. If
-              you are interested in working with me, please fill out the form.
-            </div>
-            <div class="contact-form">
-              <form action="https://formspree.io/f/mqkkezbb" method="post" >
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" name="name" id="name" />
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" name="email" id="email" />
-                </div>
-                <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea name="message"id="message" rows="5"></textarea>
-                </div>
-                <div class="form-group">
-                  <button type="submit">Submit</button>
-                </div>
-              </form>
-            </div>
+        <!-- SOCIAL ICON CONTAINER -->
+        <div class="social-icon-container">
+          <div class="social-icon">
+            <i class="fab fa-facebook-square"></i>
           </div>
-          <!-- SOCIAL ICON CONTAINER -->
-          <div class="social-icon-container">
-            <div class="social-icon">
-                <i class="fab fa-facebook-square"></i>
-            </div>
-            <div class="social-icon">
-                <i class="fab fa-twitter-square"></i>
-            </div>
+          <div class="social-icon">
+            <i class="fab fa-twitter-square"></i>
           </div>
-      </section>
+        </div>
+    </section>
 
-      <!-- END OF MAIN -->
-    </main>
+    <!-- END OF MAIN -->
+  </main>
 
-    <!-- FOOTER -->
-    <footer><p>&#169; 2022 JoeEarly.dev</p></footer>
+  <!-- FOOTER -->
+  <footer>
+    <p>&#169; 2022 JoeEarly.dev</p>
+  </footer>
 
-    <!-- Javascript -->
-    
-    
-  </body>
+  <!-- Javascript -->
+
+
+</body>
+
 </html>

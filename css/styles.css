@@ -4,10 +4,13 @@
 
 :root {
   --front-color: #ffffff;
-  --neon-color: #ff00ff;
+  /* --neon-color: #ff00ff; */
   --bkgd-color: #6f42c1;
-  --grey-color: #c0c0c0;
-  color-scheme: normal;
+  --light-purple-color: hsl(261, 51%, 98%);
+  --grey-color: hsl(0, 0%, 85%);
+  --dark-grey-color: hsl(0, 0%, 44%);
+
+  /* color-scheme: normal; */
 }
 
 /*//////////////////////
@@ -53,7 +56,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0px 5px 17px 14px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 5px 17px 14px rgba(0, 0, 0, 0.25);
   z-index: 1;
   border-bottom: 1px solid #b892ff;
   position: sticky;
@@ -68,7 +71,7 @@ nav {
   aspect-ratio: 1 / 1;
   color: var(--bkgd-color);
   text-align: center;
-  background-color: white;
+  background-color: var(--front-color);
   border-radius: 50%;
   font-family: "Assistant";
   font-size: 4rem;
@@ -112,7 +115,7 @@ main {
   /* height: calc(100vh - 175px); */
   /* min-height: 450px; */
   /* min-height: calc(100vh - 200px - 22px); */
-  background-color: #ffffff;
+  background-color: var(--light-purple-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -162,7 +165,7 @@ main {
   background-color: var(--bkgd-color);
   border: none;
   border-radius: 5px;
-  color: white;
+  color: var(--front-color);
 }
 .viewWork a,
 a:hover,
@@ -192,8 +195,9 @@ a:active {
   letter-spacing: -0.1rem;
 }
 i.fab {
-  color: var(--bkgd-color);
+  /* color: var(--bkgd-color); */
   font-size: 10rem;
+  color: var(--bkgd-color);
 }
 
 /*//////////////////////////////
@@ -227,7 +231,7 @@ PORTFOLIO SECTION
   width: auto;
   margin: auto;
   /* border: solid 1px red; */
-  background-color: #f4eeff;
+  background-color: var(--front-color);
 }
 .portfolio-info {
   width: 600px;
@@ -244,6 +248,7 @@ PORTFOLIO SECTION
   font-size: 2.5rem;
   font-weight: 700;
   padding: 1rem 0;
+  color: var(--dark-grey-color);
 }
 .portfolio-description {
   width: 500px;
@@ -275,7 +280,7 @@ CONTACT SECTION
   width: auto;
   margin: auto;
   /* border: solid 1px orangered; */
-  background-color: #f4eeff;
+  background-color: var(--front-color);
 }
 .contact-info {
   width: 600px;
@@ -286,7 +291,7 @@ CONTACT SECTION
   color: white;
   background-color: var(--bkgd-color);
   padding-left: 3rem;
-  border: solid 2px red;
+  /* border: solid 2px red; */
   /* flex-grow: 1; */
 }
 .contact-title {
@@ -348,8 +353,8 @@ CONTACT SECTION
   height: 50px;
   font-size: 2rem;
   font-weight: 700;
-  background-color: white;
-  color: var(--bkgd-color);
+  background-color: var(--front-color);
+  color: var(--dark-grey-color);
   border: none;
   border-radius: 5px;
   margin: 2rem 0;
@@ -361,7 +366,7 @@ CONTACT SECTION
   width: 650px;
   height: auto;
   flex-direction: column;
-  border: solid 4px green;
+  /* border: solid 4px green; */
 }
 .social-icon {
   display: flex;
@@ -369,6 +374,7 @@ CONTACT SECTION
   align-items: center;
   width: auto;
   height: auto;
+  /* background-color: white; */
   /* border: solid 4px green; */
 }
 .social-icon > i.fab {
