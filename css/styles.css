@@ -219,7 +219,7 @@ PORTFOLIO SECTION
   align-items: center;
   font-size: 4rem;
   font-weight: 700;
-  padding: 12rem 0;
+  padding: 12rem 0 6rem 0;
 }
 .portfolio-container {
   display: flex;
@@ -241,7 +241,7 @@ PORTFOLIO SECTION
 }
 .portfolio-title {
   display: flex;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
   padding: 1rem 0;
 }
@@ -286,6 +286,7 @@ CONTACT SECTION
   color: white;
   background-color: var(--bkgd-color);
   padding-left: 3rem;
+  border: solid 2px red;
   /* flex-grow: 1; */
 }
 .contact-title {
@@ -358,21 +359,26 @@ CONTACT SECTION
   justify-content: space-around;
   align-items: center;
   width: 650px;
-  height: 650px;
+  height: auto;
   flex-direction: column;
-}
-.social-icon i.fab {
-  color: var(--bkgd-color);
-  font-size: 8rem;
-  background-color: white;
-  border-radius: 15px;
-  height: 112px;
-  width: auto;
-  transform: translateY(-20px);
-  box-shadow: 0px 5px 17px 14px rgba(0, 0, 0, 0.15);
+  border: solid 4px green;
 }
 .social-icon {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  /* border: solid 4px green; */
+}
+.social-icon > i.fab {
+  color: var(--bkgd-color);
+  font-size: 8rem;
+  /* background-color: white; */
+  border-radius: 15px;
+  height: auto;
+  width: auto;
+  /* box-shadow: 0px 5px 17px 14px rgba(0, 0, 0, 0.15); */
 }
 
 /*//////////////////////////////
@@ -386,7 +392,7 @@ footer {
   margin-top: auto; /*//// auto keeps the info down */
   font-family: "Work Sans";
   font-size: 1rem;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
 }
 /*/////////////////////////
 PHONE SCREEN SIZE
@@ -449,21 +455,52 @@ PHONE SCREEN SIZE
     font-size: 1.5rem;
     font-weight: 600;
     width: 200px;
-    padding-bottom: .2rem;
+    padding-bottom: 0.2rem;
   }
   .html5,
-.css3,
-.jScript {
+  .css3,
+  .jScript {
     font-size: 1.5rem;
     font-weight: 700;
     padding-bottom: 3rem;
     letter-spacing: 0;
   }
-  
+
   i.fab {
     font-size: 8rem;
   }
   .myIcons {
     flex-direction: column;
+  }
+  .portfolio > header {
+    font-size: 3rem;
+  }
+  .portfolio-container {
+    flex-direction: column;
+  }
+  .portfolio-info {
+    width: 100%;
+    padding-left: 0;
+  }
+  .portfolio-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+  }
+  .portfolio-description {
+    height: auto;
+    width: 100%;
+    padding-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+  .portfolio-image {
+    /* height: 250px; */
+    /* width: auto; */
+    max-width: 100%;
+    height: 250px;
+  }
+  .contact {
+    flex-direction: column;
+    border: solid 2px red;
   }
 }
