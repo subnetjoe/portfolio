@@ -389,9 +389,9 @@ footer {
   align-items: center;
   justify-content: center;
   color: var(--grey-color);
-  margin-top: auto; /*//// auto keeps the info down */
   font-family: "Work Sans";
   font-size: 1rem;
+  height: 2rem;
   /* flex-shrink: 0; */
 }
 /*/////////////////////////
