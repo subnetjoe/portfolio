@@ -422,7 +422,6 @@ PHONE SCREEN SIZE
   }
   .main-content {
     flex-direction: column;
-    border: solid 1px red;
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -430,7 +429,7 @@ PHONE SCREEN SIZE
     width: 100%;
     height: auto;
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -443,14 +442,24 @@ PHONE SCREEN SIZE
   .passionPhrase {
     font-size: 1.5rem;
     font-weight: 500;
-    padding-bottom: 1rem;
+    padding-bottom: 6rem;
+    padding-left: 1rem;
   }
   .viewWork {
     font-size: 1.5rem;
-    font-weight: 700;
-    padding-bottom: 1rem;
-    border: solid 1px red;
+    font-weight: 600;
+    width: 200px;
+    padding-bottom: .2rem;
   }
+  .html5,
+.css3,
+.jScript {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 3rem;
+    letter-spacing: 0;
+  }
+  
   i.fab {
     font-size: 8rem;
   }
