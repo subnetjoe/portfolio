@@ -3,9 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap");
 
 :root {
-  --front-color: #ffffff;
+  --front-color: hsl(0, 0%, 100%);
   /* --neon-color: #ff00ff; */
-  --bkgd-color: #6f42c1;
+  --bkgd-color: hsl(261, 51%, 51%);
   --light-purple-color: hsl(261, 51%, 98%);
   --grey-color: hsl(0, 0%, 85%);
   --dark-grey-color: hsl(0, 0%, 44%);
@@ -228,9 +228,9 @@ PORTFOLIO SECTION
 .portfolio-container {
   display: flex;
   /* flex-direction: row; */
-  width: auto;
-  margin: auto;
-  /* border: solid 1px red; */
+  /* width: auto; */
+  margin: 0 auto;
+  border: solid 1px red;
   background-color: var(--front-color);
 }
 .portfolio-info {
@@ -251,16 +251,25 @@ PORTFOLIO SECTION
   color: var(--dark-grey-color);
 }
 .portfolio-description {
-  width: 500px;
+  max-width: 500px;
+  /* margin: 0 auto; */
   display: flex;
   font-size: 1rem;
   font-weight: 500;
 }
 .portfolio-image {
-  height: 350px;
+  /* height: 350px; */
   /* width: 400px; */
   display: flex;
+  padding: 1rem;
+  max-width: 500px;
+
   box-shadow: 0px 5px 17px 14px rgba(0, 0, 0, 0.15);
+}
+.portfolio-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /*//////////////////////////////
 CONTACT SECTION
@@ -273,17 +282,18 @@ CONTACT SECTION
   margin-top: 300px;
   padding-bottom: 50px;
   padding-top: 200px;
+  border: solid 1px orangered;
 }
 .contact-container {
   display: flex;
   flex-direction: row;
   width: auto;
   margin: auto;
-  /* border: solid 1px orangered; */
+  border: solid 1px orangered;
   background-color: var(--front-color);
 }
 .contact-info {
-  width: 600px;
+  /* width: 600px; */
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -291,7 +301,7 @@ CONTACT SECTION
   color: white;
   background-color: var(--bkgd-color);
   padding-left: 3rem;
-  /* border: solid 2px red; */
+  border: solid 2px blue;
   /* flex-grow: 1; */
 }
 .contact-title {
@@ -306,9 +316,10 @@ CONTACT SECTION
   font-size: 1rem;
   font-weight: 500;
   padding-bottom: 1rem;
+  padding-right: 3rem;
 }
 .contact-form {
-  width: 450px;
+  /* width: 450px; */
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -486,7 +497,7 @@ PHONE SCREEN SIZE
   }
   .portfolio-info {
     width: 100%;
-    padding-left: 0;
+    padding-left: 1rem;
   }
   .portfolio-title {
     font-size: 1.5rem;
@@ -494,16 +505,16 @@ PHONE SCREEN SIZE
     padding-bottom: 1rem;
   }
   .portfolio-description {
-    height: auto;
-    width: 100%;
-    padding-bottom: 1rem;
-    flex-wrap: wrap;
+    /* height: auto; */
+    /* width: 100%; */
+    padding-bottom: 2rem;
+    /* flex-wrap: wrap; */
   }
   .portfolio-image {
     /* height: 250px; */
     /* width: auto; */
-    max-width: 100%;
-    height: 250px;
+    /* max-width: 100%; */
+    /* min-height: 250px; */
   }
   .contact {
     flex-direction: column;
@@ -511,5 +522,14 @@ PHONE SCREEN SIZE
   }
   .contact-container {
     flex-direction: column-reverse;
+  }
+  .contact-title {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+  }
+  .contact-description {
+    width: 200px;
+    padding-left: 0;
   }
 }
