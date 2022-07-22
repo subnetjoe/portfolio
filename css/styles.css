@@ -326,32 +326,45 @@ CONTACT SECTION
   /* align-items: left; */
 }
 .form-group {
-  display: flex;
-  flex-direction: column;
-  max-width: 450px;
+  /* display: flex;
+  flex-direction: column; */
+  height: 2rem;
+  max-width: 100%;
+  margin: 1rem 0;
   /* justify-content: left; */
   /* align-items: left; */
 }
-.form-group > label {
+/* .form-group > label {
   font-size: 1rem;
   font-weight: 700;
-  padding-top: 1rem;
+  padding-top: 1.5rem; */
 }
-.form-group > input {
-  display: flex;
+.form-group > input ,
+.form-group > textarea {
+  /* display: flex;
   width: 100%;
   /* max-width: 400px; */
-  height: 30px;
-  font-size: 1rem;
   font-weight: 600;
   padding: 0.8rem 1rem;
   background-color: white;
   color: black;
   border: none;
   border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: #F0F1F8;
+  border-radius: 5px;
+  padding: .25rem 1rem;
+  /* resize: none; */
 }
-.form-group > textarea {
-  /* max-width: 400px; */
+.message-box{
+  min-height: 10rem;
+}
+/* .form-group > textarea {
+  
   height: 150px;
   font-size: 1rem;
   font-weight: 600;
@@ -361,7 +374,7 @@ CONTACT SECTION
   color: black;
   border: none;
   border-radius: 5px;
-}
+} */
 .form-group > button {
   width: 150px;
   height: 50px;
