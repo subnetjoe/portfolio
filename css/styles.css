@@ -318,29 +318,29 @@ CONTACT SECTION
   padding-bottom: 1rem;
   /* padding-right: 3rem; */
 }
-.contact-form {
+.contact-form-container {
   /* width: 450px; */
   display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: left;
+  /* flex-direction: column; */
+  /* justify-content: left; */
+  /* align-items: left; */
 }
 .form-group {
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  align-items: left;
+  /* justify-content: left; */
+  /* align-items: left; */
 }
 .form-group > label {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 700;
   padding-top: 1rem;
 }
 .form-group > input {
   width: 400px;
-  height: 40px;
-  font-size: 1.5rem;
-  font-weight: 500;
+  height: 30px;
+  font-size: 1rem;
+  font-weight: 600;
   padding-left: 0.8rem;
   background-color: white;
   color: black;
@@ -350,7 +350,7 @@ CONTACT SECTION
 .form-group > textarea {
   width: 400px;
   height: 150px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
   padding-left: 0.8rem;
   padding-top: 0.3rem;
@@ -375,7 +375,7 @@ CONTACT SECTION
   justify-content: space-around;
   align-items: center;
   max-width: 650px;
-  height: auto;
+  /* height: auto; */
   flex-direction: column;
   /* border: solid 4px green; */
 }
@@ -387,7 +387,7 @@ CONTACT SECTION
   /* height: auto; */
   /* background-color: white; */
   /* border: solid 4px green; */
-  padding: 5rem;
+  padding: 5rem 10rem;
 }
 .social-icon > i.fab {
   color: var(--bkgd-color);
@@ -537,4 +537,9 @@ PHONE SCREEN SIZE
     /* width: 200px; */
     /* padding-left: 0; */
   }
+
+  .social-icon {
+    padding: 0;
+  }
+
 }
