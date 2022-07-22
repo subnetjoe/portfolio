@@ -230,7 +230,7 @@ PORTFOLIO SECTION
   /* flex-direction: row; */
   /* width: auto; */
   margin: 0 auto;
-  border: solid 1px red;
+  /* border: solid 1px red; */
   background-color: var(--front-color);
 }
 .portfolio-info {
