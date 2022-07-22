@@ -311,12 +311,12 @@ CONTACT SECTION
   padding: 1rem 0;
 }
 .contact-description {
-  width: 450px;
+  max-width: 500px;
   display: flex;
   font-size: 1rem;
   font-weight: 500;
   padding-bottom: 1rem;
-  padding-right: 3rem;
+  /* padding-right: 3rem; */
 }
 .contact-form {
   /* width: 450px; */
@@ -374,7 +374,7 @@ CONTACT SECTION
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 650px;
+  max-width: 650px;
   height: auto;
   flex-direction: column;
   /* border: solid 4px green; */
@@ -383,18 +383,19 @@ CONTACT SECTION
   display: flex;
   justify-content: center;
   align-items: center;
-  width: auto;
-  height: auto;
+  /* width: auto; */
+  /* height: auto; */
   /* background-color: white; */
   /* border: solid 4px green; */
+  padding: 5rem;
 }
 .social-icon > i.fab {
   color: var(--bkgd-color);
   font-size: 8rem;
   /* background-color: white; */
   border-radius: 15px;
-  height: auto;
-  width: auto;
+  /* height: auto; */
+  /* width: auto; */
   /* box-shadow: 0px 5px 17px 14px rgba(0, 0, 0, 0.15); */
 }
 
@@ -518,8 +519,8 @@ PHONE SCREEN SIZE
     /* min-height: 250px; */
   }
   .contact {
-    flex-direction: column;
-    border: solid 2px red;
+    /* flex-direction: column; */
+    /* border: solid 2px red; */
   }
   .contact-container {
     flex-direction: column-reverse;
@@ -529,8 +530,11 @@ PHONE SCREEN SIZE
     font-weight: 700;
     padding-bottom: 1rem;
   }
+  .contact-info {
+    padding-left: 1rem;
+  }
   .contact-description {
-    width: 200px;
-    padding-left: 0;
+    /* width: 200px; */
+    /* padding-left: 0; */
   }
 }
