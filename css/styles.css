@@ -334,11 +334,6 @@ CONTACT SECTION
   /* justify-content: left; */
   /* align-items: left; */
 }
-/* .form-group > label {
-  font-size: 1rem;
-  font-weight: 700;
-  padding-top: 1.5rem; */
-}
 .form-group > input ,
 .form-group > textarea {
   /* display: flex;
@@ -346,8 +341,8 @@ CONTACT SECTION
   /* max-width: 400px; */
   font-weight: 600;
   padding: 0.8rem 1rem;
-  background-color: white;
-  color: black;
+  /* background-color: white; */
+  /* color: black; */
   border: none;
   border-radius: 5px;
   height: 100%;
@@ -358,7 +353,7 @@ CONTACT SECTION
   background: #F0F1F8;
   border-radius: 5px;
   padding: .25rem 1rem;
-  /* resize: none; */
+  resize: none;
 }
 .message-box{
   min-height: 10rem;
