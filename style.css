@@ -1,10 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-body{
+
+
+
+
+
+body {
     font-family: 'Assistant', sans-serif;
     font-size: 1rem;
-    background-color: #f5f5f5;
+    background-color: #fdfdfd;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 nav {
     background-color:hsl(261, 51%, 51%);
@@ -15,7 +28,7 @@ nav {
     aspect-ratio: 1 / 1;
     color: hsl(261, 51%, 51%);
     text-align: center;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 50%;
     font-family: "Assistant";
     font-size: 2rem;
@@ -26,16 +39,45 @@ nav {
     cursor: default;
     position: relative;
   }
-.navbar-brand{
-    color:white;
+.logo:hover {
+    background-color: hsl(261, 51%, 51%);
+    color: #ffffff;
 }
 .nav-link {
     color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+    font-family: 'Assistant';
+    font-weight: 500;
+    cursor: pointer;
+
 }
 .purple {
     background-color:hsl(261, 51%, 51%);
-    color:white;
+    color:#ffffff;
 }
 .card i {
     color:hsl(261, 51%, 51%);
 }
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+    padding: 20px;
+    margin: 20px;
+}
+
+.hiJoe {
+    display: flex;
+    font-family: "Assistant";
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+  }
+  .passionPhrase {
+    display: flex;
+    font-family: "Assistant";
+    font-size: 2.25rem;
+    font-weight: 400;
+    padding: 1rem 0 3rem 0;
+    letter-spacing: -1px;
+  }
