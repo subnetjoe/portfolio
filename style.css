@@ -88,3 +88,20 @@ footer {
     font-family: "Work Sans";
     padding: .1rem 0;
 }
+
+
+@media (max-width: 480px) {
+.hiJoe {
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+  }
+  .passionPhrase {
+    font-size: 1.3rem;
+    font-weight: 500;
+    /* padding-bottom: 6rem; */
+  }
+  .home  {
+    text-align: center;
+  }
+}
