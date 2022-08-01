@@ -392,9 +392,6 @@ PHONE SCREEN SIZE
     height: 80px;
     font-size: 3rem;
   }
-  main {
-    /* min-height: 50px; */
-  }
   .main-content {
     flex-direction: column;
     padding-top: 50px;
@@ -463,16 +460,7 @@ PHONE SCREEN SIZE
     padding-bottom: 2rem;
     /* flex-wrap: wrap; */
   }
-  .portfolio-image {
-    /* height: 250px; */
-    /* width: auto; */
-    /* max-width: 100%; */
-    /* min-height: 250px; */
-  }
-  .contact {
-    /* flex-direction: column; */
-    /* border: solid 2px red; */
-  }
+
   .contact-container {
     flex-direction: column-reverse;
   }
@@ -484,11 +472,6 @@ PHONE SCREEN SIZE
   .contact-info {
     padding-left: 1rem;
   }
-  .contact-description {
-    /* width: 200px; */
-    /* padding-left: 0; */
-  }
-
   .social-icon {
     padding: 2rem;
   }
