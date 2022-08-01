@@ -320,12 +320,6 @@ CONTACT SECTION
   padding-right: 3rem;
 }
 
-
-
-
-
-
-
 /*/////////////////////////////*/
 .social-icon-container {
   display: flex;
@@ -498,5 +492,4 @@ PHONE SCREEN SIZE
   .social-icon {
     padding: 2rem;
   }
-
 }
