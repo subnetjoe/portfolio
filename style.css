@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 body {
     font-family: 'Assistant', sans-serif;
     font-size: 1rem;
@@ -55,15 +53,13 @@ nav {
     letter-spacing: -1px;
 }
 .passionPhrase {
-display: flex;
-font-family: "Assistant";
-font-size: 2.25rem;
-font-weight: 400;
-padding: 1rem 0 3rem 0;
-letter-spacing: -1px;
+    display: flex;
+    font-family: "Assistant";
+    font-size: 2.25rem;
+    font-weight: 400;
+    padding: 1rem 0 3rem 0;
+    letter-spacing: -1px;
 }
-
-
 .card i {
     color:hsl(261, 51%, 51%);
 }
@@ -78,26 +74,17 @@ letter-spacing: -1px;
     color:hsl(261, 51%, 51%);
     text-decoration: none;
 }
-
 footer {
     background-color: hsl(261, 51%, 51%);
     color: #f3f3f3;
     text-align: center;
-    font-family: "Work Sans";
+    font-family: "Assistant";
     padding: .1rem 0;
 }
-
-
 @media (max-width: 480px) {
-/* .hiJoe {
-    font-size: 3rem;
-    font-weight: 700;
-    padding-bottom: 1rem;
-  } */
   .passionPhrase {
     font-size: 1.3rem;
     font-weight: 500;
-    /* padding-bottom: 6rem; */
   }
   .home  {
     text-align: center;
