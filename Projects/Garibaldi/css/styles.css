@@ -25,14 +25,16 @@
     -o-background-size: cover; */
     background-size: cover;
     height: 100vh;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    margin: auto;
+    display: flex;
 }
 .background-splash button {
     text-transform: uppercase;
-    
+    background-color: #97D811;
+    border: none;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
 }
 
 
