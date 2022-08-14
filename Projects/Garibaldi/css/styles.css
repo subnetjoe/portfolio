@@ -25,6 +25,14 @@
     -o-background-size: cover; */
     background-size: cover;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.background-splash button {
+    text-transform: uppercase;
+    
 }
 
 
