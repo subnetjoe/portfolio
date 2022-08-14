@@ -1,8 +1,31 @@
-.navbar-brand {
-    color: #fff;
-    font-size: 1.5em;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-decoration: none;
+@import url('https://rsms.me/inter/inter.css');
+
+/* GLOBAL */
+* { 
+    font-family: 'Inter'; 
+    /* background-color: #FCFFF8; */
 }
+
+/* GARIBALDI LOGO */
+.navbar-brand img {
+    max-height: 75px;
+    margin-left: 5rem;
+}
+
+/* NAVBAR SIDE*/
+.offcanvas-body {
+    text-transform: capitalize;
+}
+
+/* HERO SECTION */
+.background-splash {
+    background: url('../img/tacos_full.png') no-repeat  center center fixed;
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; */
+    background-size: cover;
+    height: 100vh;
+}
+
+
+
