@@ -20,9 +20,6 @@
 /* HERO SECTION */
 .background-splash {
     background: url('../img/tacos_full.png') no-repeat  center center fixed;
-    /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover; */
     background-size: cover;
     height: 100vh;
     align-items: center;
@@ -56,14 +53,13 @@
     max-width: 20%;
 }
 .card-header {
-
+    text-align: center;
 }
 .card-header .nav-link {
-    color: #97D811;
-    font-size: 1.5rem;
-    font-weight: 700;
+    color: #6A6A6A;
+    font-size: 2rem;
+    font-weight: medium;
     text-transform: capitalize;
-    border: #97D811 solid 2px;
 }
 
 
