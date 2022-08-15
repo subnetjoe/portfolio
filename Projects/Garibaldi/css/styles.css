@@ -31,11 +31,39 @@
 .background-splash button {
     text-transform: uppercase;
     background-color: #97D811;
+    color: #ffffff;
     border: none;
     font-size: 3rem;
     font-weight: 700;
     padding: 1rem 2rem;
 }
+.background-splash button:hover {
+    background-color: #7db312;
+    color: #ffffff;
+}
 
+/* MENU SECTION */
+.section-title {
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: 400;
+    padding-bottom: 0;
+    color: #6A6A6A;
+    border-bottom: #6A6A6A solid 2px;
+    padding-top: 5rem;
+    margin-bottom: 2rem;
+    max-width: 20%;
+}
+.card-header {
+
+}
+.card-header .nav-link {
+    color: #97D811;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    border: #97D811 solid 2px;
+}
 
 
