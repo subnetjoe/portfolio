@@ -51,6 +51,7 @@
     padding-top: 5rem;
     margin-bottom: 2rem;
     max-width: 20%;
+    margin-left: 5rem;
 }
 .card-header {
     text-align: center;
@@ -61,5 +62,36 @@
     font-weight: medium;
     text-transform: capitalize;
 }
+.tab-pane {
+    text-align: center;
+    padding: 2rem;
+}
+.nav-pills .nav-item {
+    padding: .1rem .1rem;
+}
+/* PILL THAT IS ACTIVE SELECTED */
+.nav-pills .nav-item .nav-link {
+    background-color: #97D811;
+    border: #97D811 solid 2px;
+}
+/* PRIMARY FROM BLUE BUTTON */
+.nav-pills .nav-item .nav-link.active {
+    background-color: #97D811;
+    font-weight: 500;
+}
+/* HOVER OVER THE PILLS */
+.nav-pills .nav-item .nav-link:not(.active):hover {
+    color: #6A6A6A;
+    text-decoration: none;
+}
+/* NOT ACTIVE PILLS */
+.nav-pills .nav-item .nav-link:not(.active){
+    background-color: #ffffff;
+    border: #97D811 solid 2px;
+}
 
 
+/* ABOUT SECTION */
+.about img {
+    width: 100%;
+}
