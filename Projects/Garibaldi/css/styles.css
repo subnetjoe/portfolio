@@ -60,12 +60,12 @@
     font-size: 1.7rem;
     font-weight: medium;
     text-transform: capitalize;
+    
 }
 
 
 .nav-pills .nav-item {
     padding: .1rem .1rem;
-    
 }
 /* PILL THAT IS SELECTED */
 .nav-pills .nav-item .nav-link {
