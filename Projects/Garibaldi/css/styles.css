@@ -50,7 +50,7 @@
     border-bottom: #6A6A6A solid 2px;
     padding-top: 5rem;
     margin-bottom: 2rem;
-    max-width: 20%;
+    max-width: 30%;
 }
 
 
@@ -60,10 +60,7 @@
     font-size: 1.7rem;
     font-weight: medium;
     text-transform: capitalize;
-    
 }
-
-
 .nav-pills .nav-item {
     padding: .1rem .1rem;
 }
@@ -124,7 +121,25 @@
 }
 
 
-
+@media only screen and (max-width: 450px){
+	/*Small smartphones [325px -> 425px]*/
+    .section-title {
+        font-size: 2rem;
+        max-width: 40%;
+    }
+    .nav-pills .nav-item .nav-link{
+        font-size: 1rem;
+    }
+    .dish-title {
+        font-size: 1.25rem;
+    }
+    .dish-ingredients {
+        font-size: .75rem;
+    }
+    .dish-price {
+        font-size: 1.25rem;
+    }
+}
 
 
 /*////// ABOUT SECTION /////////*/
