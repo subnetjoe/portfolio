@@ -92,9 +92,12 @@
     padding: 2rem;
 }
 .dish-image {
-    border-radius: 5rem;
+    /* border-radius: 5rem; */
     width: 70px;
-    filter: drop-shadow(0px 4px 4px #000000);
+    /* filter: drop-shadow(0px 4px 4px #000000); */
+    border-radius: 50%;
+    float: left;
+    border: 5px solid rgba(255, 255, 255, 0.2);
 }
 .dish-title {
     text-align: left;
@@ -113,15 +116,32 @@
 .dish-ingredients:first-letter {
     text-transform: capitalize;
 }
-
 .dish-price {
     font-size: 2rem;
     font-weight: 700;
     text-transform: capitalize;
 }
 
+.menu-item .menu-content {
+    margin-left: 85px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.menu-item .menu-ingredients {
+    margin-left: 85px;
+    font-style: italic;
+    font-size: 1rem;
+    text-align: left;
+}
 
-@media only screen and (max-width: 450px){
+
+
+@media only screen and (max-width: 650px){
 	/*Small smartphones [325px -> 425px]*/
     .section-title {
         font-size: 2rem;
