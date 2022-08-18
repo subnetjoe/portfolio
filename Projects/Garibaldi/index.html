@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Garibaldi</title>
 
-    <!--  -->
+    <!--  CSS STYLES -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/aos.css">
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -42,13 +44,13 @@
                                 <a class="nav-link active" aria-current="page" href="#">home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">menu</a>
+                                <a class="nav-link" href="#menu">menu</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">about</a>
+                                <a class="nav-link" href="#about">about</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">contact</a>
+                                <a class="nav-link" href="#contact">contact</a>
                             </li>
                         </ul>
                         <!-- <form class="d-flex" role="search">
@@ -61,42 +63,17 @@
         </nav>
 
 
-        <!-- BELOW THIS LINE WORKS FINE WITH LIGHT BG -->
-        <!-- <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Menu</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav> -->
+       
     </header>
 
 
     <!-- HERO SECTION -->
-    <section id="hero">
+    <section id="home">
 
         <div class="background-splash">
             <div class="container d-flex justify-content-center">
 
-                <button class="btn">our menu</button>
+                <a href="#menu"><button class="btn">our menu</button></a>
 
             </div>
         </div>
@@ -156,24 +133,30 @@
                         <!-- LUNCH CONTENT -->
                         <div class="tab-pane fade show active" id="pills-lunch" role="tabpanel"
                             aria-labelledby="pills-lunch-tab" tabindex="0">
-                            <div class="row d-flex">
-                                <div class="col-md-6">
+
+<!--  
+                        <div class="row menu-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" style="position: relative; height: 240px;">
+-->
+
+                            <!-- BEGINNING DISHES ROW -->
+                            <div class="row d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                                <div class="col-lg-6">
                                     <div class="row">
                                         <div class="col-2 d-flex align-items-center justify-content-center">
                                             <img src="img/cheater-shrimp-ceviche-hp.jpg" class="img-fluid dish-image">
                                         </div>
                                         <div class="col">
                                             <div class="row">
-                                                <div class="col-8 dish-title">Fresh Ceviche</div>
-                                                <div class="col dish-price">$11.99</div>
+                                                <div class="col-8 dish-title">Mexican Pizza</div>
+                                                <div class="col dish-price">$7.99</div>
                                             </div>
                                             <div class="row">
-                                                <div class="col dish-ingredients d-flex align-items-baseline">Shrimp marinated in lime juice, onion, cilantro, cucumber, tomato, jalapeno and avocado</div>
+                                                <div class="col dish-ingredients d-flex align-items-baseline">Double flat tortilla, beef or chicken, </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <div class="row">
                                         <div class="col-2 d-flex align-items-center justify-content-center">
                                             <img src="img/cheater-shrimp-ceviche-hp.jpg" class="img-fluid dish-image">
@@ -190,7 +173,44 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- END DISHES ROW -->
 
+                            <!-- BEGINNING DISHES ROW -->
+                            <div class="row d-flex">
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-2 d-flex align-items-center justify-content-center">
+                                            <img src="img/cheater-shrimp-ceviche-hp.jpg" class="img-fluid dish-image">
+                                        </div>
+                                        <div class="col">
+                                            <div class="row">
+                                                <div class="col-8 dish-title">Mexican Pizza</div>
+                                                <div class="col dish-price">$7.99</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col dish-ingredients d-flex align-items-baseline">Double flat tortilla, beef or chicken, </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-2 d-flex align-items-center justify-content-center">
+                                            <img src="img/cheater-shrimp-ceviche-hp.jpg" class="img-fluid dish-image">
+                                        </div>
+                                        <div class="col">
+                                            <div class="row">
+                                                <div class="col-8 dish-title">Fresh Ceviche</div>
+                                                <div class="col dish-price">$11.99</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col dish-ingredients d-flex align-items-baseline">Shrimp marinated in lime juice, onion, cilantro, cucumber, tomato, jalapeno and avocado</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END DISHES ROW -->
 
                         </div>
                         <!-- APPETIZERS CONTENT -->
@@ -260,6 +280,14 @@
 
     <!-- FOOTER -->
     <footer id="footer">footer</footer>
+
+    <!--  -->
+
+     <!-- JAVASCRIPT FILES -->
+  <script src="js/main.js"></script>
+   <script src="js/aos.js"></script>
+
+
 </body>
 
 </html>
