@@ -1,300 +1,1151 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garibaldi</title>
+    <title>Garibaldi's Mexican Restaurant</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-    <!--  CSS STYLES -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/aos.css">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-    <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
-    </script>
-    <script>
-    const navLinks = document.querySelectorAll('.nav-item')
-    const menuToggle = document.getElementById('navbarSupportedContent')
-    const bsCollapse = new bootstrap.Collapse(menuToggle)
-    navLinks.forEach((l) => {
-    l.addEventListener('click', () => { bsCollapse.toggle() })
-    })
-    </script>
-    
-</head>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-<body>
-    <header>
-        <!-- NAVIGATION -->
-        <!-- <nav class="navbar navbar-light fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="https://joeearly.dev"><img src="../Garibaldi/img/garibaldi_logo.png"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-start text-bg-light" tabindex="-1" id="offcanvasDarkNavbar"
-                    aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><img
-                                src="../Garibaldi/img/garibaldi_logo.png"></h5>
-                        <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="offcanvas">home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#menu" data-bs-toggle="offcanvas">menu</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about" data-bs-toggle="offcanvas">about</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact" data-bs-toggle="offcanvas" >contact</a>
-                            </li>
-                        
-                    </div>
-                </div>
-            </div>
-        </nav> -->
-        <!-- REPLACING WITH THIS ACTUAL NAVBAR NAVIGATION -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="https://joeearly.dev"><img src="../Garibaldi/img/garibaldi_logo.png"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-                            <a class="nav-link" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-                            <a class="nav-link" href="#menu">Menu</a>
-                        </li>
-                        <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact" data-bs-toggle="collapse">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Top Bar ======= -->
+    <div id="topbar" class="d-flex align-items-center fixed-top">
+      <div
+        class="container d-flex justify-content-center justify-content-md-between"
+      >
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-phone d-flex align-items-center"
+            ><span>(407) 814-7103</span></i
+          >
+          <i class="bi bi-clock d-flex align-items-center ms-4"
+            ><span> Mon-Sun: 11AM - 10PM</span></i
+          >
+        </div>
+
+        <div class="languages d-none d-md-flex align-items-center">
+          <ul>
+            <li>En</li>
+            <li><a href="#">Sp</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-cente">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-lg-between"
+      >
+        <a href="index.html" class="logo me-auto me-lg-0"
+          ><img src="assets/img/garibaldi_logo.png" alt="" class="img-fluid"
+        /></a>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
+            <li><a class="nav-link scrollto" href="#specials">Specials</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
-
-
-       
+        <!-- .navbar -->
+        <a href="#message-us" class="book-a-table-btn scrollto d-none d-lg-flex"
+          >Message us</a
+        >
+      </div>
     </header>
+    <!-- End Header -->
 
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+      <div
+        class="container position-relative text-center text-lg-start"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+      >
+        <div class="row">
+          <div class="col-lg-8">
+            <h1>Welcome to <span>Garibaldi's</span></h1>
+            <h2>Delivering great food for more than 20 years!</h2>
 
-    <!-- HERO SECTION -->
-    <section id="home">
-
-        <div class="background-splash">
-            <div class="container d-flex justify-content-center">
-
-                <a href="#menu"><button class="btn">our menu</button></a>
-
+            <div class="btns">
+              <a href="#menu" class="btn-menu animated fadeInUp scrollto"
+                >Our Menu</a
+              >
             </div>
+          </div>
         </div>
-
-
+      </div>
     </section>
-    <!-- MENU SECTION -->
-    <section id="menu">
-        <div class="container-fluid">
-            <div class="container">
-                <div class="section-title">menu</div>
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div
+              class="col-lg-6 order-1 order-lg-2"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="about-img">
+                <img src="assets/img/hello.jpg" alt="" />
+              </div>
             </div>
-            <div class="container-fluid">
-                <!-- CONTAINER OF PILLS FOR MENU -->
-                <div class="container-fluid ">
-                    <ul class="nav nav-pills d-flex justify-content-center" id="pills-tab"
-                        role="tablist">
-                        <li class="nav-item lunch-pill" role="presentation">
-                            <a class="nav-link active" id="pills-lunch-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-lunch" type="button" role="tab" aria-controls="pills-lunch"
-                                aria-selected="true">lunch</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-appetizers-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-appetizers" type="button" role="tab"
-                                aria-controls="pills-appetizers" aria-selected="false">appetizers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-bar-tab" data-bs-toggle="pill" data-bs-target="#pills-bar"
-                                type="button" role="tab" aria-controls="pills-bar" aria-selected="false">bar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-tacos-tab" data-bs-toggle="pill" data-bs-target="#pills-tacos"
-                                type="button" role="tab" aria-controls="pills-tacos" aria-selected="false">tacos,
-                                burritos, quesadillas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-specialty-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-specialty" type="button" role="tab"
-                                aria-controls="pills-specialty" aria-selected="false">specialty</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-dinner-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-dinner" type="button" role="tab" aria-controls="pills-dinner"
-                                aria-selected="false">dinner</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-desserts-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-desserts" type="button" role="tab" aria-controls="pills-desserts"
-                                aria-selected="false">desserts</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- MENU CONTENT FROM THE PILLS-->
-                <div class="container">
-                    <div class="tab-content" id="pills-tabContent">
-                        <!-- LUNCH CONTENT -->
-                        <div class="tab-pane fade show active" id="pills-lunch" role="tabpanel"
-                            aria-labelledby="pills-lunch-tab" tabindex="0">
+            <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+              <h3>Garibaldi's</h3>
+              <p class="fst-italic">
+                Garibaldi's in Apopka dates back to 2000.
+              </p>
 
-<!--  
-                        <div class="row menu-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" style="position: relative; height: 240px;">
--->
+              <p>
+                Family owned and operated by the Torres Family. We are very
+                blessed to have ended up in the city of Apopka.
+              </p>
+              <p>
+                Over the years Garibaldi has had the opportunity to establish a
+                large following of loyal customers which we are forever grateful
+                for, without you there would be no us.
+              </p>
+              <p>
+                Thank you for these 22 years of continued success. Thank you for
+                making Garibaldi's a fun family friendly atmosphere. Come check
+                us out and be part of our legacy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
 
-                            <!-- BEGINNING DISHES ROW -->
-                            <div class="row d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+      <!-- ======= Menu Section ======= -->
+      <section id="menu" class="menu section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Menu</h2>
+            <p>Bienvenidos</p>
+          </div>
 
-                                <div class="col-lg-6 menu-item filter-starters container-fluid">
-                                    <img src="img/cheater-shrimp-ceviche-hp.jpg" class="menu-img dish-image" alt="">
-                                    <div class="menu-content">
-                                      <span class="dish-title">Lobster Bisque</span><span class="dish-price">$5.95</span>
-                                    </div>
-                                    <div class="menu-ingredients ">
-                                      Lorem, deren, trataro, filede, nerada
-                                    </div>
-                                </div>
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="menu-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-lunch">Lunch</li>
+                <li data-filter=".filter-appetizers">Appetizers</li>
+                <li data-filter=".filter-tacos">Tacos, Burritos, Quesadillas</li>
+                <li data-filter=".filter-bar">Bar</li>
+                <li data-filter=".filter-specialty">Specialty</li>
+                <li data-filter=".filter-dinner">Dinner</li>
+                <li data-filter=".filter-desserts">Desserts</li>
+                
+              </ul>
+            </div>
+          </div>
 
-                            
-                                <div class="col-lg-6 menu-item filter-starters">
-                                    <img src="img/cheater-shrimp-ceviche-hp.jpg" class="menu-img dish-image" alt="">
-                                    <div class="menu-content">
-                                      <span class="dish-title">Lobster Bisque</span><span class="dish-price">$5.95</span>
-                                    </div>
-                                    <div class="menu-ingredients ">
-                                      Lorem, deren, trataro, filede, nerada
-                                    </div>
-                                </div>
+          <div
+            class="row menu-container"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="col-lg-6 menu-item filter-lunch">
+              <img
+                src="assets/img/menu/lobster-bisque.jpg"
+                class="menu-img"
+                alt=""
+              />
+              <div class="menu-content">
+                <a href="#">Make Your Own</a><span>$8.25</span>
+              </div>
+              <div class="menu-ingredients">
+                Taco | Burrito | Enchilada | Quesadilla | Tostada | Chile
+                Relleno (Served with rice and beans) Choice of ground beef,
+                shredded chicken, or shredded beef
+              </div>
+            </div>
 
+            <div class="col-lg-6 menu-item filter-lunch">
+              <img
+                src="assets/img/menu/bread-barrel.jpg"
+                class="menu-img"
+                alt=""
+              />
+              <div class="menu-content">
+                <a href="#">Mexian Pizza</a><span>$7.99</span>
+              </div>
+              <div class="menu-ingredients">
+                Double flat tortilla, beef or chicken, white cheese sauce,
+                beans, bell peppers, onions and guacamole
+              </div>
+            </div>
 
-                                <div class="col-lg-6 menu-item filter-starters">
-                                    <img src="img/cheater-shrimp-ceviche-hp.jpg" class="menu-img dish-image" alt="">
-                                    <div class="menu-content">
-                                      <span class="dish-title">Lobster Bisque</span><span class="dish-price">$5.95</span>
-                                    </div>
-                                    <div class="menu-ingredients ">
-                                      Lorem, deren, trataro, filede, nerada
-                                    </div>
-                                </div>
+            <div class="col-lg-6 menu-item filter-lunch">
+              <img src="assets/img/menu/cake.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Burrito Mexicano</a><span>$9.99</span>
+              </div>
+              <div class="menu-ingredients">
+                Tortilla filled with grilled steak or chicken, onion, bell
+                peppers and beans. Cheese, lettuce, guacamole, sour cream and
+                pico. served with rice.
+              </div>
+            </div>
 
+            <div class="col-lg-6 menu-item filter-lunch">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Quesadilla Veracruz</a><span>$8.95</span>
+              </div>
+              <div class="menu-ingredients">
+                Grilled shrimp with bell peppers and onions. Rice, guacamole, pico, sour cream and lettuce
+              </div>
+            </div>
 
-                                <!-- THIRD DISH -->
-                                <div class="col-lg-6 menu-item filter-starters">
-                                    <img src="img/cheater-shrimp-ceviche-hp.jpg" class="menu-img dish-image" alt="">
-                                    <div class="menu-content">
-                                      <span class="dish-title">Lobster Bisque</span><span class="dish-price">$5.95</span>
-                                    </div>
-                                    <div class="menu-ingredients ">
-                                      Lorem, deren, trataro, filede, nerada
-                                    </div>
-                                </div>
-                                    <!-- THIRD DISH -->
-                                
-                            </div>
-                            <!-- END DISHES ROW -->
+            <div class="col-lg-6 menu-item filter-lunch">
+              <img
+                src="assets/img/menu/tuscan-grilled.jpg"
+                class="menu-img"
+                alt=""
+                />
+              <div class="menu-content">
+                <a href="#">Chimichanga</a><span>$9.50</span>
+              </div>
+              <div class="menu-ingredients">
+                Beef or chicken wrapped up in a fried flour tortilla, white cheese sauce. Served with rice, lettuce, guacamole and sour cream.
+              </div>
+            </div>
 
-                        </div>
-                        <!-- APPETIZERS CONTENT -->
-                        <div class="tab-pane fade" id="pills-appetizers" role="tabpanel"
-                            aria-labelledby="pills-appetizers-tab" tabindex="0">appetizers
-                        </div>
-                        <!-- BAR CONTENT -->
-                        <div class="tab-pane fade" id="pills-bar" role="tabpanel" aria-labelledby="pills-bar-tab"
-                            tabindex="0">bar
-                        </div>
-                        <!-- TACOS, BURRIOTS, QUEASADILLAS CONTENT -->
-                        <div class="tab-pane fade" id="pills-tacos" role="tabpanel" aria-labelledby="pills-tacos-tab"
-                            tabindex="0">tacos
-                        </div>
-                        <!-- SPECIALTY CONTENT -->
-                        <div class="tab-pane fade" id="pills-specialty" role="tabpanel"
-                            aria-labelledby="pills-specialty-tab" tabindex="0">specialty
-                        </div>
-                        <!-- DINNER CONTENT -->
-                        <div class="tab-pane fade" id="pills-dinner" role="tabpanel" aria-labelledby="pills-dinner-tab"
-                            tabindex="0">dinner
-                        </div>
-                        <!-- DESSERTS CONTENT -->
-                        <div class="tab-pane fade" id="pills-desserts" role="tabpanel"
-                            aria-labelledby="pills-desserts-tab" tabindex="0">desserts
-                        </div>
+            <div class="col-lg-6 menu-item filter-lunch">
+              <img
+                src="assets/img/menu/mozzarella.jpg"
+                class="menu-img"
+                alt=""
+              />
+              <div class="menu-content">
+                <a href="#">Burrito Rojo</a><span>$9.50</span>
+              </div>
+              <div class="menu-ingredients">
+                Tortilla filed with beef chunks and red chile sauce, topped with lettuce, cheese and cream. Served with rice.
+              </div>
+            </div>
 
+            <div class="col-lg-6 menu-item filter-lunch">
+              <img
+                src="assets/img/menu/greek-salad.jpg"
+                class="menu-img"
+                alt=""
+              />
+              <div class="menu-content">
+                <a href="#">Acapulco Burrito</a><span>$10.25</span>
+              </div>
+              <div class="menu-ingredients">
+                tortilla fileld wth grilled shrip bell peppers and onions. Served with rice, pico, lettuce and sour cream.
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-lunch">
+              <img
+                src="assets/img/menu/spinach-salad.jpg"
+                class="menu-img"
+                alt=""
+              />
+              <div class="menu-content">
+                <a href="#">Quesadilla Rellena</a><span>$9.50</span>
+              </div>
+              <div class="menu-ingredients">
+                A flour tortilla stuffed with cheese, beef or chicken. Served with rice, letuce, guacamole and sour cream.
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-lunch">
+              <img
+                src="assets/img/menu/lobster-roll.jpg"
+                class="menu-img"
+                alt=""
+              />
+              <div class="menu-content">
+                <a href="#">Enchiladas Rancheras</a><span>$9.50</span>
+              </div>
+              <div class="menu-ingredients">
+                Two cheese enchiladas with carnitas, tomatoes, onions, bell peppers, special sauce, lettuce, guacamole, sour cream, rice or beans.
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-lunch">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Garibaldi Fajita</a><span>$10.50</span>
+              </div>
+              <div class="menu-ingredients">
+                Grilled steak or chicken with bell peppers and onions. Served with rice, pico, lettuce and sour cream.
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-lunch">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Huevos Rancheros</a><span>$8.75</span>
+              </div>
+              <div class="menu-ingredients">
+                Two eggs topped with rancheros sauce. Served with rice, refried beans and flour tortillas
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-lunch">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Huevos con Chorizo</a><span>$8.99</span>
+              </div>
+              <div class="menu-ingredients">
+                Two scrambled eggs with Mexican sausage. Served with rice, beans and tortillas
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-lunch">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Nachos Supremos</a><span>$8.50</span>
+              </div>
+              <div class="menu-ingredients">
+                Corn tortilla chips, melted cheese, chicken, beef, refried beans, lettuce, pico, guacamole, sour cream and jalapenos
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-lunch">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Burrito Ranchero</a><span>$9.50</span>
+              </div>
+              <div class="menu-ingredients">
+                A flour tortilla with carnitas cooked with tomatoes, oniosn and bell peppers. Topped with cheese, lettuce, tomatoes, and guacamole. Served with rice.
+              </div>
+            </div><!-- END OF LUNCH DISHES -->
+
+            <!-- BEGINNING OF APPETIZERS -->
+            <div class="col-lg-6 menu-item filter-appetizers">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Fresh Ceviche</a><span>$11.99</span>
+              </div>
+              <div class="menu-ingredients">
+                Shrimp marinated in lime juice, onion, cilantro, cucumber, tomato, jalapeno and avocado
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-appetizers">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Garibaldi Taquitos</a><span>$10.50</span>
+              </div>
+              <div class="menu-ingredients">
+                Deep fried flour tortilla, chicken or shredded beef, guacamole, sour cream, pico do gallo and queso dip
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-appetizers">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Guacamole Fresco</a><span>$10.99</span>
+              </div>
+              <div class="menu-ingredients">
+                Fresh avocado, tomates, onions, cilantro, and jalapenos
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-appetizers">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Queso Fundido</a><span>$9.50</span>
+              </div>
+              <div class="menu-ingredients">
+                Melted cheese with Mexican chorizo, guacamole, sour cream, pico de gallo and flour tortillas
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-appetizers">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Sopa do Tortilla</a><span>$11.99</span>
+              </div>
+              <div class="menu-ingredients">
+                Simmered chicken, fresh vegetables in a zesty chicken broth, shredded cheese and tortilla chips
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-appetizers">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Mexican Street Corn</a><span>$5.50</span>
+              </div>
+              <div class="menu-ingredients">
+                Queso cotija, tajin, mayo and crema cilantro
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-appetizers">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Mexian Caldo de Pollo</a><span>$5.99</span>
+              </div>
+              <div class="menu-ingredients">
+                Chicken broth with vegetables, rice and pico de gallo
+              </div>
+            </div><!-- END OF APPETIZERS -->
+            
+            <!-- BEGINNING OF TACOS, BURRITOS, QUESADILLAS -->
+            <div class="col-lg-6 menu-item filter-tacos">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Tacos Grilled Pollo</a><span>$12.50</span>
+              </div>
+              <div class="menu-ingredients">
+                Three grilled chicken tacos with corn tortillas. Served with cilantro, onions, rice and beans.
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-tacos">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Fish Taco Dinner</a><span>$11.99</span>
+              </div>
+              <div class="menu-ingredients">
+                Two soft or hard tacos with grilled tilapia, lettuce, cheese, pico, chipotle mayo. Served with rice and beans.
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-tacos">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Tacos Carne Asada</a><span>$13.50</span>
+              </div>
+              <div class="menu-ingredients">
+                Three steak tacos with corn tortilla. Served with cilantro, onions, rice and beans.
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-tacos">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Shrimp Tacos</a><span>$11.99</span>
+              </div>
+              <div class="menu-ingredients">
+                Two soft or hard tacos with grilled shrimp, lettuce, cheese, pico, chipotle mayo. Served with rice and beans.
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-tacos">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Birria Tacos</a><span>$13.50</span>
+              </div>
+              <div class="menu-ingredients">
+                Cheesy corn tortilla, braised beef brisket, onions, cilantro, mexican rice, side of consome
+              </div>
+            </div><!-- END OF TACOS, BURRITOS, QUESADILLAS -->
+
+            <!-- BEGINNING OF BAR DISHES -->
+            <div class="col-lg-6 menu-item filter-bar">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Tropical Margarita</a><span>$10.50</span>
+              </div>
+              <div class="menu-ingredients">
+                1800 Tequlia blended with your choice of mango, strawberry, guava or watermelon. Frozen or on the rocks
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-bar">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Sangriarita</a><span>$9.99</span>
+              </div>
+              <div class="menu-ingredients">
+                Frozen lime margarita with a swirl of real sangria.
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-bar">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Garibaldi Mojito</a><span>$10.75</span>
+              </div>
+              <div class="menu-ingredients">
+                Bacardi rum blended with fresh lime juice, fresh mint, and a splash of club soda, muddled, shaken and served on the rocks
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-bar filter-bar">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Garibaldi Paloma</a><span>$9.99</span>
+              </div>
+              <div class="menu-ingredients">
+                1800 tequila, grapefruit jarrito, fresh squeezed limes, a splash of club soda.
+              </div>
+            </div><!-- END OF BAR DISHES -->
+
+            <!-- BEGINNING OF SPECIALTY DISHES -->
+            <div class="col-lg-6 menu-item filter-specialty">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Choripollo</a><span>$15.50</span>
+              </div>
+              <div class="menu-ingredients">
+                Chicken breast topped with Mexican chorizo and cheese. Served with rice and beans.
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-specialty">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Pollo Ranchero</a><span>$14.50</span>
+              </div>
+              <div class="menu-ingredients">
+                Chicken breast with sauteed onions, tomatoes, jalapenos and cilantro. Served with rice, beans and three flour tortillas.
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-specialty">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Pollo Garibaldi</a><span>$15.50</span>
+              </div>
+              <div class="menu-ingredients">
+                Chicken breast with ham, onion, tomatoes, mushrooms, chile chipotle and cheese. Served with rice and beans.
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-specialty">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Steak Garibaldi</a><span>$18.99</span>
+              </div>
+              <div class="menu-ingredients">
+                Ribeye steak, bell peppers, onion, tomatoes and mushrooms. Served with rice, beans and tortillas
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-specialty">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Carne Asada</a><span>$18.99</span>
+              </div>
+              <div class="menu-ingredients">
+                Thin sliced steak served with rice, refried beans, lettuce, jalapenos, guacamole, sour cream and tortillas.
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-specialty">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Steak Tampiqueno</a><span>$18.99</span>
+              </div>
+              <div class="menu-ingredients">
+                Ribeye steak served with rice, beans, jalapenos, lettuce, guacamole, ranchero sauce and tortillas.
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-specialty">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Carne Guisada</a><span>$14.50</span>
+              </div>
+              <div class="menu-ingredients">
+                Steak chunks cooked with onions, tomatoes, and our special sauce, rice, beans and tortillas.
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-specialty">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Mole Ranchero</a><span>$14.25</span>
+              </div>
+              <div class="menu-ingredients">
+                Grilled chicken strips cooked with mole sauce, rice, lettuce, guacamole, sour cream and tortillas.
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-specialty">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Carnitas Platter</a><span>$16.99</span>
+              </div>
+              <div class="menu-ingredients">
+                Seasoned pork tips. Rice and refried beans, guacamole, lettuce, sour cream, grilled onions and flour tortillas.
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-specialty">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Fajitas Garibaldi</a><span>$15.50</span>
+              </div>
+              <div class="menu-ingredients">
+                Grilled with onions and bell pepper. Served with lettuce, guacamole, sour cream, rice, beans, pico and tortillas.
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-specialty">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Fajitas Del Mar</a><span>$20.99</span>
+              </div>
+              <div class="menu-ingredients">
+                Shrimp on sizzling platter cooked with bell peppers, onions, tomatoes and mushrooms. Served with rice, beans, lettucs, guacamole, pico and tortillas.
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-specialty">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Chile Colorado</a><span>$14.50</span>
+              </div>
+              <div class="menu-ingredients">
+                Beef chunks and red chile sauce, with rice, beans and tortillas.
+              </div>
+            </div><!-- END OF SPECIALTY DISHES -->
+            
+            <!-- BEGINNING OF DINNER DISHES -->
+            <div class="col-lg-6 menu-item filter-dinner filter-specialty">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Pollo Loco</a><span>$14.99</span>
+              </div>
+              <div class="menu-ingredients">
+                Grilled chicken breast, with onions and bell peppers. Served with rice, cheesy vegetables and tortillas
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-dinner">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Enchiladas Rancheras</a><span>$12.50</span>
+              </div>
+              <div class="menu-ingredients">
+                Two cheese enchiladas with carnitas, tomatoes, onions, bell  peppers, our special sauce, guacamole, sour cream and pico de gallo. Served with rice or beans.
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-dinner">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Enchiladas Poblanas</a><span>$12.50</span>
+              </div>
+              <div class="menu-ingredients">
+                Two chicken enchiladas, mole sauce served with rice, lettuce, guacamole and sour cream.
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-dinner">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Enchiladas Verdes</a><span>$12.50</span>
+              </div>
+              <div class="menu-ingredients">
+                Two chicken enchiladas with salsa verde, rice, lettuce, guacamole, sour cream and pico de gallo.
+              </div>
+            </div>
+            
+            <div class="col-lg-6 menu-item filter-dinner">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Flautas Verdes</a><span>$9.50</span>
+              </div>
+              <div class="menu-ingredients">
+                Three fried rolled corn tortillas stuffed with beef or chicken, letuce, tomatoes, guacamole and green sauce.
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-dinner">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Enchiladas Supremas</a><span>$12.50</span>
+              </div>
+              <div class="menu-ingredients">
+                One bean, one cheese, one chicken and one beef enchilada, lettuce, guacamole, sour cream, ranchero sauce and tomatoes.
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-dinner">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Molcajete Dona Pepa</a><span>$26.99</span>
+              </div>
+              <div class="menu-ingredients">
+                Hot lava rock, heaped with sizzling beef strips, chicken, pork and shrimp. Topped with cheese, grilled cactus, peppers, onions. Served with rice and beans.
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-dinner">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Chiles Rellenos</a><span>$13.50</span>
+              </div>
+              <div class="menu-ingredients">
+                Two poblano peppers stuffed with cheese, topped with our ranchero sauce. Served with rice, lettuce, guacamole and sour cream.
+              </div>
+            </div>
+            <!-- END OF DINNER DISHES-->
+
+            <!-- BEGINNING OF DESSERT DISHES -->
+
+            <div class="col-lg-6 menu-item filter-desserts">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Sopapilla with Ice Cream</a><span>$5.99</span>
+              </div>
+              <div class="menu-ingredients">
+                Fried tortilla covered in cinnamon sugar, topped with honey.
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-desserts">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Flan</a><span>$5.50</span>
+              </div>
+              <div class="menu-ingredients">
+                Homemade Mexican custard
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-desserts">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Changos</a><span>$6.50</span>
+              </div>
+              <div class="menu-ingredients">
+                Fried Mexican cheesecake topped with caramel and whipped cream
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-desserts">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Churros</a><span>$6.50</span>
+              </div>
+              <div class="menu-ingredients">
+                Mexican pastry sticks coated in cinnamon sugar, glazed with caramel
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-desserts">
+              <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="" />
+              <div class="menu-content">
+                <a href="#">Fried Ice Cream</a><span>$6.50</span>
+              </div>
+              <div class="menu-ingredients">
+                Vanilla ice coated in corn flakes, lightly fried, topped caramel and whipped cream
+              </div>
+            </div><!-- END OF DESSERT DISHES -->
+
+          <!-- ====== END OF ALL DISHES ======== -->
+          </div>
+        </div>
+      </section>
+      <!-- End Menu Section -->
+
+      <!-- ======= Specials Section ======= -->
+      <section id="specials" class="specials">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Specials</h2>
+            <p>Our Specials from 11am to 2pm</p>
+          </div>
+
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-3">
+              <ul class="nav nav-tabs flex-column">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active show"
+                    data-bs-toggle="tab"
+                    href="#tab-1"
+                    >Make Your Own</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-2"
+                    >Enchiladas Rancheras</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-3"
+                    >Garibaldi Fajita</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-4"
+                    >Burrito Ranchero</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-5"
+                    >Chimichanga</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-9 mt-4 mt-lg-0">
+              <div class="tab-content">
+                <div class="tab-pane active show" id="tab-1">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Make Your Own</h3>
+                      <p class="fst-italic">
+                        Taco | Burrito | Enchilada | Quesadilla | Tostada |
+                        Chile Relleno
+                      </p>
+                      <p>
+                        (Served with rice and beans) Choice of Ground Beef,
+                        Shredded Chicken or Shredded Beef.
+                      </p>
+                      <p><span>1 item $7.25 | 2 item $8.25</span></p>
                     </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img
+                        src="assets/img/specials-1.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
                 </div>
+                <div class="tab-pane" id="tab-2">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Enchiladas Rancheras</h3>
+                      <p>
+                        Two cheese enchiladas with carnitas, tomatoes, onions,
+                        bell peppers, special sauce, lettuce, guacamole, sour
+                        cream, rice, or beans.
+                      </p>
+                      <p><span>$9.50</span></p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img
+                        src="assets/img/specials-2.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-3">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Garibaldi Fajita</h3>
+
+                      <p>
+                        Grilled steak or chicken with bell peppers & onions.
+                        Served with rice, beans, lettuce, guacamole, sour cream,
+                        pico de gallo & flour tortillas
+                      </p>
+                      <p><span>$10.50</span></p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img
+                        src="assets/img/specials-3.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-4">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Burrito Ranchero</h3>
+                      <p>
+                        A flour tortilla with carnitas cooked with tomatoes,
+                        onions, and bells peppers. topped with chees, lettuce,
+                        tomatoes, and guacamole. Served with rice.
+                      </p>
+                      <p><span>$9.50</span></p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img
+                        src="assets/img/specials-4.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-5">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Chimichanga</h3>
+                      <p>
+                        Beef or chicken wrapped up in a fried flour tortilla,
+                        white cheese sauce. Served with rice, lettuce,
+                        guacamole, and sour cream.
+                      </p>
+                      <p><span>$9.50</span></p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img
+                        src="assets/img/specials-5.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    <!-- ABOUT SECTION -->
-    <section id="about">
-        <div class="container">
-            <div class="section-title">about</div>
-            <div class="row d-flex">
-                <div class="col-md-6">
-                    <p>Garibaldi's in Apopka dates back to 2000. Family owned and operated by the Torres Family. We are
-                        very blessed to have ended up in the city of Apopka.
-                    </p>
-                    <p>
-                        Over the years Garibaldi has had the opportunity to establish a large following of loyal
-                        customers which we are forever grateful for, without you there would be no us.
-                    </p>
-                    <p>
-                        Thank you for these 22 years of continued success. Thank you for making Garibaldi's a fun family
-                        friendly atmosphere. Come check us out and be part of our legacy.</p>
-                </div>
-                <div class="col-md-6">
+      </section>
+      <!-- End Specials Section -->
 
-                    <img src="img/hello.jpg" alt="about" class="img-fluid">
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Contact</h2>
+            <p>Contact Us</p>
+          </div>
+        </div>
 
+        <div data-aos="fade-up">
+          <iframe
+            style="border: 0; width: 100%; height: 350px"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.5832124847825!2d-81.47045937015454!3d28.672195732761175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e776863c1ad7d7%3A0x18e02d5d722affb6!2sGaribaldi%20(Apopka)%20Mexican%20Restaurant%20%26%20Bar!5e0!3m2!1sen!2sus!4v1660919548607!5m2!1sen!2sus"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div id="message-us" class="container" data-aos="fade-up">
+          <div class="row mt-5">
+            <div class="col-lg-4">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>2430 East Semoran Blvd, Apopka, FL 32703</p>
                 </div>
+
+                <div class="open-hours">
+                  <i class="bi bi-clock"></i>
+                  <h4>Open Hours:</h4>
+                  <p>
+                    Monday-Sunday:<br />
+                    11:00 AM - 10:00 PM
+                  </p>
+                </div>
+
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>info@garibaldiwekiva.com</p>
+                </div>
+
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>(407) 814-7103</p>
+                </div>
+              </div>
             </div>
+
+            <div class="col-lg-8 mt-5 mt-lg-0">
+              <form action="" method="post" role="form" class="php-email-form">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+                <div class="form-group mt-3">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="8"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Your message has been sent. Thank you!
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
 
-
-    <!-- CONTACT SECTION -->
-    <section id="contact">
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
         <div class="container">
-            <div class="section-title">contact</div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-info">
+                <img
+                  src="assets/img/garibaldi_logo.png"
+                  alt=""
+                  class="img-fluid"
+                />
+                <p>
+                  2430 East Semoran Blvd <br />
+                  Apopka, FL 32703<br /><br />
+                  <strong>Phone:</strong> (407) 814-7103<br />
+                  <strong>Email:</strong> info@garibaldiwekiva.com<br />
+                </p>
+                <div class="social-links mt-3">
+                  <a href="#" class="yelp"><i class="bx bxl-yelp"></i></a>
+                  <a href="#" class="facebook"
+                    ><i class="bx bxl-facebook"></i
+                  ></a>
+                  <a href="#" class="instagram"
+                    ><i class="bx bxl-instagram"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#home">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#about">About</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#menu">Menu</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#specials">Specials</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links"></div>
+
+            <div class="col-lg-4 col-md-6 footer-newsletter">
+              <h4>Our Newsletter</h4>
+              <p>
+                Subscribe for discounts and information about upcoming events
+                and dishes
+              </p>
+              <form action="" method="post">
+                <input type="email" name="email" /><input
+                  type="submit"
+                  value="Subscribe"
+                />
+              </form>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
 
+      <div class="container">
+        <div class="copyright">
+           &copy; 2022 Copyright <strong><span>Garibaldi's</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="https://joeearly.dev/">JoeEarly.dev</a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
 
-    <!-- FOOTER -->
-    <footer id="footer">footer</footer>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-    <!--  -->
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-     <!-- JAVASCRIPT FILES -->
-  <!-- <script src="js/main.js"></script> -->
-   <script src="js/aos.js"></script>
-
-
-</body>
-
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
