@@ -25,6 +25,8 @@ function getFacts() {
         }
     }
 
+    
+// COPY BUTTON 
 let copy_btn = document.querySelector(".copy-btn");
 
 copy_btn.addEventListener('click', () => {
