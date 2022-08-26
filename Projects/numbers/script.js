@@ -14,7 +14,7 @@ let card = document.querySelector(".card");
 // enter_btn.onclick = getFacts;
 
 // IF YOU SEE ONTOUCHSTART IN WINDOW OR ELSE 
-if ('ontouchstart' in window) {
+if ("ontouchstart" in window) {
     enter_btn.addEventListener("touchstart", getFacts);
 } else {
     enter_btn.addEventListener("click", getFacts);
@@ -63,4 +63,13 @@ function copyText() {
     document.execCommand("copy");
     textarea.remove();
     alert("Fact has been copied");
+}
+
+
+function isTouchScreendevice() {
+    return 'ontouchstart' in window || navigator.maxTouchPoints;      
+};
+
+if(isTouchScreendevice()){
+    alert("I am a touch screen device")
 }
