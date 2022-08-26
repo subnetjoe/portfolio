@@ -41,4 +41,4 @@ function copyText() {
     document.execCommand("copy");
     textarea.remove();
     alert("Fact has been copied");
-};
+}
