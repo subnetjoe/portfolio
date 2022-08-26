@@ -11,14 +11,14 @@ let card = document.querySelector(".card");
 
 // enter_btn.addEventListener("touchstart", getFacts);
 
-enter_btn.onclick = getFacts;
+// enter_btn.onclick = getFacts;
 
 // IF YOU SEE ONTOUCHSTART IN WINDOW OR ELSE 
-// if ('ontouchstart' in window) {
-//     enter_btn.addEventListener("touchstart", getFacts);
-// } else {
-//     enter_btn.addEventListener("click", getFacts);
-// };
+if ('ontouchstart' in window) {
+    enter_btn.addEventListener("touchstart", getFacts);
+} else {
+    enter_btn.addEventListener("click", getFacts);
+};
 
 // FUNCTION TO ASSIGN VALUE TO INPUT, CARD TITLE AND CARD TEXT 
 function getFacts(e) {
