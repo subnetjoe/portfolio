@@ -7,6 +7,7 @@ let card = document.querySelector(".card");
 
 // ENTER BUTTON
 enter_btn.addEventListener("click", getFacts);
+enter_btn.addEventListener("touchstart", getFacts);
 
 function getFacts() {
     let input = document.querySelector(".input").value;
