@@ -6,15 +6,14 @@ let enter_btn = document.querySelector(".btn");
 let card = document.querySelector(".card");
 
 
-
 // ENTER BUTTON
 // enter_btn.addEventListener("click", getFacts);
-// enter_btn.addEventListener("touchstart", getFacts);
 
+// enter_btn.addEventListener("touchstart", getFacts);
 
 // enter_btn.addEventListener("click", clickHandler);
 
-// ADD ON FOR CLICKING BUTTON IN MOBILE 
+// IF YOU SEE ONTOUCHSTART IN WINDOW OR ELSE 
 if ('ontouchstart' in window) {
     enter_btn.addEventListener("touchstart", getFacts);
 } else {
@@ -42,6 +41,10 @@ function getFacts(e) {
         }
     }
 
+
+
+
+
     
 // COPY BUTTON 
 let copy_btn = document.querySelector(".copy-btn");
@@ -61,5 +64,3 @@ function copyText() {
     textarea.remove();
     alert("Fact has been copied");
 }
-
-
