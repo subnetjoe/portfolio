@@ -5,6 +5,7 @@
 let enter_btn = document.querySelector(".btn");
 let card = document.querySelector(".card");
 
+// ENTER BUTTON
 enter_btn.addEventListener("click", getFacts);
 
 function getFacts() {
