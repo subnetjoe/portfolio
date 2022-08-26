@@ -5,16 +5,30 @@
 let enter_btn = document.querySelector(".btn");
 let card = document.querySelector(".card");
 
-// ENTER BUTTON
-enter_btn.addEventListener("click", getFacts);
-enter_btn.addEventListener("touchstart", getFacts);
 
+
+// ENTER BUTTON
+// enter_btn.addEventListener("click", getFacts);
+// enter_btn.addEventListener("touchstart", getFacts);
+
+
+// enter_btn.addEventListener("click", clickHandler);
+
+// ADD ON FOR CLICKING BUTTON IN MOBILE 
+if ('ontouchstart' in window) {
+    enter_btn.addEventListener("touchstart", getFacts);
+} else {
+    enter_btn.addEventListener("click", getFacts);
+};
+
+// FUNCTION TO ASSIGN VALUE TO INPUT, CARD TITLE AND CARD TEXT 
 function getFacts(e) {
     e.preventDefault();
     let input = document.querySelector(".input").value;
     let card_title = document.querySelector(".card-title");
     let card_text = document.querySelector(".card-text");
 
+    // IF VALUE IS NOT NOTHING
     if (input !== "") {
         card.classList.remove("d-none");
 
@@ -47,3 +61,5 @@ function copyText() {
     textarea.remove();
     alert("Fact has been copied");
 }
+
+
