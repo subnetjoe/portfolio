@@ -7,22 +7,21 @@ let card = document.querySelector(".card");
 
 
 // ENTER BUTTON
-// enter_btn.addEventListener("click", getFacts);
+enter_btn.addEventListener("click", getFacts);
 
 // enter_btn.addEventListener("touchstart", getFacts);
 
 // enter_btn.onclick = getFacts;
 
 // IF YOU SEE ONTOUCHSTART IN WINDOW OR ELSE 
-if ("ontouchstart" in window) {
-    enter_btn.addEventListener("touchstart", getFacts);
-} else {
-    enter_btn.addEventListener("click", getFacts);
-};
+// if ("ontouchstart" in window) {
+//     enter_btn.addEventListener("touchstart", getFacts);
+// } else {
+//     enter_btn.addEventListener("click", getFacts);
+// };
 
 // FUNCTION TO ASSIGN VALUE TO INPUT, CARD TITLE AND CARD TEXT 
-function getFacts(e) {
-    e.preventDefault();
+function getFacts() {
     let input = document.querySelector(".input").value;
     let card_title = document.querySelector(".card-title");
     let card_text = document.querySelector(".card-text");
@@ -63,13 +62,4 @@ function copyText() {
     document.execCommand("copy");
     textarea.remove();
     alert("Fact has been copied");
-}
-
-
-function isTouchScreendevice() {
-    return 'ontouchstart' in window || navigator.maxTouchPoints;      
-};
-
-if(isTouchScreendevice()){
-    alert("I am a touch screen device")
 }
