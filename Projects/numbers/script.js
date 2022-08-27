@@ -4,8 +4,8 @@
 
 
 // INITIATE YOUR SELECTORS
-let enter_btn = document.querySelector(".enter-button");
-let card = document.querySelector(".card");
+const enter_btn = document.querySelector(".enter-button");
+const card = document.querySelector(".card");
 
 
 // ENTER BUTTON
@@ -26,9 +26,9 @@ enter_btn.addEventListener('click', () => {
 
 // FUNCTION TO ASSIGN VALUE TO INPUT, CARD TITLE AND CARD TEXT 
 function getFacts() {
-    let input = document.querySelector(".input").value;
-    let card_title = document.querySelector(".card-title");
-    let card_text = document.querySelector(".card-text");
+    const input = document.querySelector(".input").value;
+    const card_title = document.querySelector(".card-title");
+    const card_text = document.querySelector(".card-text");
 
     // IF VALUE IS NOT NOTHING
     if (input !== "") {        
@@ -45,23 +45,23 @@ function getFacts() {
 
 
 // COPY BUTTON 
-let copy_btn = document.querySelector(".copy-btn");
+// const copy_btn = document.querySelector(".copy-btn");
 
-copy_btn.addEventListener('click', () => {
-    copyText();
-});
+// copy_btn.addEventListener('click', () => {
+//     copyText();
+// });
 
-function copyText() {
-    let textarea = document.createElement("textarea");
-    let card_text = document.querySelector(".card-text").innerHTML;
+// function copyText() {
+//     const textarea = document.createElement("textarea");
+//     const card_text = document.querySelector(".card-text").innerHTML;
 
-    textarea.value = card_text;
-    document.body.append(textarea);
-    textarea.select();
-    document.execCommand("copy");
-    textarea.remove();
-    alert("Fact has been copied");
-}
+//     textarea.value = card_text;
+//     document.body.append(textarea);
+//     textarea.select();
+//     document.execCommand("copy");
+//     textarea.remove();
+//     alert("Fact has been copied");
+// }
 
 // RESET BUTTON
 // let reset_btn = document.querySelector(".reset-btn");
