@@ -62,3 +62,15 @@ function copyText() {
     textarea.remove();
     alert("Fact has been copied");
 }
+
+// RESET BUTTON
+let reset_btn = document.querySelector(".reset-btn");
+
+reset_btn.addEventListener('click', () => {
+    resetText();
+});
+
+function resetText(){
+    card.classList.add("d-none");
+    document.querySelector(".input").value = '';
+};
