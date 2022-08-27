@@ -1,4 +1,4 @@
-// INITIATE YOUR SELECTORS
+// INITIATE YOUR SELECTORS = ENTER BUTON AND CARD DISPLAYING DATA
 const enter_btn = document.querySelector(".enter-button");
 const card = document.querySelector(".card");
 
@@ -18,6 +18,7 @@ function getFacts() {
     fetch(`https://numbersapi.p.rapidapi.com/${input}/math`, options)
     .then(response => response.text())
     .then(data => {
+        // DISPLAY DATA FROM API
         card_title.innerHTML = input;
         card_text.innerHTML = data;
         card.classList.remove("d-none");
