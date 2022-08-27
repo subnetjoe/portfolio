@@ -1,6 +1,10 @@
+(function() {
+    "use strict";
+
 // Fetch() method: It is defined on th window object, which we can use to perform request.
 // This method will return a promise that will be fulfilled when the request is completed
 // or rejected if the request is rejected.
+
 
 
 // INITIATE YOUR SELECTORS
@@ -74,3 +78,7 @@ function getFacts() {
 //     card.classList.add("d-none");
 //     document.querySelector(".input").value = '';
 // };
+
+
+
+})()
