@@ -2,7 +2,7 @@
 // This method will return a promise that will be fulfilled when the request is completed
 // or rejected if the request is rejected.
 
-let enter_btn = document.querySelector(".btn");
+let enter_btn = document.querySelector(".enter-button");
 let card = document.querySelector(".card");
 
 
