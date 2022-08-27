@@ -11,7 +11,9 @@ let card = document.querySelector(".card");
 // ENTER BUTTON
 // enter_btn.addEventListener("click", getFacts);
 
-enter_btn.addEventListener("mousedown", getFacts);
+enter_btn.addEventListener('click', () => {
+    getFacts();
+});
 
 // enter_btn.onclick = getFacts;
 
@@ -28,25 +30,20 @@ function getFacts() {
     let card_title = document.querySelector(".card-title");
     let card_text = document.querySelector(".card-text");
 
-    // IF VALUE IS NOT NOTHING
-    if (input !== "") {
-        card.classList.remove("d-none");
-
-        fetch(`http://numbersapi.com/${input}`)
-            .then((response) => response.text())
-            .then((data) => {
-                card_title.innerHTML = input;
-                card_text.innerHTML = data;
-            })
-            .catch((err) => console.log(err));
-        }
+// IF VALUE IS NOT NOTHING
+if (input !== "") {        
+    fetch(`http://numbersapi.com/${input}`)
+        .then((response) => response.text())
+        .then((data) => {
+            card_title.innerHTML = input;
+            card_text.innerHTML = data;
+            card.classList.remove("d-none");
+        })
+        .catch((err) => console.log(err));
     }
-
-;
-
+};
 
 
-    
 // COPY BUTTON 
 let copy_btn = document.querySelector(".copy-btn");
 
