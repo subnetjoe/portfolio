@@ -58,6 +58,7 @@ reset_btn.addEventListener('click', () => {
 function resetText(){
     card.classList.add("d-none");
     document.getElementById("input-number").value = "";
+    document.getElementById("input-number").focus();
 };
 
 // RAPID DEFAULT
