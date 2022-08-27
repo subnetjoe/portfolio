@@ -11,7 +11,7 @@ let card = document.querySelector(".card");
 // ENTER BUTTON
 // enter_btn.addEventListener("click", getFacts);
 
-enter_btn.addEventListener('click', () => {
+enter_btn.addEventListener('mousedown', () => {
     getFacts();
 });
 
