@@ -9,9 +9,9 @@ let card = document.querySelector(".card");
 
 
 // ENTER BUTTON
-enter_btn.addEventListener("click", getFacts);
+// enter_btn.addEventListener("click", getFacts);
 
-enter_btn.addEventListener("touchstart", getFacts);
+enter_btn.addEventListener("mousedown", getFacts);
 
 // enter_btn.onclick = getFacts;
 
