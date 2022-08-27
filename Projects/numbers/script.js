@@ -2,6 +2,8 @@
 // This method will return a promise that will be fulfilled when the request is completed
 // or rejected if the request is rejected.
 
+
+// INITIATE YOUR SELECTORS
 let enter_btn = document.querySelector(".enter-button");
 let card = document.querySelector(".card");
 
@@ -9,7 +11,7 @@ let card = document.querySelector(".card");
 // ENTER BUTTON
 enter_btn.addEventListener("click", getFacts);
 
-// enter_btn.addEventListener("touchstart", getFacts);
+enter_btn.addEventListener("touchstart", getFacts);
 
 // enter_btn.onclick = getFacts;
 
