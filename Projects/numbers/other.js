@@ -1,19 +1,14 @@
-// (function() {
-//     "use strict";
-
-
 // INITIATE YOUR SELECTORS
 const enter_btn = document.querySelector(".enter-button");
 const card = document.querySelector(".card");
 
 
-// ENTER BUTTON
+// ENTER BUTTON = CLICK TO CALL FUNCTION
 enter_btn.addEventListener("click", () => {
     getFacts();
 });
 
 // FUNCTION TO ASSIGN VALUE TO INPUT, CARD TITLE AND CARD TEXT 
-
 function getFacts() {
     const input = document.querySelector(".input-number").value;
     const card_title = document.querySelector(".card-title");
@@ -33,6 +28,37 @@ function getFacts() {
     .catch(err => console.error(err));
 };
 
+// COPY BUTTON 
+const copy_btn = document.querySelector(".copy-btn");
+
+copy_btn.addEventListener('click', () => {
+    copyText();
+});
+
+function copyText() {
+    const textarea = document.createElement("textarea");
+    const card_text = document.querySelector(".card-text").innerHTML;
+
+    textarea.value = card_text;
+    document.body.append(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    textarea.remove();
+    alert("Fact has been copied");
+}
+
+// RESET BUTTON
+const reset_btn = document.querySelector(".reset-btn");
+
+reset_btn.addEventListener('click', () => {
+    resetText();
+});
+
+function resetText(){
+    card.classList.add("d-none");
+    document.getElementById("input-number").value = "";
+};
+
 // RAPID DEFAULT
 const options = {
 	method: 'GET',
@@ -41,11 +67,3 @@ const options = {
 		'X-RapidAPI-Host': 'numbersapi.p.rapidapi.com'
 	}
 };
-
-
-
-
-
-
-// END OF STRICT MODE
-// });
