@@ -48,6 +48,9 @@ nav {
     background-color:hsl(261, 51%, 51%);
     color:#ffffff;
 }
+.btn:hover {
+    color: hsl(261, 51%, 51%);;
+}
 .hiJoe {
     display: flex;
     font-family: "Assistant";
