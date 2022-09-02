@@ -34,12 +34,12 @@ nav {
     background-color: hsl(261, 51%, 51%);
     color: #ffffff;
 }
+
 .nav-link {
     color: hsl(0, 0%, 100%);
     font-size: 1.2rem;
     font-family: 'Assistant';
     font-weight: 500;
-    /* cursor: pointer; */
 }
 .nav-link:hover {
     color: #ffffff;
@@ -55,6 +55,12 @@ nav {
     font-weight: 600;
     letter-spacing: -1px;
 }
+@media (max-width: 480px) {
+    .hiJoe {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+}
 .passionPhrase {
     display: flex;
     font-family: "Assistant";
@@ -62,6 +68,12 @@ nav {
     font-weight: 400;
     padding: 1rem 0 3rem 0;
     letter-spacing: -1px;
+}
+@media (max-width: 480px) {
+    .passionPhrase {
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
 }
 .card i {
     color:hsl(261, 51%, 51%);
@@ -83,13 +95,4 @@ footer {
     text-align: center;
     font-family: "Assistant";
     padding: .1rem 0;
-}
-@media (max-width: 480px) {
-  .passionPhrase {
-    font-size: 1.3rem;
-    font-weight: 500;
-  }
-  .home  {
-    text-align: center;
-  }
 }
