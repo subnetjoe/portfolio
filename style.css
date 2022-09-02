@@ -39,7 +39,10 @@ nav {
     font-size: 1.2rem;
     font-family: 'Assistant';
     font-weight: 500;
-    cursor: pointer;
+    /* cursor: pointer; */
+}
+.nav-link:hover {
+    color: #ffffff;
 }
 .purple {
     background-color:hsl(261, 51%, 51%);
