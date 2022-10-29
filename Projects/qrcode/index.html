@@ -58,6 +58,12 @@
           <input id="url" type="url" placeholder="Enter a URL"
             class="w-full border-2 border-gray-200 rounded p-3 text-grey-dark mr-2 focus:outline-none mb-5" required />
 
+            <select class="w-full border-2 border-gray-200 rounded p-3 text-grey-dark mr-2 focus:outline-none mb-5" name="color"
+            id="color">
+            <option value="default" selected>Default Style</option>
+            <option value="inverted">Inverted Colors</option>
+            </select>
+
           <select class="w-full border-2 border-gray-200 rounded p-3 text-grey-dark mr-2 focus:outline-none" name="size"
             id="size">
             <option value="100">100x100</option>
@@ -68,6 +74,8 @@
             <option value="600">600x600</option>
             <option value="700">700x700</option>
           </select>
+
+
           <button class="bg-gray-600 rounded w-full text-white py-3 px-4 mt-5 hover:bg-black" type="submit">
             Generate QR Code
           </button>
@@ -77,6 +85,8 @@
         <img class="w-1/2 m-auto mb-10 md:w-full" src="img/qr-code.svg" alt="" />
       </div>
     </div>
+
+
 
     <div id="generated" class="max-w-5xl m-auto flex flex-col text-center align-center justify-center mt-20">
       <!-- Spinner -->
@@ -95,7 +105,9 @@
 
       <div id="qrcode" class="m-auto"></div>
     </div>
+
+
+
   </main>
 </body>
-
 </html>

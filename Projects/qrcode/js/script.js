@@ -76,3 +76,6 @@ const createSaveBtn = (saveUrl) => {
 hideSpinner();
 
 form.addEventListener('submit', onGenerateSubmit);
+
+// Create a button to Exit save button by clearUI
+
