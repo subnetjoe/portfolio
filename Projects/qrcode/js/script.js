@@ -1,7 +1,7 @@
 const form = document.getElementById('generate-form');
 const qr = document.getElementById('qrcode');
 
-// Button submit
+////// BUTTON SUBMIT
 const onGenerateSubmit = (e) => {
   e.preventDefault();
 
