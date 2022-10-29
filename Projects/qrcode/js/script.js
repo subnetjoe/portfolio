@@ -36,7 +36,7 @@ const generateQRCode = (url, size) => {
   const qrcode = new QRCode('qrcode', {
     text: url,
     width: size,
-    height: size,
+    height: size
   });
 };
 
@@ -64,18 +64,16 @@ const hideSpinner = () => {
 // Create save button to download QR code as image
 const createSaveBtn = (saveUrl) => {
   const link = document.createElement('a');
-  link.id = 'save-link';
-  link.classList =
-    'bg-red-500 hover:bg-red-700 text-white font-bold py-2 rounded w-1/3 m-auto my-5';
-  link.href = saveUrl;
-  link.download = 'qrcode';
-  link.innerHTML = 'Save Image';
+        link.id = 'save-link';
+        link.classList = 'bg-red-500 hover:bg-red-700 text-white font-bold py-2 rounded w-1/3 m-auto my-5';
+        link.href = saveUrl;
+        link.download = 'qrcode';
+        link.innerHTML = 'Save Image';
   document.getElementById('generated').appendChild(link);
 };
+
+
 
 hideSpinner();
 
 form.addEventListener('submit', onGenerateSubmit);
-
-// Create a button to Exit save button by clearUI
-
