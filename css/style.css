@@ -54,27 +54,27 @@ nav {
 .hiJoe {
     display: flex;
     font-family: "Assistant";
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 600;
     letter-spacing: -1px;
 }
 @media (max-width: 480px) {
     .hiJoe {
-      font-size: 4rem;
+      font-size: 2rem;
       font-weight: 700;
     }
 }
-.passionPhrase {
+.frontend {
     display: flex;
     font-family: "Assistant";
-    font-size: 2.25rem;
+    font-size: 5rem;
     font-weight: 400;
     padding: 1rem 0 3rem 0;
     letter-spacing: -1px;
 }
 @media (max-width: 480px) {
-    .passionPhrase {
-      font-size: 1.8rem;
+    .frontend {
+      font-size: 3rem;
       font-weight: 500;
     }
 }
