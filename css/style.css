@@ -60,8 +60,8 @@ nav {
 }
 @media (max-width: 480px) {
     .hiJoe {
-      font-size: 2rem;
-      font-weight: 700;
+      font-size: 1.5rem;
+      font-weight: 600;
     }
 }
 .frontend {
@@ -73,8 +73,8 @@ nav {
 }
 @media (max-width: 480px) {
     .frontend {
-      font-size: 3rem;
-      font-weight: 500;
+      font-size: 2.19rem;
+      font-weight: 700;
     }
 }
 .card i {
