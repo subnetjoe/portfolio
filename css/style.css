@@ -11,7 +11,9 @@ body {
     padding: 0 20px;
 }
 nav {
-    background-color:hsl(261, 51%, 51%);
+    /* background-color:hsl(261, 51%, 51%); */
+    background-color: #fdfdfd;
+    
 }
 .logo {
     width: 40px;
@@ -36,13 +38,13 @@ nav {
 }
 
 .nav-link {
-    color: hsl(0, 0%, 100%);
+    color: hsl(261, 51%, 51%);
     font-size: 1.2rem;
     font-family: 'Assistant';
     font-weight: 500;
 }
 .nav-link:hover {
-    color: #ffffff;
+    color: hsl(261, 51%, 51%);
 }
 .purple {
     background-color:hsl(261, 51%, 51%);
