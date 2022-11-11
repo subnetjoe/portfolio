@@ -31,14 +31,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
+                    <div id="underline"></div>
                     <li class="nav-item">
-                        <a href="#home" class="nav-link px-5">Home</a>
+                        <a href="#home" class="nav-link mx-5">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#portfolio" class="nav-link px-5">Portfolio</a>
+                        <a href="#portfolio" class="nav-link mx-5">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link px-5">Contact</a>
+                        <a href="#contact" class="nav-link mx-5">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -221,6 +222,18 @@
             </div>
         </div>
     </section>
+
+    <script>
+        const underline = document.querySelector('#underline');
+        const menu = document.querySelector('nav');
+
+        menu.addEventListener('click', e => {
+            if (e.target.nodeName === 'A'){
+                underline.style.left = e.target.offsetLeft + 'px';
+                underline.style.width = e.target.offsetWidth + 'px';
+            }
+        });
+    </script>
 
     <!-- Footer -->
     <footer>
