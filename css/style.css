@@ -40,11 +40,11 @@ nav {
 #underline {
     position: absolute;
     height: 3px;
-    width: 50px;
+    width: 100%;
     background-color: #ffffff;
-    left: 0;
     bottom: 1.5rem;
     transition: 0.5s ease;
+    display: none;
 }
 .nav-link {
     color: #ffffff;

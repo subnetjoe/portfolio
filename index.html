@@ -33,13 +33,13 @@
                 <ul class="navbar-nav ms-auto">
                     <div id="underline"></div>
                     <li class="nav-item">
-                        <a href="#home" class="nav-link mx-5">Home</a>
+                        <a href="#home" class="nav-link ">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#portfolio" class="nav-link mx-5">Portfolio</a>
+                        <a href="#portfolio" class="nav-link ">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link mx-5">Contact</a>
+                        <a href="#contact" class="nav-link ">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -231,6 +231,7 @@
             if (e.target.nodeName === 'A'){
                 underline.style.left = e.target.offsetLeft + 'px';
                 underline.style.width = e.target.offsetWidth + 'px';
+                underline.style.display = 'block';
             }
         });
     </script>
