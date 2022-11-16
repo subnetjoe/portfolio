@@ -105,7 +105,9 @@
                                 </a>
                             </h5>
                             <p class="card-text">
-                                This QR Code Generator was created with JavaScript and Tailwind CSS. The user can input their URL into the field and select the size of the QR Code image. Once the QR Code image is loaded, the QR Code can be saved to their device location.
+                                This QR Code Generator was created with JavaScript and Tailwind CSS. The user can input
+                                their URL into the field and select the size of the QR Code image. Once the QR Code
+                                image is loaded, the QR Code can be saved to their device location.
                             </p>
                             <a href="Projects/qrcode/index.html" class="btn purple">QR Code Generator</a>
                         </div>
@@ -227,13 +229,21 @@
         const underline = document.querySelector('#underline');
         const menu = document.querySelector('nav');
 
-        menu.addEventListener('click', e => {
-            if (e.target.nodeName === 'A'){
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // if mobile device, then don't display underline
+            underline.style.display = 'none';
+        } else {
+            // if desktop device, then display underline
+            menu.addEventListener('click', e => {
+            if (e.target.nodeName === 'A') {
                 underline.style.left = e.target.offsetLeft + 'px';
                 underline.style.width = e.target.offsetWidth + 'px';
                 underline.style.display = 'block';
             }
         });
+        }
+
+        
     </script>
 
     <!-- Footer -->
