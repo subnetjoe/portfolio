@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
     </script>
-    <script src="https://kit.fontawesome.com/63f8598e7f.js" defer></script>
+    <script src="https://kit.fontawesome.com/63f8598e7f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/style.css" />
 </head>
 
@@ -59,8 +59,24 @@
                         <a href="#portfolio" class="btn btn-lg purple">View Portfolio</a>
                     </div>
                 </div>
-                <div class="col-md">
-
+                <div class="col-md container d-flex">
+                    <div class="row container d-flex ">
+                        <div class="container col d-flex justify-content-center align-items-center">
+                            <div class="container align-items-center justify-content-center">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                        </div>
+                        <div class="container col d-flex justify-content-center align-items-center">
+                            <div class="container  align-items-center justify-content-center">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                        </div>
+                        <div class="container col d-flex justify-content-center align-items-center">
+                            <div class="container  align-items-center justify-content-center ">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -235,15 +251,13 @@
         } else {
             // if desktop device, then display underline
             menu.addEventListener('click', e => {
-            if (e.target.nodeName === 'A') {
-                underline.style.left = e.target.offsetLeft + 'px';
-                underline.style.width = e.target.offsetWidth + 'px';
-                underline.style.display = 'block';
-            }
-        });
+                if (e.target.nodeName === 'A') {
+                    underline.style.left = e.target.offsetLeft + 'px';
+                    underline.style.width = e.target.offsetWidth + 'px';
+                    underline.style.display = 'block';
+                }
+            });
         }
-
-        
     </script>
 
     <!-- Footer -->
