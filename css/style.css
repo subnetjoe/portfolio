@@ -90,7 +90,7 @@ nav {
 .frontend {
     display: flex;
     font-family: "Assistant";
-    font-size: 3.8rem;
+    font-size: 3.5rem;
     font-weight: 700;
     letter-spacing: -1px;
 }
@@ -104,8 +104,14 @@ nav {
 
 i.fab {
     color: #6244C5;
-    text-shadow: .4rem .4rem .4rem black;
-    font-size: 6rem;
+    font-size: 8rem;
+}
+@media (max-width: 480px) {
+    i.fab {
+        font-size: 7rem;
+        padding-top: 1rem;
+        display: none;
+    }
 }
 
 i.fab:hover {
