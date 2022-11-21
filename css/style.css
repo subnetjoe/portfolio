@@ -22,15 +22,15 @@ nav {
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     aspect-ratio: 1 / 1;
     color: hsl(261, 51%, 51%);
     text-align: center;
     background-color: #ffffff;
     border-radius: 50%;
     font-family: "Assistant";
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 800;
     display: flex;
     justify-content: center;
@@ -154,7 +154,14 @@ i.fab:hover {
 footer {
     background-color: hsl(261, 51%, 51%);
     color: #f3f3f3;
-    text-align: center;
     font-family: "Assistant";
     padding: .1rem 0;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
+footer .container {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
 }
