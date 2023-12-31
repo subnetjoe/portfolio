@@ -1,6 +1,6 @@
 <h2>Joe Early's portfolio of web development projects</h2>
 <br>
-<a href="https://JoeEarly.dev">JoeEarly.dev Portfolio of Joe Early</a>
+<a href="https://SubnetJoe.com">SubnetJoe.com Portfolio of Joe Early</a>
 <br>
 <p>Working on new JavaScript Projects.
 </p>
